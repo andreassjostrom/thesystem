@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "agents.h"
-#include "connection.h"
+#include "connect.h"
 #include "state.h"
 
 
