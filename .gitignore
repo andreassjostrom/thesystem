@@ -1,0 +1,7 @@
+*.exe
+*.obj
+*.bak
+*.prj
+*.pdb
+*.map
+*.tmp
