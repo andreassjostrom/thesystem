@@ -6,7 +6,7 @@
 #include "agents.h"
 #include "chat.h"
 #include "ui.h"
-#include "connection.h"
+#include "connect.h"
 #include "menu.h"
 #include "state.h"
 
