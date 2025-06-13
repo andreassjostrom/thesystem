@@ -5,6 +5,8 @@
 #include "chat.h"
 #include "agents.h"
 #include "ui.h"
+#include "connection.h"
+
 
 extern int testing_mode;
 extern int is_online;

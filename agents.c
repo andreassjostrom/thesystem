@@ -1,15 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "agents.h"
+#include "connection.h"
 
-int agent_file_exists(const char* filename) {
-    FILE* f = fopen(filename, "r");
-    if (f) {
-        fclose(f);
-        return 1;
-    }
-    return 0;
-}
 
 int load_agents_from_file(char lines[][MAX_AGENT_LINE], int max_lines) {
     FILE* f = fopen(AGENTS_FILE, "r");
@@ -35,16 +28,23 @@ void call_list_agents_and_save(void) {
     FILE* cache;
     char buffer[MAX_AGENT_LINE];
 
-    if (!write_message_file("ListAgents")) {
+    /* Step 1: Send ListAgents command */
+    int result = send_message_to_helper("ListAgents");
+    if (result == -1) {
         show_error("Failed to write ListAgents command.");
         return;
-    }
-
-    if (call_helper() != 0) {
+    } else if (result == -2) {
         show_error("Helper app failed.");
         return;
     }
 
+    /* Step 2: Wait for response */
+    if (!wait_for_response_file(5000)) {
+        show_error("Timeout waiting for ListAgents response.");
+        return;
+    }
+
+    /* Step 3: Copy response.txt to agents.txt */
     in = fopen(RESP_FILE, "r");
     cache = fopen(AGENTS_FILE, "w");
 
@@ -58,8 +58,9 @@ void call_list_agents_and_save(void) {
     if (cache) fclose(cache);
 }
 
+
 void initialize_agent_list(void) {
-    if (agent_file_exists(AGENTS_FILE)) {
+    if (file_exists(AGENTS_FILE)) {
         agent_count = load_agents_from_file(agent_lines, MAX_AGENTS);
     } else {
         call_list_agents_and_save();
