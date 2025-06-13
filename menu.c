@@ -8,6 +8,7 @@
 #include "ui.h"
 #include "connection.h"
 #include "menu.h"
+#include "state.h"
 
 extern int agent_count;
 extern int is_online;
@@ -86,3 +87,93 @@ void test_spinner() {
     gotoxy(30, 12);
     cprintf("                    ");  /* clear */
 }
+
+void handle_chat_with_agent() {
+    char input[5];
+    int i;
+    int selected_id = -1;
+    int len;
+    int id;
+    int redraw = 1;
+
+refresh_menu:
+
+    if (redraw) {
+        agent_count = 1;  /* THE SYSTEM already in slot 0 */
+        for (i = 0; i < MAX_AGENTS && agent_lines[i][0] != '\0'; i++) {
+            char name[MAX_AGENT_NAME];
+            char desc[MAX_AGENT_DESC];
+
+            if (sscanf(agent_lines[i], "ID: %d | Name: %[^|]| Desc: %[^\n]", &id, name, desc) == 3) {
+                if (id == 0) continue;
+
+                len = strlen(name);
+                while (len > 0 && name[len - 1] == ' ') {
+                    name[--len] = '\0';
+                }
+
+                agent_list[agent_count].id = id;
+                strncpy(agent_list[agent_count].name, name, MAX_AGENT_NAME - 1);
+                agent_list[agent_count].name[MAX_AGENT_NAME - 1] = '\0';
+                strncpy(agent_list[agent_count].desc, desc, MAX_AGENT_DESC - 1);
+                agent_list[agent_count].desc[MAX_AGENT_DESC - 1] = '\0';
+                agent_count++;
+            }
+        }
+
+        clrscr();
+        gotoxy(2, 2);
+        cprintf("Select an AI Agent to chat with:");
+
+        gotoxy(2, 4);
+        cprintf("R) Refresh agent list");
+
+        for (i = 1; i < agent_count; i++) {
+            gotoxy(2, 5 + i);
+            cprintf("ID: %d | %s - %s", agent_list[i].id, agent_list[i].name, agent_list[i].desc);
+        }
+
+        redraw = 0;
+    }
+
+    gotoxy(2, 6 + agent_count);
+    cprintf("Enter ID or command: ");
+    gotoxy(25, 6 + agent_count);
+
+    if (!get_user_input(input, sizeof(input), 25, 6 + agent_count, 1)) {
+        return;
+    }
+
+    if (strcmpi(input, "R") == 0) {
+        call_list_agents_and_save();
+        load_agents_from_file(agent_lines, MAX_AGENTS);
+        redraw = 1;
+        goto refresh_menu;
+    }
+
+    selected_id = atoi(input);
+
+    for (i = 0; i < agent_count; i++) {
+        if (agent_list[i].id == selected_id) {
+            strncpy(current_agent_name, agent_list[i].name, MAX_AGENT_NAME - 1);
+            current_agent_name[MAX_AGENT_NAME - 1] = '\0';
+
+            if (testing_mode) {
+                strcpy(session_id, "fb4fd402");
+                handle_chat(selected_id);
+            } else {
+                if (start_chat_session(selected_id)) {
+                    handle_chat(selected_id);
+                } else {
+                    show_error("Failed to start session with agent.");
+                }
+            }
+            return;
+        }
+    }
+
+    show_error("Invalid ID or command.");
+    goto refresh_menu;
+}
+
+

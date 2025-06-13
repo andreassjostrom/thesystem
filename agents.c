@@ -2,6 +2,7 @@
 #include <string.h>
 #include "agents.h"
 #include "connection.h"
+#include "state.h"
 
 
 int load_agents_from_file(char lines[][MAX_AGENT_LINE], int max_lines) {

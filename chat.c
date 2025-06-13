@@ -6,15 +6,14 @@
 #include "agents.h"
 #include "ui.h"
 #include "connection.h"
+#include "state.h"
 
 
 extern int testing_mode;
 extern int is_online;
 extern char session_id[20];
 
-extern int send_message_to_helper(const char* command_line);
-extern int read_response_file(char lines[][MAX_LINE_LENGTH], int max_lines, int skip_first_line);
-extern int start_chat_session(int agent_id);
+
 
 /* Shared state */
 char chat_history[MAX_MESSAGES][MAX_LENGTH];
@@ -132,7 +131,7 @@ void handle_chat(int agent_id) {
                     if (pos - dir >= 0 && pos - dir < 20) line[pos - dir] = 'o';
                     if (pos - 2 * dir >= 0 && pos - 2 * dir < 20) line[pos - 2 * dir] = '.';
 
-                    gotoxy(30, 22);
+                    gotoxy(30, UI_STATUS_ROW);
                     cprintf("%s", line);
                     fflush(stdout);
 
@@ -148,7 +147,7 @@ void handle_chat(int agent_id) {
                     steps++;
                 }
 
-                gotoxy(30, 22);
+                gotoxy(30, UI_STATUS_ROW);
                 cprintf("                    ");
                 ui_show_cursor();
 
@@ -181,3 +180,48 @@ void handle_chat(int agent_id) {
         }
     }
 }
+
+
+
+
+int start_chat_session(int agent_id) {
+    char cmd[40];
+    char response[MAX_RESPONSE_LINES][MAX_LINE_LENGTH];
+    int count;
+
+    if (testing_mode) {
+        strcpy(session_id, "fb4fd402");  /* fixed ID for test mode */
+        return 1;
+    }
+
+		sprintf(cmd, "StartChat,%d", agent_id);
+		int result = send_message_to_helper(cmd);
+		
+		if (result == -1) {
+		    show_error("Failed to write message.txt");
+		    return 0;
+		} else if (result == -2) {
+		    show_error("Helper app failed.");
+		    return 0;
+		}
+		
+		if (!wait_for_response_file(5000)) {
+		    show_error("Timeout waiting for session.");
+		    return 0;
+		}
+
+
+
+    count = read_response_file(response, MAX_RESPONSE_LINES, 0);  /* do not skip session id ... that is the 0 */  
+    
+    if (count >= 1) {
+        strncpy(session_id, response[0], sizeof(session_id) - 1);
+        session_id[sizeof(session_id) - 1] = '\0';
+        return 1;
+    }
+
+    show_error("No session ID received.");
+    return 0;
+}
+
+
