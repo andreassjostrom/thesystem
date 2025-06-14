@@ -1,1 +1,1 @@
-EndChat,e63adede
+TestConnection

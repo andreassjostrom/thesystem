@@ -1,4 +1,5 @@
 #include "state.h"
+#include "common.h"
 
 /* Connection status */
 int is_online = 0;
@@ -18,5 +19,4 @@ int agent_count = 0;
 
 /* Raw agent lines from agents.txt */
 char agent_lines[MAX_AGENTS][MAX_AGENT_LINE];
-
 

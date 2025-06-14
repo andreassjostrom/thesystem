@@ -3,6 +3,9 @@
 #include "agents.h"
 #include "connect.h"
 #include "state.h"
+#include "common.h"
+
+
 
 
 int load_agents_from_file(char lines[][MAX_AGENT_LINE], int max_lines) {
@@ -61,6 +64,13 @@ void call_list_agents_and_save(void) {
 
 
 void initialize_agent_list(void) {
+	
+agent_list[0].id = SYSTEM_AGENT_ID;
+strncpy(agent_list[0].name, "THE SYSTEM", MAX_AGENT_NAME - 1);
+agent_list[0].name[MAX_AGENT_NAME - 1] = '\0';
+agent_count = 1;
+	
+	
     if (file_exists(AGENTS_FILE)) {
         agent_count = load_agents_from_file(agent_lines, MAX_AGENTS);
     } else {

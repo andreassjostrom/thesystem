@@ -8,28 +8,16 @@
 #include "ui.h"
 #include "connect.h"
 #include "state.h"
+#include "common.h"
+
 
 
 int main() {
     char input[4];
 
-    /* Ensure agent 0 (The System) exists */
-    agent_list[0].id = SYSTEM_AGENT_ID;
-    strncpy(agent_list[0].name, "THE SYSTEM", MAX_AGENT_NAME - 1);
-    agent_list[0].name[MAX_AGENT_NAME - 1] = '\0';
-    agent_count = 1;
-
-    gotoxy(2, 2);
-    cprintf("Checking connection...");
-    check_connection_status();
-
-    gotoxy(2, 3);
-    if (is_online) {
-        cprintf("Status: ONLINE");
-    } else {
-        cprintf("Status: OFFLINE");
-    }
-
+    /* Check if there is a connection */
+		check_connection();
+		
     initialize_agent_list();
 
     while (1) {

@@ -18,10 +18,8 @@ extern int agent_count;
 
 extern char agent_lines[MAX_AGENTS][MAX_AGENT_LINE];
 
-typedef struct {
-    int id;
-    char name[MAX_AGENT_NAME];
-    char desc[MAX_AGENT_DESC];
-} Agent;
+
 
 #endif
+
+

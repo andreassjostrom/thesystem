@@ -4,6 +4,8 @@
 #define UI_STATUS_ROW 23
 #define CONSOLE_WIDTH 80
 
+#define MAX_RESPONSE_LINES 20
+#define MAX_LINE_LENGTH 80
 
 /* Cursor control */
 void ui_hide_cursor(void);

@@ -3,44 +3,110 @@
 #include <string.h>
 #include <dos.h>
 #include "connect.h"
+#include "common.h"
+#include "spinner.h"
+#include "ui.h"
+
+
+
+void check_connection(void) {
+    if (check_connection_status() == SUCCESS) {
+        is_online = 1;
+    } else {
+        is_online = 0;
+    }
+}
+
+
+
+int check_connection_status(void) {
+    char lines[1][80];
+    int count;
+
+		if (write_message_file("TestConnection") != SUCCESS) return FAILURE;
+		if (call_helper() != SUCCESS) return FAILURE;
+		if (wait_for_response_file(5000) != SUCCESS) return FAILURE;
+
+    count = read_response_file(lines, 1, 1);
+    if (count >= 1) {
+        if (strcmp(lines[0], "Online") == 0) {
+            return SUCCESS;
+        } else {
+            return FAILURE;
+        }
+    }
+
+    return FAILURE;
+}
+
+int send_message_to_helper(const char* command_line) {
+	
+		if (write_message_file(command_line) != SUCCESS) return FAILURE;
+    if (call_helper() != SUCCESS) return FAILURE;
+    return SUCCESS;
+}
 
 int write_message_file(const char* message) {
     FILE* f = fopen(MSG_FILE, "w");
-    if (!f) return -1;
+    if (!f) return FAILURE;
     fprintf(f, "%s\n", message);
     fclose(f);
-    return 0;
+    return SUCCESS;
 }
 
 int call_helper(void) {
-    char command[100];
-    sprintf(command, "%s %s %s", HELPER_APP, MSG_FILE, RESP_FILE);
-    return system(command);  /* Returns 0 on success */
+    char cmd[100];
+    remove(RESP_FILE);
+    sprintf(cmd, "%s %s %s", HELPER_APP, MSG_FILE, RESP_FILE);
+    if (system(cmd) == 0) {
+        return SUCCESS;
+    } else {
+        return FAILURE;
+    }
 }
 
 int wait_for_response_file(int timeout_ms) {
-    int attempts = 0;
-    int max_attempts = timeout_ms / 500;
-    while (!file_exists(RESP_FILE) && attempts < max_attempts) {
-        delay(500);
-        attempts++;
+    int pos = 0, dir = 1, steps = 0;
+    int max_steps = timeout_ms / 100;
+    FILE* f;
+
+    ui_hide_cursor();
+    log_message("wait_for_response_file");
+
+    while (steps < max_steps) {
+        log_message("spinner_tick() called.");
+        spinner_tick(pos, dir);
+
+        f = fopen(RESP_FILE, "r");
+        if (f) {
+            fclose(f);
+            break;
+        }
+
+        delay(100);
+        pos += dir;
+        if (pos == 19 || pos == 0) dir = -dir;
+        steps++;
     }
-    return file_exists(RESP_FILE);
+
+    spinner_clear();
+    log_message("spinner cleared called.");
+    ui_show_cursor();
+
+    if (file_exists(RESP_FILE)) {
+        return SUCCESS;
+    } else {
+        return FAILURE;
+    }
 }
 
 int file_exists(const char* filename) {
     FILE* f = fopen(filename, "r");
     if (f) {
         fclose(f);
-        return 1;
+        return SUCCESS;
     }
-    return 0;
-}
-
-int send_message_to_helper(const char* command_line) {
-    if (write_message_file(command_line) != 0) return -1;
-    if (call_helper() != 0) return -2;
-    return 0;
+    return FAILURE;
 }
 
 int read_response_file(char lines[][80], int max_lines, int skip_first_line) {
@@ -53,7 +119,7 @@ int read_response_file(char lines[][80], int max_lines, int skip_first_line) {
 
     if (skip_first_line) {
         char temp[80];
-        fgets(temp, sizeof(temp), f);  /* Skip first line */
+        fgets(temp, sizeof(temp), f);
     }
 
     while (fgets(lines[count], 80, f) && count < max_lines) {
@@ -68,40 +134,4 @@ int read_response_file(char lines[][80], int max_lines, int skip_first_line) {
     remove(RESP_FILE);
 
     return count;
-}
-
-int check_connection_status(void) {
-    FILE* f;
-    char buffer1[40], buffer2[40];
-    int attempts = 0;
-    int len;
-
-    remove(RESP_FILE);
-
-    if (write_message_file("TestConnection") != 0) return 0;
-    if (call_helper() != 0) return 0;
-
-    while (!file_exists(RESP_FILE) && attempts < 10) {
-        delay(500);
-        attempts++;
-    }
-
-    if (!file_exists(RESP_FILE)) return 0;
-
-    f = fopen(RESP_FILE, "r");
-    if (!f) return 0;
-
-    buffer1[0] = '\0';
-    buffer2[0] = '\0';
-
-    fgets(buffer1, sizeof(buffer1), f);  /* Session ID */
-    fgets(buffer2, sizeof(buffer2), f);  /* Status Line */
-    fclose(f);
-
-    len = strlen(buffer2);
-    while (len > 0 && (buffer2[len - 1] == '\n' || buffer2[len - 1] == '\r')) {
-        buffer2[--len] = '\0';
-    }
-
-    return (strcmp(buffer2, "Online") == 0);
 }

@@ -7,6 +7,7 @@
 #include "ui.h"
 #include "connect.h"
 #include "state.h"
+#include "common.h"
 
 
 extern int testing_mode;
@@ -42,11 +43,8 @@ void handle_chat(int agent_id) {
     int ch, i, j;
     int response_count;
     int in_chat = 1;
-    int steps = 0;
-    int pos = 0;
-    int dir = 1;
-    char line[81];
-    FILE* f;
+    char logbuf[120];
+    int send_result;
 
     if (!start_chat_session(agent_id)) return;
 
@@ -56,6 +54,9 @@ void handle_chat(int agent_id) {
     textbackground(BLACK);
     gotoxy(2, 1);
     cprintf("Chatting with: %s (ESC to end)", current_agent_name);
+
+    sprintf(logbuf, "Entering chat with agent ID %d", agent_id);
+    log_message(logbuf);
 
     while (in_chat) {
         for (i = 0; i < message_count && i < MAX_MESSAGES; i++) {
@@ -75,10 +76,23 @@ void handle_chat(int agent_id) {
         while (1) {
             ch = getch();
             if (ch == 13) break;
+
             if (ch == 27) {
+                log_message("User pressed ESC - sending EndChat command.");
                 sprintf(command, "EndChat,%s", session_id);
+                
+							  send_result = send_message_to_helper(command);
+								if (send_result != 0) {
+								    sprintf(logbuf, "EndChat send_message_to_helper failed: %d", send_result);
+								    log_message(logbuf);
+								}              
+  
                 send_message_to_helper(command);
+
                 response_count = read_response_file(response_lines, MAX_RESPONSE_LINES, 1);
+                sprintf(logbuf, "EndChat response lines: %d", response_count);
+                log_message(logbuf);
+
                 for (j = 0; j < response_count; j++) {
                     if (j == 0) {
                         sprintf(formatted, "%s:", current_agent_name);
@@ -86,9 +100,11 @@ void handle_chat(int agent_id) {
                     }
                     add_message(response_lines[j]);
                 }
+
                 in_chat = 0;
                 break;
             }
+
             if (ch == 8 && i > 0) {
                 i--;
                 input[i] = '\0';
@@ -116,66 +132,51 @@ void handle_chat(int agent_id) {
             }
 
             sprintf(command, "Chat,%s,%s", session_id, input);
-            if (send_message_to_helper(command)) {
-                steps = 0;
-                pos = 0;
-                dir = 1;
-                ui_hide_cursor();
+            sprintf(logbuf, "Sending Chat command: %s", command);
+            log_message(logbuf);
 
-                while (steps < 100) {
-                    int k;
-                    for (k = 0; k < 20; k++) line[k] = ' ';
-                    line[20] = '\0';
+						send_result = send_message_to_helper(command);
+						if (send_result != 0) {
+						    sprintf(logbuf, "send_message_to_helper failed with code %d", send_result);
+						    log_message(logbuf);
+						    continue;
+						}
 
-                    line[pos] = 'O';
-                    if (pos - dir >= 0 && pos - dir < 20) line[pos - dir] = 'o';
-                    if (pos - 2 * dir >= 0 && pos - 2 * dir < 20) line[pos - 2 * dir] = '.';
+            if (!wait_for_response_file(5000)) {
+                add_message("SYSTEM: No response (timeout).");
+                log_message("SYSTEM: No response (timeout).");
+                continue;
+            }
 
-                    gotoxy(30, UI_STATUS_ROW);
-                    cprintf("%s", line);
-                    fflush(stdout);
+            clrscr();
+            textcolor(LIGHTGREEN);
+            gotoxy(2, 1);
+            cprintf("Chatting with: %s (ESC to end)", current_agent_name);
+            for (j = 0; j < message_count && j < MAX_MESSAGES; j++) {
+                gotoxy(2, 3 + j);
+                cprintf("%-78s", chat_history[j]);
+            }
 
-                    f = fopen(RESP_FILE, "r");
-                    if (f) {
-                        fclose(f);
-                        break;
+            response_count = read_response_file(response_lines, MAX_RESPONSE_LINES, 1);
+            sprintf(logbuf, "Chat response lines: %d", response_count);
+            log_message(logbuf);
+
+            for (j = 0; j < response_count; j++) {
+                sprintf(logbuf, "Line %d: %s", j, response_lines[j]);
+                log_message(logbuf);
+            }
+
+            if (response_count > 0) {
+                for (j = 0; j < response_count; j++) {
+                    if (j == 0) {
+                        sprintf(formatted, "%s:", current_agent_name);
+                        add_message(formatted);
                     }
-
-                    delay(50);
-                    pos += dir;
-                    if (pos == 19 || pos == 0) dir = -dir;
-                    steps++;
+                    add_message(response_lines[j]);
                 }
-
-                gotoxy(30, UI_STATUS_ROW);
-                cprintf("                    ");
-                ui_show_cursor();
-
-                clrscr();
-                textcolor(LIGHTGREEN);
-                gotoxy(2, 1);
-                cprintf("Chatting with: %s (ESC to end)", current_agent_name);
-                for (j = 0; j < message_count && j < MAX_MESSAGES; j++) {
-                    gotoxy(2, 3 + j);
-                    cprintf("%-78s", chat_history[j]);
-                }
-
-                if (steps < 100) {
-                    response_count = read_response_file(response_lines, MAX_RESPONSE_LINES, 1);
-                    if (response_count > 0) {
-                        for (j = 0; j < response_count; j++) {
-                            if (j == 0) {
-                                sprintf(formatted, "%s:", current_agent_name);
-                                add_message(formatted);
-                            }
-                            add_message(response_lines[j]);
-                        }
-                    } else {
-                        add_message("SYSTEM: No response (empty or invalid).");
-                    }
-                } else {
-                    add_message("SYSTEM: No response (timeout).");
-                }
+            } else {
+                add_message("SYSTEM: No response (empty or invalid).");
+                log_message("SYSTEM: No response (empty or invalid).");
             }
         }
     }
@@ -183,8 +184,8 @@ void handle_chat(int agent_id) {
 
 
 
-
 int start_chat_session(int agent_id) {
+	  int result;
     char cmd[40];
     char response[MAX_RESPONSE_LINES][MAX_LINE_LENGTH];
     int count;
@@ -195,7 +196,7 @@ int start_chat_session(int agent_id) {
     }
 
 		sprintf(cmd, "StartChat,%d", agent_id);
-		int result = send_message_to_helper(cmd);
+		result = send_message_to_helper(cmd);
 		
 		if (result == -1) {
 		    show_error("Failed to write message.txt");

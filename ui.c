@@ -2,7 +2,8 @@
 #include <dos.h>
 #include <stdio.h>
 #include "ui.h"
-#include "connection.h"
+#include "connect.h"
+#include "state.h"
 
 void ui_hide_cursor(void) {
     union REGS regs;

@@ -5,6 +5,9 @@
 #define RESP_FILE "response.txt"
 #define HELPER_APP "helper.exe"
 
+void check_connection(void);
+
+
 /* Writes a command string to message.txt */
 int write_message_file(const char* message);
 

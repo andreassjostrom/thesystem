@@ -9,6 +9,7 @@
 #include "connect.h"
 #include "menu.h"
 #include "state.h"
+#include "common.h"
 
 extern int agent_count;
 extern int is_online;
