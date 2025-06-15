@@ -3,7 +3,7 @@
 #include <string.h>
 #include <dos.h>
 #include <stdlib.h>
-#include "agents.h"  /* Handles loading, caching, and parsing agent list from agents.txt */
+#include "agents.h"
 #include "chat.h"
 #include "ui.h"
 #include "connect.h"
@@ -14,6 +14,9 @@
 
 int main() {
     char input[4];
+
+
+		log_message("Start app");
 
     /* Check if there is a connection */
 		check_connection();
@@ -43,7 +46,7 @@ int main() {
                     strcpy(session_id, "fb4fd402");
                     handle_chat(SYSTEM_AGENT_ID);
                 } else {
-                    if (start_chat_session(SYSTEM_AGENT_ID)) {
+                    if (start_chat_session(SYSTEM_AGENT_ID) == SUCCESS) {
                         handle_chat(SYSTEM_AGENT_ID);
                     } else {
                         show_error("Failed to start session with THE SYSTEM.");
@@ -65,12 +68,12 @@ int main() {
 
             case '8':
                 test_spinner();
-                return 0;
+								return SUCCESS;
 
 
             case '9':
                 handle_exit();
-                return 0;
+								return SUCCESS;
 
             default:
                 gotoxy(20, 13);
@@ -80,7 +83,7 @@ int main() {
         }
     }
 
-    return 0;  /* Unreachable, but included for completeness */
+	return SUCCESS;  /* Unreachable, but included for completeness */
 }
 
 

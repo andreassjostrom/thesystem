@@ -17,6 +17,5 @@ char current_agent_name[MAX_AGENT_NAME] = "THE SYSTEM";
 Agent agent_list[MAX_AGENTS];
 int agent_count = 0;
 
-/* Raw agent lines from agents.txt */
 char agent_lines[MAX_AGENTS][MAX_AGENT_LINE];
 

@@ -1,0 +1,918 @@
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+AGENTS_FILE exists, loading from file...
+AGENTS_FILE was empty or invalid. Refetching...
+begin: in call list agents
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL fopen failed
+AGENTS_FILE exists, loading from file...
+agent_count = -1
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call list agents
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call list agents
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call list agents
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call list agents
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+spinner cleared called.
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call_list_agents_and_save
+In call helper
+Removed response.txt
+helper app called
+send_message_to_helper returned SUCCESS
+Calling wait_for_response_file...
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+wait_for_response_file returned FAILURE
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call_list_agents_and_save
+In call helper
+Removed response.txt
+helper app called
+send_message_to_helper returned SUCCESS
+Calling wait_for_response_file...
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+wait_for_response_file returned FAILURE
+agent_count = 0
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is NULL  fopen failed
+AGENTS_FILE does not exist, calling fetch...
+begin: in call_list_agents_and_save
+In call helper
+Removed response.txt
+helper app called
+send_message_to_helper returned SUCCESS
+Calling wait_for_response_file...
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+wait_for_response_file returned SUCCESS
+Opening response.txt for read...
+Successfully opened response.txt
+Opening agents file for write...
+Successfully opened agents file
+Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Raw line: 'input.'
+Line did not match format.
+Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Raw line: ', summarizes findings.'
+Line did not match format.
+Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
+Raw line: 's fixes.'
+Line did not match format.
+Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
+Raw line: 'ces in various styles.'
+Line did not match format.
+Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
+Raw line: 'dance on legal matters.'
+Line did not match format.
+Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
+Raw line: ' tips, and career coaching.'
+Line did not match format.
+Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
+Raw line: 'ivities, and itineraries.'
+Line did not match format.
+Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
+Raw line: '-of-life questions.'
+Line did not match format.
+agent_count = 8
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+In call helper
+Removed response.txt
+helper app called
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+Entering chat with agent ID 0
+User pressed ESC - sending EndChat command.
+In call helper
+Removed response.txt
+helper app called
+EndChat response lines: 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Buffered line: 'input.'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
+Line did not match format, continue buffering.
+agent_count = 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: ''
+Line did not match format, continue buffering.
+Buffered line: 'input.'
+Line did not match format, continue buffering.
+Buffered line: 'input.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
+Line did not match format, continue buffering.
+AGENTS_FILE was empty or invalid. Refetching...
+begin: in call_list_agents_and_save
+In call helper
+Removed response.txt
+helper app called
+send_message_to_helper returned SUCCESS
+Calling wait_for_response_file...
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+wait_for_response_file returned SUCCESS
+Opening response.txt for read...
+Successfully opened response.txt
+Opening agents file for write...
+Successfully opened agents file
+Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Raw line: 'input.'
+Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Raw line: ', summarizes findings.'
+Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
+Raw line: 's fixes.'
+Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
+Raw line: 'ces in various styles.'
+Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
+Raw line: 'dance on legal matters.'
+Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
+Raw line: ' tips, and career coaching.'
+Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
+Raw line: 'ivities, and itineraries.'
+Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
+Raw line: '-of-life questions.'
+agent_count = 8
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Buffered line: 'input.'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical , summarizes findings., summarizes findings.,ores academic and technical topics'
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainIs to any '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical s fixes.s fixes.se Debugger | Desc: Analyzes code, identifies bugs, and explainID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainIs to any  '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieIs to any   '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ces in various styles.ces in various styles.cstories, scripts, and creative pieID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieIs to any    '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiIs to any     '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical dance on legal matters.dance on legal matters.dgal terms and offers general guiID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiIs to any      '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationIs to any       '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical  tips, and career coaching. tips, and career coaching. ip advice, communicationID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationIs to any        '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actIs to any         '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ivities, and itineraries.ivities, and itineraries.id suggests destinations, actID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actIs to any          '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningIs to any           '
+Line did not match format, continue buffering.
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical -of-life questions.-of-life questions.-es in deep thinking, ethics, and meaningID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningIs to any            '
+Line did not match format, continue buffering.
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Line did not match format, continue buffering.
+Buffered line: 'esponds to any ' input.'
+Line did not match format, continue buffering.
+Buffered line: 'esponds to any ' input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Line did not match format, continue buffering.
+Buffered line: ' Explores academic and technical topics' , summarizes findings.'
+Line did not match format, continue buffering.
+Buffered line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
+Line did not match format, continue buffering.
+Buffered line: 'gs, and explain' s fixes.'
+Line did not match format, continue buffering.
+Buffered line: 'gs, and explain' s fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
+Line did not match format, continue buffering.
+Buffered line: 'Writes stories, scripts, and creative pie' ces in various styles.'
+Line did not match format, continue buffering.
+Buffered line: '.' ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
+Line did not match format, continue buffering.
+Buffered line: 'offers general gui' dance on legal matters.'
+Line did not match format, continue buffering.
+Buffered line: 'offers general gui' dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
+Line did not match format, continue buffering.
+Buffered line: 'ive Coach | Desc: Provides leadership advice, communication'  tips, and career coaching.'
+Line did not match format, continue buffering.
+Buffered line: 'ps, and career coaching.' ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
+Line did not match format, continue buffering.
+Buffered line: 'lans trips and suggests destinations, act' ivities, and itineraries.'
+Line did not match format, continue buffering.
+Buffered line: 'ies.' ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
+Line did not match format, continue buffering.
+Buffered line: ', ethics, and meaning' -of-life questions.'
+Line did not match format, continue buffering.
+AGENTS_FILE was empty or invalid. Refetching...
+begin: in call_list_agents_and_save
+In call helper
+Removed response.txt
+helper app called
+send_message_to_helper returned SUCCESS
+Calling wait_for_response_file...
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+wait_for_response_file returned SUCCESS
+Opening response.txt for read...
+Successfully opened response.txt
+Opening agents file for write...
+Successfully opened agents file
+Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Raw line: 'input.'
+Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Raw line: ', summarizes findings.'
+Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
+Raw line: 's fixes.'
+Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
+Raw line: 'ces in various styles.'
+Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
+Raw line: 'dance on legal matters.'
+Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
+Raw line: ' tips, and career coaching.'
+Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
+Raw line: 'ivities, and itineraries.'
+Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
+Raw line: '-of-life questions.'
+agent_count = 8
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+Buffered line:
+ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  
+Buffered line:
+input. 
+Buffered block did not parse.
+Buffered line:
+ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics 
+Buffered line:
+, summarizes findings. 
+Buffered block did not parse.
+Buffered line:
+ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain 
+Buffered line:
+s fixes. 
+Buffered block did not parse.
+Buffered line:
+ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie 
+Buffered line:
+ces in various styles. 
+Buffered block did not parse.
+Buffered line:
+ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui 
+Buffered line:
+dance on legal matters. 
+Buffered block did not parse.
+Buffered line:
+ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication 
+Buffered line:
+ tips, and career coaching. 
+Buffered block did not parse.
+Buffered line:
+ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act 
+Buffered line:
+ivities, and itineraries. 
+Buffered block did not parse.
+Buffered line:
+ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning 
+Buffered line:
+-of-life questions. 
+agent_count = 8
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
+Buffered line: 'input. '
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
+Line did not match format, continue buffering.
+Buffered line: ', summarizes findings. '
+Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
+Line did not match format, continue buffering.
+Buffered line: 's fixes. '
+Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
+Line did not match format, continue buffering.
+Buffered line: 'ces in various styles. '
+Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
+Line did not match format, continue buffering.
+Buffered line: 'dance on legal matters. '
+Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
+Line did not match format, continue buffering.
+Buffered line: ' tips, and career coaching. '
+Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
+Line did not match format, continue buffering.
+Buffered line: 'ivities, and itineraries. '
+Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
+Line did not match format, continue buffering.
+Buffered line: '-of-life questions. '
+agent_count = 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
+Buffered line: 'input. '
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
+Line did not match format, continue buffering.
+Buffered line: ', summarizes findings. '
+Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
+Line did not match format, continue buffering.
+Buffered line: 's fixes. '
+Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
+Line did not match format, continue buffering.
+Buffered line: 'ces in various styles. '
+Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
+Line did not match format, continue buffering.
+Buffered line: 'dance on legal matters. '
+Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
+Line did not match format, continue buffering.
+Buffered line: ' tips, and career coaching. '
+Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
+Line did not match format, continue buffering.
+Buffered line: 'ivities, and itineraries. '
+Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
+Line did not match format, continue buffering.
+Buffered line: '-of-life questions. '
+agent_count = 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
+Buffered line: 'input. '
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
+Line did not match format, continue buffering.
+Buffered line: ', summarizes findings. '
+Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
+Line did not match format, continue buffering.
+Buffered line: 's fixes. '
+Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
+Line did not match format, continue buffering.
+Buffered line: 'ces in various styles. '
+Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
+Line did not match format, continue buffering.
+Buffered line: 'dance on legal matters. '
+Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
+Line did not match format, continue buffering.
+Buffered line: ' tips, and career coaching. '
+Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
+Line did not match format, continue buffering.
+Buffered line: 'ivities, and itineraries. '
+Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
+Line did not match format, continue buffering.
+Buffered line: '-of-life questions. '
+agent_count = 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+before while loop
+Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
+Buffered line: 'input. '
+Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
+Line did not match format, continue buffering.
+Buffered line: ', summarizes findings. '
+Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
+Line did not match format, continue buffering.
+Buffered line: 's fixes. '
+Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
+Line did not match format, continue buffering.
+Buffered line: 'ces in various styles. '
+Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
+Line did not match format, continue buffering.
+Buffered line: 'dance on legal matters. '
+Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
+Line did not match format, continue buffering.
+Buffered line: ' tips, and career coaching. '
+Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
+Line did not match format, continue buffering.
+Buffered line: 'ivities, and itineraries. '
+Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
+Line did not match format, continue buffering.
+Buffered line: '-of-life questions. '
+agent_count = 1
+Start app
+ccs in
+ccs after write
+In call helper
+Removed response.txt
+helper app called
+ccs after call helper
+wait_for_response_file
+spinner_tick() called.
+Opened RESP_FILE
+RESP_FILE has content
+spinner cleared called.
+Returning SUCCESS from wait_for_response_file
+ccs after wait for response
+Connection status: ONLINE
+begin: in initialize_agent_list
+Before file_exists check
+Using AGENTS_FILE:
+agents2.txt
+Checking file_exists: agents2.txt
+File pointer is not NULL
+Opened 'agents2.txt', size = 808
+AGENTS_FILE exists, loading from file...
+begin: in load_agents_from_file
+Loaded agent line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
+Loaded agent line: 'input.'
+Loaded agent line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
+Loaded agent line: ', summarizes findings.'
+Loaded agent line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
+Loaded agent line: 's fixes.'
+Loaded agent line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
+Loaded agent line: 'ces in various styles.'
+Loaded agent line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
+Loaded agent line: 'dance on legal matters.'
+Loaded agent line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
+Loaded agent line: ' tips, and career coaching.'
+Loaded agent line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
+Loaded agent line: 'ivities, and itineraries.'
+Loaded agent line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
+Loaded agent line: '-of-life questions.'
+agent_count = 16

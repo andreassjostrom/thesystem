@@ -1,4 +1,5 @@
 00000000
+ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any input.
 ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics, summarizes findings.
 ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explains fixes.
 ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieces in various styles.

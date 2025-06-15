@@ -9,14 +9,10 @@
 #include "state.h"
 #include "common.h"
 
-
 extern int testing_mode;
 extern int is_online;
 extern char session_id[20];
 
-
-
-/* Shared state */
 char chat_history[MAX_MESSAGES][MAX_LENGTH];
 int message_count = 0;
 
@@ -36,17 +32,13 @@ void add_message(const char* msg) {
 }
 
 void handle_chat(int agent_id) {
-    char input[60];
-    char command[MAX_COMMAND_LENGTH];
-    char formatted[MAX_LENGTH];
+    char input[60], command[MAX_COMMAND_LENGTH], formatted[MAX_LENGTH];
     char response_lines[MAX_RESPONSE_LINES][MAX_LINE_LENGTH];
-    int ch, i, j;
-    int response_count;
-    int in_chat = 1;
+    int ch, i, j, response_count, in_chat = 1;
     char logbuf[120];
     int send_result;
 
-    if (!start_chat_session(agent_id)) return;
+    if (start_chat_session(agent_id) != SUCCESS) return;
 
     message_count = 0;
     clrscr();
@@ -70,24 +62,20 @@ void handle_chat(int agent_id) {
         cprintf("> ");
         gotoxy(4, 24);
 
-        for (i = 0; i < 60; i++) input[i] = '\0';
+        memset(input, 0, sizeof(input));
         i = 0;
 
         while (1) {
             ch = getch();
             if (ch == 13) break;
-
             if (ch == 27) {
                 log_message("User pressed ESC - sending EndChat command.");
                 sprintf(command, "EndChat,%s", session_id);
-                
-							  send_result = send_message_to_helper(command);
-								if (send_result != 0) {
-								    sprintf(logbuf, "EndChat send_message_to_helper failed: %d", send_result);
-								    log_message(logbuf);
-								}              
-  
-                send_message_to_helper(command);
+                send_result = send_message_to_helper(command);
+                if (send_result != SUCCESS) {
+                    sprintf(logbuf, "EndChat send_message_to_helper failed: %d", send_result);
+                    log_message(logbuf);
+                }
 
                 response_count = read_response_file(response_lines, MAX_RESPONSE_LINES, 1);
                 sprintf(logbuf, "EndChat response lines: %d", response_count);
@@ -135,14 +123,14 @@ void handle_chat(int agent_id) {
             sprintf(logbuf, "Sending Chat command: %s", command);
             log_message(logbuf);
 
-						send_result = send_message_to_helper(command);
-						if (send_result != 0) {
-						    sprintf(logbuf, "send_message_to_helper failed with code %d", send_result);
-						    log_message(logbuf);
-						    continue;
-						}
+            send_result = send_message_to_helper(command);
+            if (send_result != SUCCESS) {
+                sprintf(logbuf, "send_message_to_helper failed with code %d", send_result);
+                log_message(logbuf);
+                continue;
+            }
 
-            if (!wait_for_response_file(5000)) {
+            if (wait_for_response_file(5000) != SUCCESS) {
                 add_message("SYSTEM: No response (timeout).");
                 log_message("SYSTEM: No response (timeout).");
                 continue;
@@ -182,47 +170,38 @@ void handle_chat(int agent_id) {
     }
 }
 
-
-
 int start_chat_session(int agent_id) {
-	  int result;
+    int result;
     char cmd[40];
     char response[MAX_RESPONSE_LINES][MAX_LINE_LENGTH];
     int count;
 
     if (testing_mode) {
-        strcpy(session_id, "fb4fd402");  /* fixed ID for test mode */
-        return 1;
+        strcpy(session_id, "fb4fd402");
+        return SUCCESS;
     }
 
-		sprintf(cmd, "StartChat,%d", agent_id);
-		result = send_message_to_helper(cmd);
-		
-		if (result == -1) {
-		    show_error("Failed to write message.txt");
-		    return 0;
-		} else if (result == -2) {
-		    show_error("Helper app failed.");
-		    return 0;
-		}
-		
-		if (!wait_for_response_file(5000)) {
-		    show_error("Timeout waiting for session.");
-		    return 0;
-		}
+    sprintf(cmd, "StartChat,%d", agent_id);
+    result = send_message_to_helper(cmd);
 
+    if (result != SUCCESS) {
+        show_error("Failed to start chat session.");
+        return FAILURE;
+    }
 
+    if (wait_for_response_file(5000) != SUCCESS) {
+        show_error("Timeout waiting for session.");
+        return FAILURE;
+    }
 
-    count = read_response_file(response, MAX_RESPONSE_LINES, 0);  /* do not skip session id ... that is the 0 */  
-    
+    count = read_response_file(response, MAX_RESPONSE_LINES, 0);
     if (count >= 1) {
         strncpy(session_id, response[0], sizeof(session_id) - 1);
         session_id[sizeof(session_id) - 1] = '\0';
-        return 1;
+        return SUCCESS;
     }
 
     show_error("No session ID received.");
-    return 0;
+    return FAILURE;
 }
-
 
