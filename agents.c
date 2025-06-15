@@ -1,131 +1,103 @@
 #include <stdio.h>
 #include <string.h>
+#include "common.h"
 #include "agents.h"
 #include "connect.h"
-#include "state.h"
-#include "common.h"
+#include "ui.h"
 
 
-void initialize_agent_list(void) {
-    char buf[64];
+Agent agent_list[MAX_AGENTS];
+int agent_count = 0;
 
-    log_message("begin: in initialize_agent_list");
-    log_message("Before file_exists check");
-    
-    log_message("Using AGENTS_FILE:");
-		log_message(AGENTS_FILE);
+int load_agents(void) {
+    FILE *f, *in, *out;
+    char line[MAX_AGENT_LINE];
+    agent_count = 0;
 
-		if (file_exists(AGENTS_FILE) != SUCCESS) {
-        log_message("AGENTS_FILE does not exist, calling fetch...");
-        call_list_agents_and_save();
-    } else {
-        log_message("AGENTS_FILE exists, loading from file...");
-        
-        agent_count = load_agents_from_file();
-
-        if (agent_count == 0) {
-            log_message("AGENTS_FILE was empty or invalid. Refetching...");
-            call_list_agents_and_save();  /* fallback fetch */
+    if (file_exists(AGENTS_FILE) != SUCCESS) {
+        if (write_message_file("ListAgents") != SUCCESS) {
+            log_message("Failed to write ListAgents command.");
+            show_error("Failed to write ListAgents command.");
+            return FAILURE;
         }
+
+        if (call_helper() != SUCCESS) {
+            log_message("Helper app failed.");
+            show_error("Helper app failed.");
+            return FAILURE;
+        }
+
+        in = fopen(RESP_FILE, "r");
+        out = fopen(AGENTS_FILE, "w");
+        if (in && out) {
+            while (fgets(line, sizeof(line), in)) {
+                fputs(line, out);
+            }
+        }
+        if (in) fclose(in);
+        if (out) fclose(out);
+
+        delay(100);  /* Let DOS file system settle */
+        log_message("Saved agents file");
     }
 
-    sprintf(buf, "agent_count = %d", agent_count);
-    log_message(buf);
-}
-
-int load_agents_from_file(void) {
-    FILE* f = fopen(AGENTS_FILE, "r");
-    int count = 0;
-    char line[MAX_AGENT_LINE];
-    char logbuf[160];
-
-    if (!f) return FAILURE;
-
-    log_message("begin: in load_agents_from_file");
-
-    /* Skip session ID line */
-    if (!fgets(line, sizeof(line), f)) {
-        fclose(f);
+    f = fopen(AGENTS_FILE, "r");
+    if (!f) {
+        log_message("Failed to open agents.txt for reading.");
         return FAILURE;
     }
 
-    while (fgets(line, sizeof(line), f) && count < MAX_AGENTS) {
+    while (fgets(line, sizeof(line), f)) {
         int len = strlen(line);
-
-        /* Trim newline */
-        while (len > 0 && (line[len - 1] == '\n' || line[len - 1] == '\r')) {
+        while (len > 0 && (line[len - 1] == '\n' || line[len - 1] == '\r'))
             line[--len] = '\0';
+
+        if (len == 0) continue;
+        if (agent_count >= MAX_AGENTS) break;
+
+        if (parse_agent_line(line, &agent_list[agent_count]) == SUCCESS) {
+            char logbuf[120];
+            sprintf(logbuf, "Loaded agent: %s [%d]", agent_list[agent_count].name, agent_list[agent_count].id);
+            log_message(logbuf);
+            agent_count++;
         }
-
-        strncpy(agent_lines[count], line, MAX_AGENT_LINE - 1);
-        agent_lines[count][MAX_AGENT_LINE - 1] = '\0';
-
-        sprintf(logbuf, "Loaded agent line: '%s'", agent_lines[count]);
-        log_message(logbuf);
-
-        count++;
     }
 
     fclose(f);
-    return count;
+    return SUCCESS;
 }
 
 
+int parse_agent_line(const char* line, Agent* agent) {
+    char temp[MAX_AGENT_LINE];
+    char *id_part, *name_part, *desc_part;
+    char *name_end;
+    int name_len;
 
+    strncpy(temp, line, MAX_AGENT_LINE - 1);
+    temp[MAX_AGENT_LINE - 1] = '\0';
 
-void call_list_agents_and_save(void) {
-    FILE* in;
-    FILE* out;
-    char line[128];
-    char logbuf[160];
+    id_part = strstr(temp, "ID: ");
+    name_part = strstr(temp, "Name: ");
+    desc_part = strstr(temp, "Desc: ");
 
-    log_message("begin: in call_list_agents_and_save");
+    if (!id_part || !name_part || !desc_part)
+        return FAILURE;
 
-    if (send_message_to_helper("ListAgents") != SUCCESS) {
-        log_message("send_message_to_helper failed.");
-        show_error("Failed to fetch agent list.");
-        return;
-    }
-    log_message("send_message_to_helper returned SUCCESS");
+    agent->id = atoi(id_part + 4);
 
-    log_message("Calling wait_for_response_file...");
-    if (wait_for_response_file(5000) != SUCCESS) {
-        log_message("wait_for_response_file returned FAILURE");
-        show_error("Timeout waiting for ListAgents response.");
-        return;
-    }
-    log_message("wait_for_response_file returned SUCCESS");
+    name_end = strchr(name_part, '|');
+    if (!name_end) return FAILURE;
 
-    log_message("Opening response.txt for read...");
-    in = fopen(RESP_FILE, "r");
-    if (in) log_message("Successfully opened response.txt");
-    else log_message("Failed to open response.txt");
+    name_len = name_end - (name_part + 6);
+    if (name_len <= 0 || name_len >= MAX_AGENT_NAME) return FAILURE;
 
-    log_message("Opening agents file for write...");
-    out = fopen(AGENTS_FILE, "w");
-    if (out) log_message("Successfully opened agents file");
-    else log_message("Failed to open agents file");
+    strncpy(agent->name, name_part + 6, name_len);
+    agent->name[name_len] = '\0';
 
-    if (!in || !out) {
-        if (in) fclose(in);
-        if (out) fclose(out);
-        show_error("Failed to open files for agent caching.");
-        return;
-    }
+    strncpy(agent->desc, desc_part + 6, MAX_AGENT_DESC - 1);
+    agent->desc[MAX_AGENT_DESC - 1] = '\0';
 
-    while (fgets(line, sizeof(line), in)) {
-        sprintf(logbuf, "Caching line: '%s'", line);
-        log_message(logbuf);
-        fputs(line, out);
-    }
-
-    fclose(in);
-    fclose(out);
-    log_message("Finished writing agents file.");
+    return SUCCESS;
 }
-
-
-
-
-
 

@@ -16,12 +16,13 @@ int main() {
     char input[4];
 
 
-		log_message("Start app");
+		log_message("********** Start app **********");
 
     /* Check if there is a connection */
 		check_connection();
 		
-    initialize_agent_list();
+		/* Load agents either from local file or server */
+    load_agents();
 
     while (1) {
         while (kbhit()) getch();  /* Clear leftover keystrokes */

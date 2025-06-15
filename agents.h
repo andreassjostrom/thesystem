@@ -12,11 +12,10 @@ typedef struct {
     char desc[MAX_AGENT_DESC];
 } Agent;
 
+extern Agent agent_list[MAX_AGENTS];
+extern int agent_count;
 
-int load_agents_from_file(void);
-
-
-void call_list_agents_and_save(void);
-void initialize_agent_list(void);
+int parse_agent_line(const char* line, Agent* agent);
+int load_agents(void);
 
 #endif

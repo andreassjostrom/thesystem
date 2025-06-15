@@ -4,7 +4,7 @@
 #define MSG_FILE "message.txt"
 #define RESP_FILE "response.txt"
 #define HELPER_APP "helper.exe"
-#define AGENTS_FILE "agents2.txt"
+#define AGENTS_FILE "agents.txt"
 
 void check_connection(void);
 

@@ -64,9 +64,17 @@ int call_helper(void) {
 
     sprintf(cmd, "%s %s %s", HELPER_APP, MSG_FILE, RESP_FILE);
     log_message("helper app called");
+		log_message(cmd);
 
-    return (system(cmd) == 0) ? SUCCESS : FAILURE;
+    if (system(cmd) == 0) {
+    		log_message("helper app SUCCESS");
+        return SUCCESS;
+    } else {
+    		    		log_message("helper app FAILURE");
+        return FAILURE;
+    }
 }
+
 
 int wait_for_response_file(int timeout_ms) {
     int pos = 0, dir = 1, steps = 0;
