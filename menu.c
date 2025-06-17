@@ -113,11 +113,11 @@ void test_spinner_file(void) {
     getch();
 }
 
-
-void handle_chat_with_agent() {
+void show_agent_selector() {
     char input[5];
     int i, selected_id = -1;
     int redraw = 1;
+    int y;
 
 refresh_menu:
     if (redraw) {
@@ -125,36 +125,52 @@ refresh_menu:
         gotoxy(2, 2);
         cprintf("Select an AI Agent to chat with:");
 
+        y = 4;
         for (i = 1; i < agent_count; i++) {
-            gotoxy(2, 4 + i);
-            cprintf("ID: %d | %s - %s", agent_list[i].id,
-                    agent_list[i].name,
-                    agent_list[i].desc);
+            draw_agent_entry(&agent_list[i], &y);
+            if (y >= 24) break;
         }
 
         redraw = 0;
     }
 
-    gotoxy(2, 5 + agent_count);
+    gotoxy(2, y);
     cprintf("Enter ID: ");
-    gotoxy(13, 5 + agent_count);
+    gotoxy(13, y);
 
-    if (!get_user_input(input, sizeof(input), 13, 5 + agent_count, 1)) {
+    if (!get_user_input(input, sizeof(input), 13, y, 1)) {
         return;
     }
 
     selected_id = atoi(input);
-
-		for (i = 0; i < agent_count; i++) {
-		    if (agent_list[i].id == selected_id) {
-		        strncpy(current_agent_name, agent_list[i].name, MAX_AGENT_NAME - 1);
-		        current_agent_name[MAX_AGENT_NAME - 1] = '\0';
-		
-		        handle_chat_INTERNAL_DEBUG(selected_id);
-		        return;
-		    }
-		}
+    for (i = 0; i < agent_count; i++) {
+        if (agent_list[i].id == selected_id) {
+            strncpy(current_agent_name, agent_list[i].name, MAX_AGENT_NAME - 1);
+            current_agent_name[MAX_AGENT_NAME - 1] = '\0';
+            handle_chat(selected_id);
+            return;
+        }
+    }
 
     show_error("Invalid ID.");
     goto refresh_menu;
+}
+
+void draw_agent_entry(const Agent* agent, int* y) {
+    int len = strlen(agent->desc);
+    const char* desc = agent->desc;
+
+    if (*y >= 24) return;  /* Prevent overflow */
+
+    gotoxy(2, (*y)++);
+    cprintf("%d. %s", agent->id, agent->name);
+
+    while (len > 0 && *y < 24) {
+        gotoxy(5, (*y)++);
+        cprintf("%.70s", desc);
+        desc += 70;
+        len -= 70;
+    }
+
+    if (*y < 24) (*y)++;  /* Blank line after agent */
 }

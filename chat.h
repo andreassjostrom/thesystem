@@ -3,7 +3,7 @@
 
 #define MAX_COMMAND_LENGTH 200
 
-int handle_chat_INTERNAL_DEBUG(int agent_id);
+int handle_chat(int agent_id);
 int run_chat_loop(void);
 
 #endif

@@ -18,12 +18,9 @@ void chatlog_scroll(int direction);           /* -1 = up, 1 = down, -20 = PGUP, 
 void chatlog_scroll_reset_to_bottom(void);
 int  chatlog_get_visible_lines(char lines[][CHATLOG_LINE_BYTES], int max_lines);
 
-                         
 int wrap_text_into_lines(const char* input,
                          char lines[][CHATLOG_LINE_BYTES],
                          int max_lines,
                          int max_width);
 
 #endif
-
-

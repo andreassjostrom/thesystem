@@ -14,22 +14,22 @@
 extern int is_online;
 extern char session_id[20];
 
-int handle_chat_INTERNAL_DEBUG(int agent_id) {
+int handle_chat(int agent_id) {
     int result;
 
     result = start_session(agent_id);
     if (result != SUCCESS) {
-        log_message("handle_chat_INTERNAL_DEBUG: start_session failed");
+        log_message("handle_chat: start_session failed");
         return FAILURE;
     }
 
     result = run_chat_loop();
     if (result != SUCCESS) {
-        log_message("handle_chat_INTERNAL_DEBUG: run_chat_loop failed");
+        log_message("handle_chat: run_chat_loop failed");
         return FAILURE;
     }
 
-    log_message("handle_chat_INTERNAL_DEBUG: completed successfully");
+    log_message("handle_chat: completed successfully");
     return SUCCESS;
 }
 
@@ -54,12 +54,12 @@ int run_chat_loop(void) {
     char command[MAX_COMMAND_LENGTH];
     char formatted[CHATLOG_LINE_BYTES];
     char logbuf[120];
-    int ch, i, j, response_count;
+    int ch, ch2, i, j, response_count;
     int in_chat = 1;
 
-    /* Dynamically allocate response buffer to avoid _BSS overflow */
+    /* Dynamically allocate response buffer to avoid BSS overflow */
     char (*response)[RESPONSE_LINE_MAX];
-    response = malloc(MAX_RESPONSE_LINES * RESPONSE_LINE_MAX);
+    response = malloc(sizeof(char) * MAX_RESPONSE_LINES * RESPONSE_LINE_MAX);
     if (!response) {
         show_error("Memory allocation failed.");
         return FAILURE;
@@ -72,8 +72,35 @@ int run_chat_loop(void) {
 
         while (1) {
             ch = getch();
-            if (ch == 13) break;
-            if (ch == 27) {
+
+            /* Handle extended keys */
+            if (ch == 0 || ch == 224) {
+                ch2 = getch();
+
+                switch (ch2) {
+                    case 72:  /* Up arrow */
+                        chatlog_scroll(-1);
+                        chatui_refresh_view(current_agent_name, "");
+                        continue;
+                    case 80:  /* Down arrow */
+                        chatlog_scroll(1);
+                        chatui_refresh_view(current_agent_name, "");
+                        continue;
+                    case 73:  /* Page Up */
+                        chatlog_scroll(-20);
+                        chatui_refresh_view(current_agent_name, "");
+                        continue;
+                    case 81:  /* Page Down */
+                        chatlog_scroll(20);
+                        chatui_refresh_view(current_agent_name, "");
+                        continue;
+                    default:
+                        continue;
+                }
+            }
+
+            if (ch == 13) break;  /* Enter */
+            if (ch == 27) {       /* ESC = End chat */
                 sprintf(command, "EndChat,%s", session_id);
                 if (call_helper(command) != SUCCESS) {
                     chatlog_add("SYSTEM: EndChat failed.");
@@ -88,12 +115,13 @@ int run_chat_loop(void) {
                     }
                     chatlog_add(response[j]);
                 }
-                free(response);
-                return SUCCESS;
+                in_chat = 0;
+                break;
             }
 
-            if (ch == 8 && i > 0) i--;
-            else if (i < CHATLOG_MAX_INPUT_LENGTH - 1 && ch >= 32 && ch <= 126) input[i++] = ch;
+            if (ch == 8 && i > 0) i--;  /* Backspace */
+            else if (i < CHATLOG_MAX_INPUT_LENGTH - 1 && ch >= 32 && ch <= 126)
+                input[i++] = ch;
 
             input[i] = '\0';
             chatui_draw_input_prompt(input);

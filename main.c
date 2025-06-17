@@ -44,14 +44,14 @@ int main() {
                 sprintf(logbuf, "Main menu: Set current_agent_name = %s", current_agent_name);
                 log_message(logbuf);
                 
- 								log_message("Main: About to call handle_chat_INTERNAL_DEBUG");               
+ 								log_message("Main: About to call handle_chat");               
                 
-								if (handle_chat_INTERNAL_DEBUG(SYSTEM_AGENT_ID) != SUCCESS) {
+								if (handle_chat(SYSTEM_AGENT_ID) != SUCCESS) {
 								    log_message("Main: Chat session failed.");
 								}
 
 
-								log_message("Main: Returned from handle_chat_INTERNAL_DEBUG");
+								log_message("Main: Returned from handle_chat");
 								
                 break;
 
@@ -60,7 +60,7 @@ int main() {
                     show_error("You're offline. Cannot chat right now.");
                     break;
                 }
-                handle_chat_with_agent();
+                show_agent_selector();
                 break;
 
             case '3':
