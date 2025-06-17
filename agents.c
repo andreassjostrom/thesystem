@@ -15,15 +15,9 @@ int load_agents(void) {
     agent_count = 0;
 
     if (file_exists(AGENTS_FILE) != SUCCESS) {
-        if (write_message_file("ListAgents") != SUCCESS) {
-            log_message("Failed to write ListAgents command.");
-            show_error("Failed to write ListAgents command.");
-            return FAILURE;
-        }
-
-        if (call_helper() != SUCCESS) {
-            log_message("Helper app failed.");
-            show_error("Helper app failed.");
+        if (call_helper("ListAgents") != SUCCESS) {
+            log_message("call_helper failed for ListAgents.");
+            show_error("Failed to list agents.");
             return FAILURE;
         }
 

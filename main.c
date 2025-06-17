@@ -10,18 +10,16 @@
 #include "state.h"
 #include "common.h"
 
-
-
 int main() {
     char input[4];
+    char logbuf[120];
 
-
-		log_message("********** Start app **********");
+    log_message("********** Start app **********");
 
     /* Check if there is a connection */
-		check_connection();
-		
-		/* Load agents either from local file or server */
+    check_connection();
+
+    /* Load agents either from local file or server */
     load_agents();
 
     while (1) {
@@ -43,16 +41,18 @@ int main() {
                 strncpy(current_agent_name, agent_list[SYSTEM_AGENT_ID].name, MAX_AGENT_NAME - 1);
                 current_agent_name[MAX_AGENT_NAME - 1] = '\0';
 
-                if (testing_mode) {
-                    strcpy(session_id, "fb4fd402");
-                    handle_chat(SYSTEM_AGENT_ID);
-                } else {
-                    if (start_chat_session(SYSTEM_AGENT_ID) == SUCCESS) {
-                        handle_chat(SYSTEM_AGENT_ID);
-                    } else {
-                        show_error("Failed to start session with THE SYSTEM.");
-                    }
-                }
+                sprintf(logbuf, "Main menu: Set current_agent_name = %s", current_agent_name);
+                log_message(logbuf);
+                
+ 								log_message("Main: About to call handle_chat_INTERNAL_DEBUG");               
+                
+								if (handle_chat_INTERNAL_DEBUG(SYSTEM_AGENT_ID) != SUCCESS) {
+								    log_message("Main: Chat session failed.");
+								}
+
+
+								log_message("Main: Returned from handle_chat_INTERNAL_DEBUG");
+								
                 break;
 
             case '2':
@@ -68,13 +68,12 @@ int main() {
                 break;
 
             case '8':
-                test_spinner();
-								return SUCCESS;
-
+                test_spinner_file();
+                return SUCCESS;
 
             case '9':
                 handle_exit();
-								return SUCCESS;
+                return SUCCESS;
 
             default:
                 gotoxy(20, 13);
@@ -84,7 +83,6 @@ int main() {
         }
     }
 
-	return SUCCESS;  /* Unreachable, but included for completeness */
+    return SUCCESS;  /* Unreachable, but included for completeness */
 }
-
-
+

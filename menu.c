@@ -10,10 +10,10 @@
 #include "menu.h"
 #include "state.h"
 #include "common.h"
+#include "spinner.h"
 
 extern int agent_count;
 extern int is_online;
-extern int testing_mode;
 extern char session_id[20];
 extern char current_agent_name[MAX_AGENT_NAME];
 extern Agent agent_list[MAX_AGENTS];
@@ -62,31 +62,57 @@ void handle_exit() {
     getch();
 }
 
-void test_spinner() {
+void test_spinner(void) {
     int steps = 0, pos = 0, dir = 1;
-    char line[81];
-    int k;
 
-    while (steps < 100) {
-        for (k = 0; k < 20; k++) line[k] = ' ';
-        line[20] = '\0';
+    clrscr();
+    gotoxy(30, 10);
+    cprintf("SPINNER TEST (ESC to exit)");
 
-        line[pos] = 'O';
-        if (pos - dir >= 0 && pos - dir < 20) line[pos - dir] = 'o';
-        if (pos - 2 * dir >= 0 && pos - 2 * dir < 20) line[pos - 2 * dir] = '.';
+    ui_hide_cursor();
 
-        gotoxy(30, 12);
-        cprintf("%s", line);
+    while (steps < 1000) {
+        spinner_tick(pos, dir);
+        delay(70);
+        pos += dir;
+        if (pos == SPINNER_WIDTH - 1 || pos == 0) dir = -dir;
 
-        delay(50);
+        if (kbhit() && getch() == 27) break;
+        steps++;
+    }
+
+    spinner_clear();
+    ui_show_cursor(); 
+}
+
+void test_spinner_file(void) {
+    int pos = 0, dir = 1, steps = 0;
+    const char* filename = "testflag.txt";
+
+    clrscr();
+    gotoxy(30, 10);
+    cprintf("Waiting for 'testflag.txt'...");
+
+    while (steps < 200) {  /* max 20 seconds */
+        if (file_exists(filename) == SUCCESS) {
+            gotoxy(30, 12);
+            cprintf("File detected. Spinner stopped.");
+            break;
+        }
+
+        spinner_tick(pos, dir);
+        delay(100);
         pos += dir;
         if (pos == 19 || pos == 0) dir = -dir;
         steps++;
     }
 
-    gotoxy(30, 12);
-    cprintf("                    ");
+    spinner_clear();
+    gotoxy(30, 14);
+    cprintf("Press any key to exit.");
+    getch();
 }
+
 
 void handle_chat_with_agent() {
     char input[5];
@@ -119,24 +145,15 @@ refresh_menu:
 
     selected_id = atoi(input);
 
-    for (i = 0; i < agent_count; i++) {
-        if (agent_list[i].id == selected_id) {
-            strncpy(current_agent_name, agent_list[i].name, MAX_AGENT_NAME - 1);
-            current_agent_name[MAX_AGENT_NAME - 1] = '\0';
-
-            if (testing_mode) {
-                strcpy(session_id, "fb4fd402");
-                handle_chat(selected_id);
-            } else {
-                if (start_chat_session(selected_id) == SUCCESS) {
-                    handle_chat(selected_id);
-                } else {
-                    show_error("Failed to start session with agent.");
-                }
-            }
-            return;
-        }
-    }
+		for (i = 0; i < agent_count; i++) {
+		    if (agent_list[i].id == selected_id) {
+		        strncpy(current_agent_name, agent_list[i].name, MAX_AGENT_NAME - 1);
+		        current_agent_name[MAX_AGENT_NAME - 1] = '\0';
+		
+		        handle_chat_INTERNAL_DEBUG(selected_id);
+		        return;
+		    }
+		}
 
     show_error("Invalid ID.");
     goto refresh_menu;

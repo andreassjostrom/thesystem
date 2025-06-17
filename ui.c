@@ -33,33 +33,6 @@ void ui_set_status(const char* msg) {
 }
 
 
-void ui_wait_and_display_response(const char* title) {
-    char response[MAX_RESPONSE_LINES][MAX_LINE_LENGTH];
-    int line_count, i;
-
-    if (!wait_for_response_file(5000)) {
-        ui_set_status("Timeout waiting for response.");
-        return;
-    }
-
-    line_count = read_response_file(response, MAX_RESPONSE_LINES, 1);
-    clrscr();
-    textcolor(LIGHTGREEN);
-
-    gotoxy(2, 2);
-    cprintf("%s", title ? title : "Response:");
-
-    for (i = 0; i < line_count && i < MAX_RESPONSE_LINES; i++) {
-        gotoxy(2, 4 + i);
-        cprintf("%s", response[i]);
-    }
-
-    gotoxy(2, UI_STATUS_ROW);
-    cprintf("Press any key to continue...");
-    getch();
-}
-
-
 
 /**
  * Gets input from user with live editing (ESC/backspace supported).
@@ -104,8 +77,6 @@ int get_user_input(char* buffer, int max_len, int x, int y, int echo) {
 void delay_ms(unsigned int ms) {
     delay(ms);  /* Turbo C delay in milliseconds */
 }
-
-
 
 
 

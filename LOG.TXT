@@ -1,1132 +1,1582 @@
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-AGENTS_FILE exists, loading from file...
-AGENTS_FILE was empty or invalid. Refetching...
-begin: in call list agents
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL fopen failed
-AGENTS_FILE exists, loading from file...
-agent_count = -1
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call list agents
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call list agents
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call list agents
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call list agents
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-spinner cleared called.
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call_list_agents_and_save
-In call helper
-Removed response.txt
-helper app called
-send_message_to_helper returned SUCCESS
-Calling wait_for_response_file...
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-wait_for_response_file returned FAILURE
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call_list_agents_and_save
-In call helper
-Removed response.txt
-helper app called
-send_message_to_helper returned SUCCESS
-Calling wait_for_response_file...
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-wait_for_response_file returned FAILURE
-agent_count = 0
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is NULL  fopen failed
-AGENTS_FILE does not exist, calling fetch...
-begin: in call_list_agents_and_save
-In call helper
-Removed response.txt
-helper app called
-send_message_to_helper returned SUCCESS
-Calling wait_for_response_file...
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-wait_for_response_file returned SUCCESS
-Opening response.txt for read...
-Successfully opened response.txt
-Opening agents file for write...
-Successfully opened agents file
-Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Raw line: 'input.'
-Line did not match format.
-Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Raw line: ', summarizes findings.'
-Line did not match format.
-Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
-Raw line: 's fixes.'
-Line did not match format.
-Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
-Raw line: 'ces in various styles.'
-Line did not match format.
-Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
-Raw line: 'dance on legal matters.'
-Line did not match format.
-Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
-Raw line: ' tips, and career coaching.'
-Line did not match format.
-Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
-Raw line: 'ivities, and itineraries.'
-Line did not match format.
-Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
-Raw line: '-of-life questions.'
-Line did not match format.
-agent_count = 8
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-In call helper
-Removed response.txt
-helper app called
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Entering chat with agent ID 0
-User pressed ESC - sending EndChat command.
-In call helper
-Removed response.txt
-helper app called
-EndChat response lines: 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Buffered line: 'input.'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical'
-Line did not match format, continue buffering.
-agent_count = 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: ''
-Line did not match format, continue buffering.
-Buffered line: 'input.'
-Line did not match format, continue buffering.
-Buffered line: 'input.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: 'input. , summarizes findings. s fixes. ces in various styles.'
-Line did not match format, continue buffering.
-AGENTS_FILE was empty or invalid. Refetching...
-begin: in call_list_agents_and_save
-In call helper
-Removed response.txt
-helper app called
-send_message_to_helper returned SUCCESS
-Calling wait_for_response_file...
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-wait_for_response_file returned SUCCESS
-Opening response.txt for read...
-Successfully opened response.txt
-Opening agents file for write...
-Successfully opened agents file
-Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Raw line: 'input.'
-Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Raw line: ', summarizes findings.'
-Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
-Raw line: 's fixes.'
-Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
-Raw line: 'ces in various styles.'
-Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
-Raw line: 'dance on legal matters.'
-Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
-Raw line: ' tips, and career coaching.'
-Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
-Raw line: 'ivities, and itineraries.'
-Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
-Raw line: '-of-life questions.'
-agent_count = 8
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Buffered line: 'input.'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical , summarizes findings., summarizes findings.,ores academic and technical topics'
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainIs to any '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical s fixes.s fixes.se Debugger | Desc: Analyzes code, identifies bugs, and explainID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explainIs to any  '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieIs to any   '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ces in various styles.ces in various styles.cstories, scripts, and creative pieID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieIs to any    '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiIs to any     '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical dance on legal matters.dance on legal matters.dgal terms and offers general guiID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guiIs to any      '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationIs to any       '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical  tips, and career coaching. tips, and career coaching. ip advice, communicationID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communicationIs to any        '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actIs to any         '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ivities, and itineraries.ivities, and itineraries.id suggests destinations, actID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, actIs to any          '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningIs to any           '
-Line did not match format, continue buffering.
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical -of-life questions.-of-life questions.-es in deep thinking, ethics, and meaningID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaningIs to any            '
-Line did not match format, continue buffering.
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Line did not match format, continue buffering.
-Buffered line: 'esponds to any ' input.'
-Line did not match format, continue buffering.
-Buffered line: 'esponds to any ' input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Line did not match format, continue buffering.
-Buffered line: ' Explores academic and technical topics' , summarizes findings.'
-Line did not match format, continue buffering.
-Buffered line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
-Line did not match format, continue buffering.
-Buffered line: 'gs, and explain' s fixes.'
-Line did not match format, continue buffering.
-Buffered line: 'gs, and explain' s fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
-Line did not match format, continue buffering.
-Buffered line: 'Writes stories, scripts, and creative pie' ces in various styles.'
-Line did not match format, continue buffering.
-Buffered line: '.' ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
-Line did not match format, continue buffering.
-Buffered line: 'offers general gui' dance on legal matters.'
-Line did not match format, continue buffering.
-Buffered line: 'offers general gui' dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
-Line did not match format, continue buffering.
-Buffered line: 'ive Coach | Desc: Provides leadership advice, communication'  tips, and career coaching.'
-Line did not match format, continue buffering.
-Buffered line: 'ps, and career coaching.' ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
-Line did not match format, continue buffering.
-Buffered line: 'lans trips and suggests destinations, act' ivities, and itineraries.'
-Line did not match format, continue buffering.
-Buffered line: 'ies.' ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
-Line did not match format, continue buffering.
-Buffered line: ', ethics, and meaning' -of-life questions.'
-Line did not match format, continue buffering.
-AGENTS_FILE was empty or invalid. Refetching...
-begin: in call_list_agents_and_save
-In call helper
-Removed response.txt
-helper app called
-send_message_to_helper returned SUCCESS
-Calling wait_for_response_file...
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-wait_for_response_file returned SUCCESS
-Opening response.txt for read...
-Successfully opened response.txt
-Opening agents file for write...
-Successfully opened agents file
-Raw line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Raw line: 'input.'
-Raw line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Raw line: ', summarizes findings.'
-Raw line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
-Raw line: 's fixes.'
-Raw line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
-Raw line: 'ces in various styles.'
-Raw line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
-Raw line: 'dance on legal matters.'
-Raw line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
-Raw line: ' tips, and career coaching.'
-Raw line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
-Raw line: 'ivities, and itineraries.'
-Raw line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
-Raw line: '-of-life questions.'
-agent_count = 8
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-Buffered line:
-ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  
-Buffered line:
-input. 
-Buffered block did not parse.
-Buffered line:
-ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics 
-Buffered line:
-, summarizes findings. 
-Buffered block did not parse.
-Buffered line:
-ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain 
-Buffered line:
-s fixes. 
-Buffered block did not parse.
-Buffered line:
-ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie 
-Buffered line:
-ces in various styles. 
-Buffered block did not parse.
-Buffered line:
-ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui 
-Buffered line:
-dance on legal matters. 
-Buffered block did not parse.
-Buffered line:
-ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication 
-Buffered line:
- tips, and career coaching. 
-Buffered block did not parse.
-Buffered line:
-ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act 
-Buffered line:
-ivities, and itineraries. 
-Buffered block did not parse.
-Buffered line:
-ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning 
-Buffered line:
--of-life questions. 
-agent_count = 8
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
-Buffered line: 'input. '
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
-Line did not match format, continue buffering.
-Buffered line: ', summarizes findings. '
-Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
-Line did not match format, continue buffering.
-Buffered line: 's fixes. '
-Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
-Line did not match format, continue buffering.
-Buffered line: 'ces in various styles. '
-Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
-Line did not match format, continue buffering.
-Buffered line: 'dance on legal matters. '
-Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
-Line did not match format, continue buffering.
-Buffered line: ' tips, and career coaching. '
-Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
-Line did not match format, continue buffering.
-Buffered line: 'ivities, and itineraries. '
-Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
-Line did not match format, continue buffering.
-Buffered line: '-of-life questions. '
-agent_count = 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
-Buffered line: 'input. '
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
-Line did not match format, continue buffering.
-Buffered line: ', summarizes findings. '
-Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
-Line did not match format, continue buffering.
-Buffered line: 's fixes. '
-Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
-Line did not match format, continue buffering.
-Buffered line: 'ces in various styles. '
-Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
-Line did not match format, continue buffering.
-Buffered line: 'dance on legal matters. '
-Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
-Line did not match format, continue buffering.
-Buffered line: ' tips, and career coaching. '
-Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
-Line did not match format, continue buffering.
-Buffered line: 'ivities, and itineraries. '
-Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
-Line did not match format, continue buffering.
-Buffered line: '-of-life questions. '
-agent_count = 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
-Buffered line: 'input. '
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
-Line did not match format, continue buffering.
-Buffered line: ', summarizes findings. '
-Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
-Line did not match format, continue buffering.
-Buffered line: 's fixes. '
-Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
-Line did not match format, continue buffering.
-Buffered line: 'ces in various styles. '
-Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
-Line did not match format, continue buffering.
-Buffered line: 'dance on legal matters. '
-Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
-Line did not match format, continue buffering.
-Buffered line: ' tips, and career coaching. '
-Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
-Line did not match format, continue buffering.
-Buffered line: 'ivities, and itineraries. '
-Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
-Line did not match format, continue buffering.
-Buffered line: '-of-life questions. '
-agent_count = 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-before while loop
-Buffered line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any  '
-Buffered line: 'input. '
-Buffered line: 'input. ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics '
-Line did not match format, continue buffering.
-Buffered line: ', summarizes findings. '
-Buffered line: ', summarizes findings. ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain '
-Line did not match format, continue buffering.
-Buffered line: 's fixes. '
-Buffered line: 's fixes. ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie '
-Line did not match format, continue buffering.
-Buffered line: 'ces in various styles. '
-Buffered line: 'ces in various styles. ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui '
-Line did not match format, continue buffering.
-Buffered line: 'dance on legal matters. '
-Buffered line: 'dance on legal matters. ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication '
-Line did not match format, continue buffering.
-Buffered line: ' tips, and career coaching. '
-Buffered line: ' tips, and career coaching. ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act '
-Line did not match format, continue buffering.
-Buffered line: 'ivities, and itineraries. '
-Buffered line: 'ivities, and itineraries. ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning '
-Line did not match format, continue buffering.
-Buffered line: '-of-life questions. '
-agent_count = 1
-Start app
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-begin: in initialize_agent_list
-Before file_exists check
-Using AGENTS_FILE:
-agents2.txt
-Checking file_exists: agents2.txt
-File pointer is not NULL
-Opened 'agents2.txt', size = 808
-AGENTS_FILE exists, loading from file...
-begin: in load_agents_from_file
-Loaded agent line: 'ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any '
-Loaded agent line: 'input.'
-Loaded agent line: 'ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics'
-Loaded agent line: ', summarizes findings.'
-Loaded agent line: 'ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explain'
-Loaded agent line: 's fixes.'
-Loaded agent line: 'ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pie'
-Loaded agent line: 'ces in various styles.'
-Loaded agent line: 'ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general gui'
-Loaded agent line: 'dance on legal matters.'
-Loaded agent line: 'ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication'
-Loaded agent line: ' tips, and career coaching.'
-Loaded agent line: 'ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, act'
-Loaded agent line: 'ivities, and itineraries.'
-Loaded agent line: 'ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning'
-Loaded agent line: '-of-life questions.'
-agent_count = 16
-********** Start app **********
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-Checking file_exists: agents.txt
-File pointer is NULL  fopen failed
-********** Start app **********
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-Checking file_exists: agents.txt
-File pointer is NULL  fopen failed
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-Saved agents file
-Loaded agent:  identifies bugs [0]
-Loaded agent:  scripts [0]
-Loaded agent:  ethics [0]
-********** Start app **********
-ccs in
-ccs after write
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-ccs after call helper
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-ccs after wait for response
-Connection status: ONLINE
-Checking file_exists: agents.txt
-File pointer is not NULL
-Opened 'agents.txt', size = 808
-Loaded agent: The System  [0]
-Loaded agent: Research Assistant  [1]
-Loaded agent: Code Debugger  [2]
-Loaded agent: Creative Writer  [3]
-Loaded agent: Legal Advisor  [4]
-Loaded agent: Executive Coach  [5]
-Loaded agent: Travel Planner  [6]
-Loaded agent: Philosopher  [7]
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Entering chat with agent ID 0
-Sending Chat command: Chat,c36c9a25,hi
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Chat response lines: 1
-Line 0: Hello! How can I assist you today?
-User pressed ESC - sending EndChat command.
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-EndChat response lines: 1
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Entering chat with agent ID 0
-Sending Chat command: Chat,eda64e5f,hi
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Chat response lines: 1
-Line 0: Hello! How can I assist you today?
-User pressed ESC - sending EndChat command.
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-EndChat response lines: 1
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Entering chat with agent ID 3
-Sending Chat command: Chat,e492d811,a cat
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-wait_for_response_file
-spinner_tick() called.
-Opened RESP_FILE
-RESP_FILE has content
-spinner cleared called.
-Returning SUCCESS from wait_for_response_file
-Chat response lines: 10
-Line 0: In the cozy corner of an ancient, sunlit library, there resides a cat whose fur
-Line 1:  is a living tapestry of silver mist and midnight shadows. This feline phantasm
-Line 2:  glides over the well-worn pages of forgotten tomes, its paws whispering secret
-Line 3: s of yore with every silent step. Whiskers, delicate as spun moonlight, twitch 
-Line 4: in the language of enchantment as it navigates a terrain of sepia, where dust m
-Line 5: otes cavort in the golden shafts of afternoon sun. Its eyes, limpid pools of on
-Line 6: yx, reflect the mysteries of a thousand unwritten stories, enigmatic and deep, 
-Line 7: teasing out a hidden whimsy from the still, hushed air. Here, among a sanctuary
-Line 8:  of fading ink and paper sighs, this ethereal creature commands its dominion?a 
-Line 9: spectral muse for all who dare dream within these hallowed walls.
-User pressed ESC - sending EndChat command.
-In call helper
-Removed response.txt
-helper app called
-helper.exe message.txt response.txt
-helper app SUCCESS
-EndChat response lines: 1
+[2025-06-17 10:49:20] ********** Start app **********
+[2025-06-17 10:49:20] check_connection_status: starting
+[2025-06-17 10:49:20] call_helper: starting
+[2025-06-17 10:49:20] call_helper: wrote message
+[2025-06-17 10:49:20] call_helper: removed response
+[2025-06-17 10:49:20] call_helper: invoking helper
+[2025-06-17 10:49:20] helper.exe message.txt response.txt
+[2025-06-17 10:49:21] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 10:49:21] Connection status: ONLINE
+[2025-06-17 10:49:21] Checking file_exists: agents.txt
+[2025-06-17 10:49:21] File pointer is not NULL
+[2025-06-17 10:49:21] Opened 'agents.txt', size = 808
+[2025-06-17 10:49:21] Loaded agent: The System  [0]
+[2025-06-17 10:49:21] Loaded agent: Research Assistant  [1]
+[2025-06-17 10:49:21] Loaded agent: Code Debugger  [2]
+[2025-06-17 10:49:21] Loaded agent: Creative Writer  [3]
+[2025-06-17 10:49:21] Loaded agent: Legal Advisor  [4]
+[2025-06-17 10:49:21] Loaded agent: Executive Coach  [5]
+[2025-06-17 10:49:21] Loaded agent: Travel Planner  [6]
+[2025-06-17 10:49:21] Loaded agent: Philosopher  [7]
+[2025-06-17 10:59:36] Main menu: Set current_agent_name = The System 
+[2025-06-17 10:59:36] start_chat_session: agent_id = 0
+[2025-06-17 10:59:36] start_chat_session: command constructed
+[2025-06-17 10:59:36] StartChat,0
+[2025-06-17 10:59:36] call_helper: starting
+[2025-06-17 10:59:36] call_helper: wrote message
+[2025-06-17 10:59:36] call_helper: removed response
+[2025-06-17 10:59:36] call_helper: invoking helper
+[2025-06-17 10:59:36] helper.exe message.txt response.txt
+[2025-06-17 10:59:36] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 10:59:36] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 10:59:36] start_chat_session: response line count = 2
+[2025-06-17 10:59:36] start_chat_session: session_id = fcab8d1a
+[2025-06-17 11:11:01] ********** Start app **********
+[2025-06-17 11:11:01] check_connection_status: starting
+[2025-06-17 11:11:01] call_helper: starting
+[2025-06-17 11:11:01] call_helper: wrote message
+[2025-06-17 11:11:01] call_helper: removed response
+[2025-06-17 11:11:01] call_helper: invoking helper
+[2025-06-17 11:11:01] helper.exe message.txt response.txt
+[2025-06-17 11:11:03] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:11:03] Connection status: ONLINE
+[2025-06-17 11:11:03] Checking file_exists: agents.txt
+[2025-06-17 11:11:03] File pointer is not NULL
+[2025-06-17 11:11:03] Opened 'agents.txt', size = 808
+[2025-06-17 11:11:03] Loaded agent: The System  [0]
+[2025-06-17 11:11:03] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:11:03] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:11:03] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:11:03] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:11:03] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:11:03] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:11:03] Loaded agent: Philosopher  [7]
+[2025-06-17 11:11:08] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:11:08] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:11:08] start_chat_session: command constructed
+[2025-06-17 11:11:08] StartChat,0
+[2025-06-17 11:11:08] call_helper: starting
+[2025-06-17 11:11:08] call_helper: wrote message
+[2025-06-17 11:11:08] call_helper: removed response
+[2025-06-17 11:11:08] call_helper: invoking helper
+[2025-06-17 11:11:08] helper.exe message.txt response.txt
+[2025-06-17 11:11:09] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:11:09] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:11:09] start_chat_session: response line count = 2
+[2025-06-17 11:11:09] start_chat_session: session_id = d01badc9
+[2025-06-17 11:15:20] ********** Start app **********
+[2025-06-17 11:15:20] check_connection_status: starting
+[2025-06-17 11:15:20] call_helper: starting
+[2025-06-17 11:15:20] call_helper: wrote message
+[2025-06-17 11:15:20] call_helper: removed response
+[2025-06-17 11:15:20] call_helper: invoking helper
+[2025-06-17 11:15:20] helper.exe message.txt response.txt
+[2025-06-17 11:15:22] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:15:22] Connection status: ONLINE
+[2025-06-17 11:15:22] Checking file_exists: agents.txt
+[2025-06-17 11:15:22] File pointer is not NULL
+[2025-06-17 11:15:22] Opened 'agents.txt', size = 808
+[2025-06-17 11:15:22] Loaded agent: The System  [0]
+[2025-06-17 11:15:22] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:15:22] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:15:22] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:15:22] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:15:22] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:15:22] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:15:22] Loaded agent: Philosopher  [7]
+[2025-06-17 11:15:41] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:15:41] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:15:41] start_chat_session: command constructed
+[2025-06-17 11:15:41] StartChat,0
+[2025-06-17 11:15:41] call_helper: starting
+[2025-06-17 11:15:41] call_helper: wrote message
+[2025-06-17 11:15:41] call_helper: removed response
+[2025-06-17 11:15:41] call_helper: invoking helper
+[2025-06-17 11:15:41] helper.exe message.txt response.txt
+[2025-06-17 11:15:42] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:15:42] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:15:42] start_chat_session: response line count = 2
+[2025-06-17 11:15:42] start_chat_session: session_id = a281a1ed
+[2025-06-17 11:23:06] ********** Start app **********
+[2025-06-17 11:23:06] check_connection_status: starting
+[2025-06-17 11:23:06] call_helper: starting
+[2025-06-17 11:23:06] call_helper: wrote message
+[2025-06-17 11:23:06] call_helper: removed response
+[2025-06-17 11:23:06] call_helper: invoking helper
+[2025-06-17 11:23:06] helper.exe message.txt response.txt
+[2025-06-17 11:23:07] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:23:07] Connection status: ONLINE
+[2025-06-17 11:23:07] Checking file_exists: agents.txt
+[2025-06-17 11:23:07] File pointer is not NULL
+[2025-06-17 11:23:07] Opened 'agents.txt', size = 808
+[2025-06-17 11:23:07] Loaded agent: The System  [0]
+[2025-06-17 11:23:07] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:23:07] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:23:07] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:23:07] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:23:07] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:23:07] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:23:07] Loaded agent: Philosopher  [7]
+[2025-06-17 11:23:18] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:23:18] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:23:18] start_chat_session: command constructed
+[2025-06-17 11:23:18] StartChat,0
+[2025-06-17 11:23:18] call_helper: starting
+[2025-06-17 11:23:18] call_helper: wrote message
+[2025-06-17 11:23:18] call_helper: removed response
+[2025-06-17 11:23:18] call_helper: invoking helper
+[2025-06-17 11:23:18] helper.exe message.txt response.txt
+[2025-06-17 11:23:19] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:23:19] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:23:19] start_chat_session: response line count = 2
+[2025-06-17 11:23:19] start_chat_session: session_id = b741b085
+[2025-06-17 11:29:30] ********** Start app **********
+[2025-06-17 11:29:30] check_connection_status: starting
+[2025-06-17 11:29:30] call_helper: starting
+[2025-06-17 11:29:30] call_helper: wrote message
+[2025-06-17 11:29:30] call_helper: removed response
+[2025-06-17 11:29:30] call_helper: invoking helper
+[2025-06-17 11:29:30] helper.exe message.txt response.txt
+[2025-06-17 11:29:31] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:29:31] Connection status: ONLINE
+[2025-06-17 11:29:31] Checking file_exists: agents.txt
+[2025-06-17 11:29:31] File pointer is not NULL
+[2025-06-17 11:29:31] Opened 'agents.txt', size = 808
+[2025-06-17 11:29:31] Loaded agent: The System  [0]
+[2025-06-17 11:29:31] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:29:31] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:29:31] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:29:31] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:29:31] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:29:31] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:29:31] Loaded agent: Philosopher  [7]
+[2025-06-17 11:30:02] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:30:02] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:30:02] start_chat_session: command constructed
+[2025-06-17 11:30:02] StartChat,0
+[2025-06-17 11:30:02] call_helper: starting
+[2025-06-17 11:30:02] call_helper: wrote message
+[2025-06-17 11:30:02] call_helper: removed response
+[2025-06-17 11:30:02] call_helper: invoking helper
+[2025-06-17 11:30:02] helper.exe message.txt response.txt
+[2025-06-17 11:30:03] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:30:03] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:30:03] start_chat_session: response line count = 2
+[2025-06-17 11:30:03] start_chat_session: session_id = 6f810bec
+[2025-06-17 11:31:14] ********** Start app **********
+[2025-06-17 11:31:14] check_connection_status: starting
+[2025-06-17 11:31:14] call_helper: starting
+[2025-06-17 11:31:14] call_helper: wrote message
+[2025-06-17 11:31:14] call_helper: removed response
+[2025-06-17 11:31:14] call_helper: invoking helper
+[2025-06-17 11:31:14] helper.exe message.txt response.txt
+[2025-06-17 11:31:15] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:31:15] Connection status: ONLINE
+[2025-06-17 11:31:15] Checking file_exists: agents.txt
+[2025-06-17 11:31:15] File pointer is not NULL
+[2025-06-17 11:31:15] Opened 'agents.txt', size = 808
+[2025-06-17 11:31:15] Loaded agent: The System  [0]
+[2025-06-17 11:31:15] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:31:15] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:31:15] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:31:15] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:31:15] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:31:15] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:31:15] Loaded agent: Philosopher  [7]
+[2025-06-17 11:34:46] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:34:52] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:34:52] start_chat_session: command constructed
+[2025-06-17 11:34:52] StartChat,0
+[2025-06-17 11:34:52] call_helper: starting
+[2025-06-17 11:34:52] call_helper: wrote message
+[2025-06-17 11:34:52] call_helper: removed response
+[2025-06-17 11:34:52] call_helper: invoking helper
+[2025-06-17 11:34:52] helper.exe message.txt response.txt
+[2025-06-17 11:34:52] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:34:52] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:34:52] start_chat_session: response line count = 2
+[2025-06-17 11:34:52] start_chat_session: session_id = e163c14f
+[2025-06-17 11:39:03] ********** Start app **********
+[2025-06-17 11:39:03] check_connection_status: starting
+[2025-06-17 11:39:03] call_helper: starting
+[2025-06-17 11:39:03] call_helper: wrote message
+[2025-06-17 11:39:03] call_helper: removed response
+[2025-06-17 11:39:03] call_helper: invoking helper
+[2025-06-17 11:39:03] helper.exe message.txt response.txt
+[2025-06-17 11:39:04] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:39:04] Connection status: ONLINE
+[2025-06-17 11:39:04] Checking file_exists: agents.txt
+[2025-06-17 11:39:04] File pointer is not NULL
+[2025-06-17 11:39:04] Opened 'agents.txt', size = 808
+[2025-06-17 11:39:04] Loaded agent: The System  [0]
+[2025-06-17 11:39:04] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:39:04] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:39:04] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:39:04] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:39:04] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:39:04] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:39:04] Loaded agent: Philosopher  [7]
+[2025-06-17 11:39:16] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:39:18] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:39:18] start_chat_session: command constructed
+[2025-06-17 11:39:18] StartChat,0
+[2025-06-17 11:39:18] call_helper: starting
+[2025-06-17 11:39:18] call_helper: wrote message
+[2025-06-17 11:39:18] call_helper: removed response
+[2025-06-17 11:39:18] call_helper: invoking helper
+[2025-06-17 11:39:18] helper.exe message.txt response.txt
+[2025-06-17 11:39:19] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:39:19] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:39:19] start_chat_session: response line count = 2
+[2025-06-17 11:39:19] start_chat_session: session_id = cc5e02e2
+[2025-06-17 11:43:11] ********** Start app **********
+[2025-06-17 11:43:11] check_connection_status: starting
+[2025-06-17 11:43:11] call_helper: starting
+[2025-06-17 11:43:11] call_helper: wrote message
+[2025-06-17 11:43:11] call_helper: removed response
+[2025-06-17 11:43:11] call_helper: invoking helper
+[2025-06-17 11:43:11] helper.exe message.txt response.txt
+[2025-06-17 11:43:12] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:43:12] Connection status: ONLINE
+[2025-06-17 11:43:12] Checking file_exists: agents.txt
+[2025-06-17 11:43:12] File pointer is not NULL
+[2025-06-17 11:43:12] Opened 'agents.txt', size = 808
+[2025-06-17 11:43:12] Loaded agent: The System  [0]
+[2025-06-17 11:43:12] Loaded agent: Research Assistant  [1]
+[2025-06-17 11:43:12] Loaded agent: Code Debugger  [2]
+[2025-06-17 11:43:12] Loaded agent: Creative Writer  [3]
+[2025-06-17 11:43:12] Loaded agent: Legal Advisor  [4]
+[2025-06-17 11:43:12] Loaded agent: Executive Coach  [5]
+[2025-06-17 11:43:12] Loaded agent: Travel Planner  [6]
+[2025-06-17 11:43:12] Loaded agent: Philosopher  [7]
+[2025-06-17 11:43:46] Main menu: Set current_agent_name = The System 
+[2025-06-17 11:43:46] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 11:43:49] start_chat_session chatc: agent_id = 0
+[2025-06-17 11:43:49] start_chat_session: command constructed
+[2025-06-17 11:43:49] StartChat,0
+[2025-06-17 11:43:49] call_helper: starting
+[2025-06-17 11:43:49] call_helper: wrote message
+[2025-06-17 11:43:49] call_helper: removed response
+[2025-06-17 11:43:49] call_helper: invoking helper
+[2025-06-17 11:43:49] helper.exe message.txt response.txt
+[2025-06-17 11:43:50] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 11:43:50] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 11:43:50] start_chat_session: response line count = 2
+[2025-06-17 11:43:50] start_chat_session: session_id = d44b30ac
+[2025-06-17 11:43:54] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:04:09] ********** Start app **********
+[2025-06-17 12:04:09] check_connection_status: starting
+[2025-06-17 12:04:09] call_helper: starting
+[2025-06-17 12:04:09] call_helper: wrote message
+[2025-06-17 12:04:09] call_helper: removed response
+[2025-06-17 12:04:09] call_helper: invoking helper
+[2025-06-17 12:04:09] helper.exe message.txt response.txt
+[2025-06-17 12:04:10] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:04:10] Connection status: ONLINE
+[2025-06-17 12:04:10] Checking file_exists: agents.txt
+[2025-06-17 12:04:10] File pointer is not NULL
+[2025-06-17 12:04:10] Opened 'agents.txt', size = 808
+[2025-06-17 12:04:10] Loaded agent: The System  [0]
+[2025-06-17 12:04:10] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:04:10] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:04:10] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:04:10] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:04:10] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:04:10] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:04:10] Loaded agent: Philosopher  [7]
+[2025-06-17 12:04:13] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:04:13] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:04:15] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:04:15] start_chat_session: command constructed
+[2025-06-17 12:04:15] StartChat,0
+[2025-06-17 12:04:15] call_helper: starting
+[2025-06-17 12:04:15] call_helper: wrote message
+[2025-06-17 12:04:15] call_helper: removed response
+[2025-06-17 12:04:15] call_helper: invoking helper
+[2025-06-17 12:04:15] helper.exe message.txt response.txt
+[2025-06-17 12:04:16] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:04:16] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 12:04:16] start_chat_session: response line count = 2
+[2025-06-17 12:04:16] start_chat_session: session_id = 520a9b65
+[2025-06-17 12:04:16] start_chat_session: returning SUCCESS
+[2025-06-17 12:04:21] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:05:51] ********** Start app **********
+[2025-06-17 12:05:51] check_connection_status: starting
+[2025-06-17 12:05:51] call_helper: starting
+[2025-06-17 12:05:51] call_helper: wrote message
+[2025-06-17 12:05:51] call_helper: removed response
+[2025-06-17 12:05:51] call_helper: invoking helper
+[2025-06-17 12:05:51] helper.exe message.txt response.txt
+[2025-06-17 12:05:52] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:05:52] Connection status: ONLINE
+[2025-06-17 12:05:52] Checking file_exists: agents.txt
+[2025-06-17 12:05:52] File pointer is not NULL
+[2025-06-17 12:05:52] Opened 'agents.txt', size = 808
+[2025-06-17 12:05:52] Loaded agent: The System  [0]
+[2025-06-17 12:05:52] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:05:52] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:05:52] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:05:52] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:05:52] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:05:52] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:05:52] Loaded agent: Philosopher  [7]
+[2025-06-17 12:06:43] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:06:43] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:06:44] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:06:44] start_chat_session: command constructed
+[2025-06-17 12:06:44] StartChat,0
+[2025-06-17 12:06:44] call_helper: starting
+[2025-06-17 12:06:44] call_helper: wrote message
+[2025-06-17 12:06:44] call_helper: removed response
+[2025-06-17 12:06:44] call_helper: invoking helper
+[2025-06-17 12:06:44] helper.exe message.txt response.txt
+[2025-06-17 12:06:45] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:06:45] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 12:06:45] start_chat_session: response line count = 2
+[2025-06-17 12:06:45] start_chat_session: session_id = f426964e
+[2025-06-17 12:06:45] start_chat_session: returning SUCCESS
+[2025-06-17 12:06:50] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:08:58] ********** Start app **********
+[2025-06-17 12:08:58] check_connection_status: starting
+[2025-06-17 12:08:58] call_helper: starting
+[2025-06-17 12:08:58] call_helper: wrote message
+[2025-06-17 12:08:58] call_helper: removed response
+[2025-06-17 12:08:58] call_helper: invoking helper
+[2025-06-17 12:08:58] helper.exe message.txt response.txt
+[2025-06-17 12:09:00] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:09:00] Connection status: ONLINE
+[2025-06-17 12:09:00] Checking file_exists: agents.txt
+[2025-06-17 12:09:00] File pointer is not NULL
+[2025-06-17 12:09:00] Opened 'agents.txt', size = 808
+[2025-06-17 12:09:00] Loaded agent: The System  [0]
+[2025-06-17 12:09:00] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:09:00] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:09:00] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:09:00] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:09:00] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:09:00] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:09:00] Loaded agent: Philosopher  [7]
+[2025-06-17 12:21:26] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:21:26] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:21:28] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:21:28] start_chat_session: command constructed
+[2025-06-17 12:21:28] StartChat,0
+[2025-06-17 12:21:28] call_helper: starting
+[2025-06-17 12:21:28] call_helper: wrote message
+[2025-06-17 12:21:28] call_helper: removed response
+[2025-06-17 12:21:28] call_helper: invoking helper
+[2025-06-17 12:21:28] helper.exe message.txt response.txt
+[2025-06-17 12:21:29] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:21:29] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 12:21:29] start_chat_session: response line count = 2
+[2025-06-17 12:21:29] start_chat_session: session_id = a515b78e
+[2025-06-17 12:21:29] start_chat_session: returning SUCCESS
+[2025-06-17 12:21:33] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:36:33] ********** Start app **********
+[2025-06-17 12:36:33] check_connection_status: starting
+[2025-06-17 12:36:33] call_helper: starting
+[2025-06-17 12:36:33] call_helper: wrote message
+[2025-06-17 12:36:33] call_helper: removed response
+[2025-06-17 12:36:33] call_helper: invoking helper
+[2025-06-17 12:36:33] helper.exe message.txt response.txt
+[2025-06-17 12:36:34] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:36:34] Connection status: ONLINE
+[2025-06-17 12:36:34] Checking file_exists: agents.txt
+[2025-06-17 12:36:34] File pointer is not NULL
+[2025-06-17 12:36:34] Opened 'agents.txt', size = 808
+[2025-06-17 12:36:34] Loaded agent: The System  [0]
+[2025-06-17 12:36:34] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:36:34] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:36:34] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:36:34] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:36:34] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:36:34] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:36:34] Loaded agent: Philosopher  [7]
+[2025-06-17 12:36:51] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:36:51] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:37:01] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:37:01] start_chat_session: command constructed
+[2025-06-17 12:37:01] StartChat,0
+[2025-06-17 12:37:01] call_helper: starting
+[2025-06-17 12:37:01] call_helper: wrote message
+[2025-06-17 12:37:01] call_helper: removed response
+[2025-06-17 12:37:01] call_helper: invoking helper
+[2025-06-17 12:37:01] helper.exe message.txt response.txt
+[2025-06-17 12:37:02] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:37:02] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 12:37:02] start_chat_session: response line count = 2
+[2025-06-17 12:37:02] start_chat_session: session_id = f0fb68d5
+[2025-06-17 12:37:02] start_chat_session: returning SUCCESS
+[2025-06-17 12:37:12] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:50:40] ********** Start app **********
+[2025-06-17 12:50:40] check_connection_status: starting
+[2025-06-17 12:50:40] call_helper: starting
+[2025-06-17 12:50:40] call_helper: wrote message
+[2025-06-17 12:50:40] call_helper: removed old response
+[2025-06-17 12:50:40] call_helper: invoking helper
+[2025-06-17 12:50:40] helper.exe message.txt response.txt
+[2025-06-17 12:50:41] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:50:41] Connection status: ONLINE
+[2025-06-17 12:50:41] Checking file_exists: agents.txt
+[2025-06-17 12:50:41] File pointer is not NULL
+[2025-06-17 12:50:41] Opened 'agents.txt', size = 808
+[2025-06-17 12:50:41] Loaded agent: The System  [0]
+[2025-06-17 12:50:41] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:50:41] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:50:41] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:50:41] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:50:41] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:50:41] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:50:41] Loaded agent: Philosopher  [7]
+[2025-06-17 12:50:43] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:50:43] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:50:44] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:50:44] start_chat_session: command constructed
+[2025-06-17 12:50:44] StartChat,0
+[2025-06-17 12:50:44] call_helper: starting
+[2025-06-17 12:50:44] call_helper: wrote message
+[2025-06-17 12:50:44] call_helper: removed old response
+[2025-06-17 12:50:44] call_helper: invoking helper
+[2025-06-17 12:50:44] helper.exe message.txt response.txt
+[2025-06-17 12:50:45] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:50:45] start_chat_session: cc call_helper returned SUCCESS
+[2025-06-17 12:50:45] start_chat_session: response line count = 2
+[2025-06-17 12:50:45] start_chat_session: session_id = 82d2d0ac
+[2025-06-17 12:50:45] start_chat_session: returning SUCCESS
+[2025-06-17 12:50:54] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:56:00] ********** Start app **********
+[2025-06-17 12:56:00] check_connection_status: starting
+[2025-06-17 12:56:00] call_helper: starting
+[2025-06-17 12:56:00] call_helper: wrote message
+[2025-06-17 12:56:00] call_helper: removed old response
+[2025-06-17 12:56:00] call_helper: invoking helper
+[2025-06-17 12:56:00] helper.exe message.txt response.txt
+[2025-06-17 12:56:01] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:56:01] Connection status: ONLINE
+[2025-06-17 12:56:01] Checking file_exists: agents.txt
+[2025-06-17 12:56:01] File pointer is not NULL
+[2025-06-17 12:56:01] Opened 'agents.txt', size = 808
+[2025-06-17 12:56:01] Loaded agent: The System  [0]
+[2025-06-17 12:56:01] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:56:01] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:56:01] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:56:01] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:56:01] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:56:01] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:56:01] Loaded agent: Philosopher  [7]
+[2025-06-17 12:56:22] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:56:22] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:56:25] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:56:25] start_chat_session: command constructed
+[2025-06-17 12:56:25] StartChat,0
+[2025-06-17 12:56:25] call_helper: starting
+[2025-06-17 12:56:25] call_helper: wrote message
+[2025-06-17 12:56:25] call_helper: removed old response
+[2025-06-17 12:56:25] call_helper: invoking helper
+[2025-06-17 12:56:25] helper.exe message.txt response.txt
+[2025-06-17 12:56:26] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:56:26] start_chat_session: cc call_helper returned SUCCESS
+[2025-06-17 12:56:26] start_chat_session: response line count = 2
+[2025-06-17 12:56:26] start_chat_session: session_id = 093fe52d
+[2025-06-17 12:56:26] start_chat_session: returning SUCCESS
+[2025-06-17 12:56:35] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:59:00] ********** Start app **********
+[2025-06-17 12:59:00] check_connection_status: starting
+[2025-06-17 12:59:00] call_helper: starting
+[2025-06-17 12:59:00] call_helper: wrote message
+[2025-06-17 12:59:00] call_helper: removed old response
+[2025-06-17 12:59:00] call_helper: invoking helper
+[2025-06-17 12:59:00] helper.exe message.txt response.txt
+[2025-06-17 12:59:01] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:59:01] Connection status: ONLINE
+[2025-06-17 12:59:01] Checking file_exists: agents.txt
+[2025-06-17 12:59:01] File pointer is not NULL
+[2025-06-17 12:59:01] Opened 'agents.txt', size = 808
+[2025-06-17 12:59:01] Loaded agent: The System  [0]
+[2025-06-17 12:59:01] Loaded agent: Research Assistant  [1]
+[2025-06-17 12:59:01] Loaded agent: Code Debugger  [2]
+[2025-06-17 12:59:01] Loaded agent: Creative Writer  [3]
+[2025-06-17 12:59:01] Loaded agent: Legal Advisor  [4]
+[2025-06-17 12:59:01] Loaded agent: Executive Coach  [5]
+[2025-06-17 12:59:01] Loaded agent: Travel Planner  [6]
+[2025-06-17 12:59:01] Loaded agent: Philosopher  [7]
+[2025-06-17 12:59:04] Main menu: Set current_agent_name = The System 
+[2025-06-17 12:59:04] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 12:59:05] start_chat_session chatc: agent_id = 0
+[2025-06-17 12:59:05] start_chat_session: command constructed
+[2025-06-17 12:59:05] StartChat,0
+[2025-06-17 12:59:05] call_helper: starting
+[2025-06-17 12:59:05] call_helper: wrote message
+[2025-06-17 12:59:05] call_helper: removed old response
+[2025-06-17 12:59:05] call_helper: invoking helper
+[2025-06-17 12:59:05] helper.exe message.txt response.txt
+[2025-06-17 12:59:06] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 12:59:06] start_chat_session: cc call_helper returned SUCCESS
+[2025-06-17 12:59:06] start_chat_session: response line count = 2
+[2025-06-17 12:59:06] start_chat_session: session_id = a05f9f2e
+[2025-06-17 12:59:06] start_chat_session: returning SUCCESS
+[2025-06-17 12:59:12] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:02:31] ********** Start app **********
+[2025-06-17 13:02:31] check_connection_status: starting
+[2025-06-17 13:02:31] call_helper: starting
+[2025-06-17 13:02:31] call_helper: wrote message
+[2025-06-17 13:02:31] call_helper: removed old response
+[2025-06-17 13:02:31] call_helper: invoking helper
+[2025-06-17 13:02:31] helper.exe message.txt response.txt
+[2025-06-17 13:02:32] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 13:02:32] Connection status: ONLINE
+[2025-06-17 13:02:32] Checking file_exists: agents.txt
+[2025-06-17 13:02:32] File pointer is not NULL
+[2025-06-17 13:02:32] Opened 'agents.txt', size = 808
+[2025-06-17 13:02:32] Loaded agent: The System  [0]
+[2025-06-17 13:02:32] Loaded agent: Research Assistant  [1]
+[2025-06-17 13:02:32] Loaded agent: Code Debugger  [2]
+[2025-06-17 13:02:32] Loaded agent: Creative Writer  [3]
+[2025-06-17 13:02:32] Loaded agent: Legal Advisor  [4]
+[2025-06-17 13:02:32] Loaded agent: Executive Coach  [5]
+[2025-06-17 13:02:32] Loaded agent: Travel Planner  [6]
+[2025-06-17 13:02:32] Loaded agent: Philosopher  [7]
+[2025-06-17 13:02:54] Main menu: Set current_agent_name = The System 
+[2025-06-17 13:02:54] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:02:55] start_chat_session chatc: agent_id = 0
+[2025-06-17 13:02:55] start_chat_session: command constructed
+[2025-06-17 13:02:55] StartChat,0
+[2025-06-17 13:02:55] call_helper: starting
+[2025-06-17 13:02:55] call_helper: wrote message
+[2025-06-17 13:02:55] call_helper: removed old response
+[2025-06-17 13:02:55] call_helper: invoking helper
+[2025-06-17 13:02:55] helper.exe message.txt response.txt
+[2025-06-17 13:02:56] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 13:02:56] start_chat_session: cc call_helper returned SUCCESS
+[2025-06-17 13:02:56] start_chat_session: response line count = 2
+[2025-06-17 13:02:56] start_chat_session: session_id = f463dc8c
+[2025-06-17 13:02:56] start_chat_session: returning SUCCESS
+[2025-06-17 13:03:10] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:20:57] ********** Start app **********
+[2025-06-17 13:20:57] check_connection_status: starting
+[2025-06-17 13:20:57] call_helper: starting
+[2025-06-17 13:20:57] call_helper: wrote message
+[2025-06-17 13:20:57] call_helper: removed old response
+[2025-06-17 13:20:57] call_helper: invoking helper
+[2025-06-17 13:20:57] helper.exe message.txt response.txt
+[2025-06-17 13:20:58] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 13:20:58] Connection status: ONLINE
+[2025-06-17 13:20:58] Checking file_exists: agents.txt
+[2025-06-17 13:20:58] File pointer is not NULL
+[2025-06-17 13:20:58] Opened 'agents.txt', size = 808
+[2025-06-17 13:20:58] Loaded agent: The System  [0]
+[2025-06-17 13:20:58] Loaded agent: Research Assistant  [1]
+[2025-06-17 13:20:58] Loaded agent: Code Debugger  [2]
+[2025-06-17 13:20:58] Loaded agent: Creative Writer  [3]
+[2025-06-17 13:20:58] Loaded agent: Legal Advisor  [4]
+[2025-06-17 13:20:58] Loaded agent: Executive Coach  [5]
+[2025-06-17 13:20:58] Loaded agent: Travel Planner  [6]
+[2025-06-17 13:20:58] Loaded agent: Philosopher  [7]
+[2025-06-17 13:21:00] Main menu: Set current_agent_name = The System 
+[2025-06-17 13:21:00] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:21:00] start_session: initializing
+[2025-06-17 13:28:20] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 13:28:20] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:45:44] ********** Start app **********
+[2025-06-17 13:45:44] check_connection_status: starting
+[2025-06-17 13:45:44] call_helper: starting
+[2025-06-17 13:45:44] call_helper: wrote message
+[2025-06-17 13:45:44] call_helper: removed old response
+[2025-06-17 13:45:44] call_helper: invoking helper
+[2025-06-17 13:45:44] helper.exe message.txt response.txt
+[2025-06-17 13:45:46] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 13:45:46] Connection status: ONLINE
+[2025-06-17 13:45:46] Checking file_exists: agents.txt
+[2025-06-17 13:45:46] File pointer is not NULL
+[2025-06-17 13:45:46] Opened 'agents.txt', size = 808
+[2025-06-17 13:45:46] Loaded agent: The System  [0]
+[2025-06-17 13:45:46] Loaded agent: Research Assistant  [1]
+[2025-06-17 13:45:46] Loaded agent: Code Debugger  [2]
+[2025-06-17 13:45:46] Loaded agent: Creative Writer  [3]
+[2025-06-17 13:45:46] Loaded agent: Legal Advisor  [4]
+[2025-06-17 13:45:46] Loaded agent: Executive Coach  [5]
+[2025-06-17 13:45:46] Loaded agent: Travel Planner  [6]
+[2025-06-17 13:45:46] Loaded agent: Philosopher  [7]
+[2025-06-17 13:46:12] Main menu: Set current_agent_name = The System 
+[2025-06-17 13:46:12] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 13:46:12] start_session: initializing
+[2025-06-17 13:46:16] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 13:46:16] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:10:27] ********** Start app **********
+[2025-06-17 14:10:27] check_connection_status: starting
+[2025-06-17 14:10:27] call_helper: starting
+[2025-06-17 14:10:27] call_helper: wrote message
+[2025-06-17 14:10:27] call_helper: removed old response
+[2025-06-17 14:10:27] call_helper: invoking helper
+[2025-06-17 14:10:27] helper.exe message.txt response.txt
+[2025-06-17 14:10:28] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:10:28] Connection status: ONLINE
+[2025-06-17 14:10:28] Checking file_exists: agents.txt
+[2025-06-17 14:10:28] File pointer is not NULL
+[2025-06-17 14:10:28] Opened 'agents.txt', size = 808
+[2025-06-17 14:10:28] Loaded agent: The System  [0]
+[2025-06-17 14:10:28] Loaded agent: Research Assistant  [1]
+[2025-06-17 14:10:28] Loaded agent: Code Debugger  [2]
+[2025-06-17 14:10:28] Loaded agent: Creative Writer  [3]
+[2025-06-17 14:10:28] Loaded agent: Legal Advisor  [4]
+[2025-06-17 14:10:29] Loaded agent: Executive Coach  [5]
+[2025-06-17 14:10:29] Loaded agent: Travel Planner  [6]
+[2025-06-17 14:10:29] Loaded agent: Philosopher  [7]
+[2025-06-17 14:10:30] Main menu: Set current_agent_name = The System 
+[2025-06-17 14:10:30] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:10:30] start_session: initializing
+[2025-06-17 14:10:30] start_chat_session chatc: agent_id = 0
+[2025-06-17 14:10:30] start_chat_session: command constructed
+[2025-06-17 14:10:30] StartChat,0
+[2025-06-17 14:10:30] call_helper: starting
+[2025-06-17 14:10:30] call_helper: wrote message
+[2025-06-17 14:10:30] call_helper: removed old response
+[2025-06-17 14:10:30] call_helper: invoking helper
+[2025-06-17 14:10:30] helper.exe message.txt response.txt
+[2025-06-17 14:10:30] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:10:30] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:10:30] start_chat_session: response line count = 2
+[2025-06-17 14:10:30] start_chat_session: session_id = 1c73c424
+[2025-06-17 14:10:30] start_chat_session: returning SUCCESS
+[2025-06-17 14:10:31] start_session: completed successfully
+[2025-06-17 14:10:31] handle_chat_INTERNAL_DEBUG: start_session failed
+[2025-06-17 14:10:31] Main: Chat session failed.
+[2025-06-17 14:10:31] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:10:33] Main menu: Set current_agent_name = The System 
+[2025-06-17 14:10:33] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:10:33] start_session: initializing
+[2025-06-17 14:10:33] start_chat_session chatc: agent_id = 0
+[2025-06-17 14:10:33] start_chat_session: command constructed
+[2025-06-17 14:10:33] StartChat,0
+[2025-06-17 14:10:33] call_helper: starting
+[2025-06-17 14:10:33] call_helper: wrote message
+[2025-06-17 14:10:33] call_helper: removed old response
+[2025-06-17 14:10:33] call_helper: invoking helper
+[2025-06-17 14:10:33] helper.exe message.txt response.txt
+[2025-06-17 14:10:34] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:10:34] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:10:34] start_chat_session: response line count = 2
+[2025-06-17 14:10:34] start_chat_session: session_id = 6eee1885
+[2025-06-17 14:10:34] start_chat_session: returning SUCCESS
+[2025-06-17 14:10:34] start_session: completed successfully
+[2025-06-17 14:10:34] handle_chat_INTERNAL_DEBUG: start_session failed
+[2025-06-17 14:10:34] Main: Chat session failed.
+[2025-06-17 14:10:34] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:12:44] ********** Start app **********
+[2025-06-17 14:12:44] check_connection_status: starting
+[2025-06-17 14:12:44] call_helper: starting
+[2025-06-17 14:12:45] call_helper: wrote message
+[2025-06-17 14:12:45] call_helper: removed old response
+[2025-06-17 14:12:45] call_helper: invoking helper
+[2025-06-17 14:12:45] helper.exe message.txt response.txt
+[2025-06-17 14:12:46] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:12:46] Connection status: ONLINE
+[2025-06-17 14:12:46] Checking file_exists: agents.txt
+[2025-06-17 14:12:46] File pointer is not NULL
+[2025-06-17 14:12:46] Opened 'agents.txt', size = 808
+[2025-06-17 14:12:46] Loaded agent: The System  [0]
+[2025-06-17 14:12:46] Loaded agent: Research Assistant  [1]
+[2025-06-17 14:12:46] Loaded agent: Code Debugger  [2]
+[2025-06-17 14:12:46] Loaded agent: Creative Writer  [3]
+[2025-06-17 14:12:46] Loaded agent: Legal Advisor  [4]
+[2025-06-17 14:12:46] Loaded agent: Executive Coach  [5]
+[2025-06-17 14:12:46] Loaded agent: Travel Planner  [6]
+[2025-06-17 14:12:46] Loaded agent: Philosopher  [7]
+[2025-06-17 14:13:19] Main menu: Set current_agent_name = The System 
+[2025-06-17 14:13:19] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:13:19] start_session: initializing
+[2025-06-17 14:13:19] start_chat_session chatc: agent_id = 0
+[2025-06-17 14:13:19] start_chat_session: command constructed
+[2025-06-17 14:13:19] StartChat,0
+[2025-06-17 14:13:19] call_helper: starting
+[2025-06-17 14:13:19] call_helper: wrote message
+[2025-06-17 14:13:19] call_helper: removed old response
+[2025-06-17 14:13:19] call_helper: invoking helper
+[2025-06-17 14:13:19] helper.exe message.txt response.txt
+[2025-06-17 14:13:20] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:13:20] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:13:20] start_chat_session: response line count = 2
+[2025-06-17 14:13:20] start_chat_session: session_id = 75cc35a8
+[2025-06-17 14:13:20] start_chat_session: returning SUCCESS
+[2025-06-17 14:13:20] start_session: completed successfully
+[2025-06-17 14:13:21] chatlog_add: START
+[2025-06-17 14:13:21] chatlog_add: line 0: YOU: test
+[2025-06-17 14:13:21] chatlog_add: DONE
+[2025-06-17 14:13:21] call_helper: starting
+[2025-06-17 14:13:21] call_helper: wrote message
+[2025-06-17 14:13:21] call_helper: removed old response
+[2025-06-17 14:13:21] call_helper: invoking helper
+[2025-06-17 14:13:21] helper.exe message.txt response.txt
+[2025-06-17 14:13:23] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:13:23] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:24] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:25] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:26] spinner_tick updated line.
+[2025-06-17 14:13:27] spinner_clear executed.
+[2025-06-17 14:13:27] chatlog_add: START
+[2025-06-17 14:13:27] chatlog_add: line 1: The System :
+[2025-06-17 14:13:27] chatlog_add: DONE
+[2025-06-17 14:13:27] chatlog_add: START
+[2025-06-17 14:13:27] chatlog_add: line 2: How can I assist you today?
+[2025-06-17 14:13:27] chatlog_add: DONE
+[2025-06-17 14:13:29] call_helper: starting
+[2025-06-17 14:13:29] call_helper: wrote message
+[2025-06-17 14:13:29] call_helper: removed old response
+[2025-06-17 14:13:29] call_helper: invoking helper
+[2025-06-17 14:13:29] helper.exe message.txt response.txt
+[2025-06-17 14:13:30] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:13:30] chatlog_add: START
+[2025-06-17 14:13:30] chatlog_add: line 3: The System :
+[2025-06-17 14:13:30] chatlog_add: DONE
+[2025-06-17 14:13:30] chatlog_add: START
+[2025-06-17 14:13:30] chatlog_add: line 4: Session 75cc35a8 ended
+[2025-06-17 14:13:30] chatlog_add: DONE
+[2025-06-17 14:13:30] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 14:13:30] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:14:41] ********** Start app **********
+[2025-06-17 14:14:41] check_connection_status: starting
+[2025-06-17 14:14:41] call_helper: starting
+[2025-06-17 14:14:41] call_helper: wrote message
+[2025-06-17 14:14:41] call_helper: removed old response
+[2025-06-17 14:14:41] call_helper: invoking helper
+[2025-06-17 14:14:41] helper.exe message.txt response.txt
+[2025-06-17 14:14:43] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:14:43] Connection status: ONLINE
+[2025-06-17 14:14:43] Checking file_exists: agents.txt
+[2025-06-17 14:14:43] File pointer is not NULL
+[2025-06-17 14:14:43] Opened 'agents.txt', size = 808
+[2025-06-17 14:14:43] Loaded agent: The System  [0]
+[2025-06-17 14:14:43] Loaded agent: Research Assistant  [1]
+[2025-06-17 14:14:43] Loaded agent: Code Debugger  [2]
+[2025-06-17 14:14:43] Loaded agent: Creative Writer  [3]
+[2025-06-17 14:14:43] Loaded agent: Legal Advisor  [4]
+[2025-06-17 14:14:43] Loaded agent: Executive Coach  [5]
+[2025-06-17 14:14:43] Loaded agent: Travel Planner  [6]
+[2025-06-17 14:14:43] Loaded agent: Philosopher  [7]
+[2025-06-17 14:14:44] Main menu: Set current_agent_name = The System 
+[2025-06-17 14:14:44] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:14:44] start_session: initializing
+[2025-06-17 14:14:44] start_chat_session chatc: agent_id = 0
+[2025-06-17 14:14:44] start_chat_session: command constructed
+[2025-06-17 14:14:44] StartChat,0
+[2025-06-17 14:14:44] call_helper: starting
+[2025-06-17 14:14:44] call_helper: wrote message
+[2025-06-17 14:14:44] call_helper: removed old response
+[2025-06-17 14:14:44] call_helper: invoking helper
+[2025-06-17 14:14:44] helper.exe message.txt response.txt
+[2025-06-17 14:14:45] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:14:45] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:14:45] start_chat_session: response line count = 2
+[2025-06-17 14:14:45] start_chat_session: session_id = 49ab065b
+[2025-06-17 14:14:45] start_chat_session: returning SUCCESS
+[2025-06-17 14:14:45] start_session: completed successfully
+[2025-06-17 14:14:47] chatlog_add: START
+[2025-06-17 14:14:47] chatlog_add: line 0: YOU: test
+[2025-06-17 14:14:47] chatlog_add: DONE
+[2025-06-17 14:14:47] call_helper: starting
+[2025-06-17 14:14:47] call_helper: wrote message
+[2025-06-17 14:14:47] call_helper: removed old response
+[2025-06-17 14:14:47] call_helper: invoking helper
+[2025-06-17 14:14:47] helper.exe message.txt response.txt
+[2025-06-17 14:14:48] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:14:48] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:49] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:50] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:51] spinner_tick updated line.
+[2025-06-17 14:14:52] spinner_clear executed.
+[2025-06-17 14:14:52] chatlog_add: START
+[2025-06-17 14:14:52] chatlog_add: line 1: The System :
+[2025-06-17 14:14:52] chatlog_add: DONE
+[2025-06-17 14:14:52] chatlog_add: START
+[2025-06-17 14:14:52] chatlog_add: line 2: How can I assist you today?
+[2025-06-17 14:14:52] chatlog_add: DONE
+[2025-06-17 14:14:55] chatlog_add: START
+[2025-06-17 14:14:55] chatlog_add: line 3: YOU: write a long line
+[2025-06-17 14:14:55] chatlog_add: DONE
+[2025-06-17 14:14:55] call_helper: starting
+[2025-06-17 14:14:55] call_helper: wrote message
+[2025-06-17 14:14:55] call_helper: removed old response
+[2025-06-17 14:14:55] call_helper: invoking helper
+[2025-06-17 14:14:55] helper.exe message.txt response.txt
+[2025-06-17 14:14:57] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:14:57] spinner_tick updated line.
+[2025-06-17 14:14:57] spinner_tick updated line.
+[2025-06-17 14:14:57] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:58] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:14:59] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_tick updated line.
+[2025-06-17 14:15:00] spinner_clear executed.
+[2025-06-17 14:15:00] chatlog_add: START
+[2025-06-17 14:15:00] chatlog_add: line 4: The System :
+[2025-06-17 14:15:00] chatlog_add: DONE
+[2025-06-17 14:15:00] chatlog_add: START
+[2025-06-17 14:15:00] chatlog_add: line 5: Certainly! Could you clarify what you mean by a "long line"? Are you looking
+[2025-06-17 14:15:00] chatlog_add: line 6: for an extended sentence, a list of words, or something else? Let me know so
+[2025-06-17 14:15:00] chatlog_add: line 7: I can assist you properly.
+[2025-06-17 14:15:00] chatlog_add: DONE
+[2025-06-17 14:15:18] chatlog_add: START
+[2025-06-17 14:15:18] chatlog_add: line 8: YOU: write a long line about a cat
+[2025-06-17 14:15:18] chatlog_add: DONE
+[2025-06-17 14:15:18] call_helper: starting
+[2025-06-17 14:15:18] call_helper: wrote message
+[2025-06-17 14:15:18] call_helper: removed old response
+[2025-06-17 14:15:18] call_helper: invoking helper
+[2025-06-17 14:15:18] helper.exe message.txt response.txt
+[2025-06-17 14:15:21] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:15:21] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:22] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:23] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_tick updated line.
+[2025-06-17 14:15:24] spinner_clear executed.
+[2025-06-17 14:15:24] chatlog_add: START
+[2025-06-17 14:15:24] chatlog_add: line 9: The System :
+[2025-06-17 14:15:24] chatlog_add: DONE
+[2025-06-17 14:15:24] chatlog_add: START
+[2025-06-17 14:15:24] chatlog_add: line 10: Sure! Here's a long line about a cat:
+[2025-06-17 14:15:24] chatlog_add: DONE
+[2025-06-17 14:15:24] chatlog_add: START
+[2025-06-17 14:15:25] chatlog_add: DONE
+[2025-06-17 14:15:25] chatlog_add: START
+[2025-06-17 14:15:25] chatlog_add: line 11: Whiskers twitching in the gentle breeze, the sleek, elegant tabby cat?with
+[2025-06-17 14:15:25] chatlog_add: line 12: its glossy fur shimmering under the warm sunlight?stalked silently through
+[2025-06-17 14:15:25] chatlog_add: line 13: the tall, rustling grass, its emerald eyes focused intently on a distant,
+[2025-06-17 14:15:25] chatlog_add: line 14: fluttering butterfly, every muscle poised and ready for the inevitable
+[2025-06-17 14:15:25] chatlog_add: line 15: playful pounce, showcasing its graceful agility and innate curiosity.
+[2025-06-17 14:15:25] chatlog_add: DONE
+[2025-06-17 14:17:00] call_helper: starting
+[2025-06-17 14:17:00] call_helper: wrote message
+[2025-06-17 14:17:00] call_helper: removed old response
+[2025-06-17 14:17:00] call_helper: invoking helper
+[2025-06-17 14:17:00] helper.exe message.txt response.txt
+[2025-06-17 14:17:01] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:17:01] chatlog_add: START
+[2025-06-17 14:17:01] chatlog_add: line 16: The System :
+[2025-06-17 14:17:01] chatlog_add: DONE
+[2025-06-17 14:17:01] chatlog_add: START
+[2025-06-17 14:17:01] chatlog_add: line 17: Session 49ab065b ended
+[2025-06-17 14:17:01] chatlog_add: DONE
+[2025-06-17 14:17:01] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 14:17:01] Main: Returned from handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:17:06] start_session: initializing
+[2025-06-17 14:17:06] start_chat_session chatc: agent_id = 1
+[2025-06-17 14:17:06] start_chat_session: command constructed
+[2025-06-17 14:17:06] StartChat,1
+[2025-06-17 14:17:06] call_helper: starting
+[2025-06-17 14:17:06] call_helper: wrote message
+[2025-06-17 14:17:06] call_helper: removed old response
+[2025-06-17 14:17:06] call_helper: invoking helper
+[2025-06-17 14:17:06] helper.exe message.txt response.txt
+[2025-06-17 14:17:07] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:17:07] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:17:07] start_chat_session: response line count = 2
+[2025-06-17 14:17:07] start_chat_session: session_id = 164e3ca8
+[2025-06-17 14:17:07] start_chat_session: returning SUCCESS
+[2025-06-17 14:17:07] start_session: completed successfully
+[2025-06-17 14:17:09] chatlog_add: START
+[2025-06-17 14:17:09] chatlog_add: line 0: YOU: a cat
+[2025-06-17 14:17:09] chatlog_add: DONE
+[2025-06-17 14:17:09] call_helper: starting
+[2025-06-17 14:17:09] call_helper: wrote message
+[2025-06-17 14:17:09] call_helper: removed old response
+[2025-06-17 14:17:09] call_helper: invoking helper
+[2025-06-17 14:17:09] helper.exe message.txt response.txt
+[2025-06-17 14:17:15] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:17:15] chatlog_add: START
+[2025-06-17 14:17:15] chatlog_add: line 1: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:17:15] chatlog_add: DONE
+[2025-06-17 14:17:19] chatlog_add: START
+[2025-06-17 14:17:19] chatlog_add: line 2: YOU: a cat
+[2025-06-17 14:17:19] chatlog_add: DONE
+[2025-06-17 14:17:19] call_helper: starting
+[2025-06-17 14:17:19] call_helper: wrote message
+[2025-06-17 14:17:19] call_helper: removed old response
+[2025-06-17 14:17:19] call_helper: invoking helper
+[2025-06-17 14:17:19] helper.exe message.txt response.txt
+[2025-06-17 14:17:25] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:17:25] spinner_tick updated line.
+[2025-06-17 14:17:25] spinner_tick updated line.
+[2025-06-17 14:17:25] spinner_tick updated line.
+[2025-06-17 14:17:25] spinner_tick updated line.
+[2025-06-17 14:17:25] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:26] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:27] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_tick updated line.
+[2025-06-17 14:17:28] spinner_clear executed.
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 3: Research Assistant :
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 4: A cat refers to a domesticated species known scientifically as *Felis catus*.
+[2025-06-17 14:17:28] chatlog_add: line 5: Cats are small, carnivorous mammals that are part of the Felidae family. They
+[2025-06-17 14:17:28] chatlog_add: line 6: are known for their distinctive features such as sharp retractable claws,
+[2025-06-17 14:17:28] chatlog_add: line 7: flexible bodies, keen senses, and an independent temperament. Cats are
+[2025-06-17 14:17:28] chatlog_add: line 8: popular pets due to their companionship, playful nature, and rodent control
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 9: Domestication of cats likely began around 9,000 years ago in the Near East,
+[2025-06-17 14:17:28] chatlog_add: line 10: where they played a role in protecting agricultural crops from pests. While
+[2025-06-17 14:17:28] chatlog_add: line 11: the genetic lineage of domestic cats is closely linked to wild cats, their
+[2025-06-17 14:17:28] chatlog_add: line 12: behavior can vary, ranging from highly social creatures to more solitary
+[2025-06-17 14:17:28] chatlog_add: line 13: animals.
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 14: Typical cat communication includes a mix of vocal sounds (like meowing and
+[2025-06-17 14:17:28] chatlog_add: line 15: purring), body language, and scent marking. They are also known for their
+[2025-06-17 14:17:28] chatlog_add: line 16: grooming habits and periods of high activity interspersed with long naps,
+[2025-06-17 14:17:28] chatlog_add: line 17: which is aligned with their ancestral hunting patterns.
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 18: Cats have been adored for centuries and often hold a significant place in
+[2025-06-17 14:17:28] chatlog_add: line 19: cultural symbolism and history across the globe.
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 20: Sources:
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 21: 1. Driscoll, C. A., Clutton-Brock, J., & Macdonald, D. W. (2009). Evolution
+[2025-06-17 14:17:28] chatlog_add: line 22: of cat domestication. *Proceedings of the National Academy of Sciences*,
+[2025-06-17 14:17:28] chatlog_add: line 23: 106(34), 13805-13811.
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:28] chatlog_add: START
+[2025-06-17 14:17:28] chatlog_add: line 24: 2. Bradshaw, J. (2013). *Cat Sense: How the New Feline Science Can Make You a
+[2025-06-17 14:17:28] chatlog_add: line 25: Better Friend to Your Pet*. Basic Books.
+[2025-06-17 14:17:28] chatlog_add: DONE
+[2025-06-17 14:17:55] chatlog_add: START
+[2025-06-17 14:17:55] chatlog_add: line 26: YOU: exit
+[2025-06-17 14:17:55] chatlog_add: DONE
+[2025-06-17 14:17:55] call_helper: starting
+[2025-06-17 14:17:55] call_helper: wrote message
+[2025-06-17 14:17:55] call_helper: removed old response
+[2025-06-17 14:17:55] call_helper: invoking helper
+[2025-06-17 14:17:55] helper.exe message.txt response.txt
+[2025-06-17 14:17:56] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:56] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:57] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:58] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_tick updated line.
+[2025-06-17 14:17:59] spinner_clear executed.
+[2025-06-17 14:17:59] chatlog_add: START
+[2025-06-17 14:17:59] chatlog_add: line 27: Research Assistant :
+[2025-06-17 14:17:59] chatlog_add: DONE
+[2025-06-17 14:17:59] chatlog_add: START
+[2025-06-17 14:17:59] chatlog_add: line 28: If you have any more questions in the future or need assistance, feel free to
+[2025-06-17 14:17:59] chatlog_add: line 29: reach out. Have a great day!
+[2025-06-17 14:17:59] chatlog_add: DONE
+[2025-06-17 14:18:06] chatlog_add: START
+[2025-06-17 14:18:06] chatlog_add: line 30: YOU: test
+[2025-06-17 14:18:06] chatlog_add: DONE
+[2025-06-17 14:18:06] call_helper: starting
+[2025-06-17 14:18:06] call_helper: wrote message
+[2025-06-17 14:18:06] call_helper: removed old response
+[2025-06-17 14:18:06] call_helper: invoking helper
+[2025-06-17 14:18:06] helper.exe message.txt response.txt
+[2025-06-17 14:18:08] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:08] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:09] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:10] spinner_tick updated line.
+[2025-06-17 14:18:11] spinner_clear executed.
+[2025-06-17 14:18:11] chatlog_add: START
+[2025-06-17 14:18:11] chatlog_add: line 31: Research Assistant :
+[2025-06-17 14:18:11] chatlog_add: DONE
+[2025-06-17 14:18:11] chatlog_add: START
+[2025-06-17 14:18:11] chatlog_add: line 32: It looks like you're performing a test. If you need assistance or have any
+[2025-06-17 14:18:11] chatlog_add: line 33: questions, feel free to let me know how I can help!
+[2025-06-17 14:18:11] chatlog_add: DONE
+[2025-06-17 14:18:15] call_helper: starting
+[2025-06-17 14:18:15] call_helper: wrote message
+[2025-06-17 14:18:15] call_helper: removed old response
+[2025-06-17 14:18:15] call_helper: invoking helper
+[2025-06-17 14:18:15] helper.exe message.txt response.txt
+[2025-06-17 14:18:16] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:18:16] chatlog_add: START
+[2025-06-17 14:18:16] chatlog_add: line 34: Research Assistant :
+[2025-06-17 14:18:16] chatlog_add: DONE
+[2025-06-17 14:18:16] chatlog_add: START
+[2025-06-17 14:18:16] chatlog_add: line 35: Session 164e3ca8 ended
+[2025-06-17 14:18:16] chatlog_add: DONE
+[2025-06-17 14:18:16] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 14:21:27] ********** Start app **********
+[2025-06-17 14:21:27] check_connection_status: starting
+[2025-06-17 14:21:27] call_helper: starting
+[2025-06-17 14:21:27] call_helper: wrote message
+[2025-06-17 14:21:27] call_helper: removed old response
+[2025-06-17 14:21:27] call_helper: invoking helper
+[2025-06-17 14:21:27] helper.exe message.txt response.txt
+[2025-06-17 14:21:28] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:28] Connection status: ONLINE
+[2025-06-17 14:21:28] Checking file_exists: agents.txt
+[2025-06-17 14:21:28] File pointer is not NULL
+[2025-06-17 14:21:28] Opened 'agents.txt', size = 808
+[2025-06-17 14:21:28] Loaded agent: The System  [0]
+[2025-06-17 14:21:28] Loaded agent: Research Assistant  [1]
+[2025-06-17 14:21:28] Loaded agent: Code Debugger  [2]
+[2025-06-17 14:21:28] Loaded agent: Creative Writer  [3]
+[2025-06-17 14:21:28] Loaded agent: Legal Advisor  [4]
+[2025-06-17 14:21:28] Loaded agent: Executive Coach  [5]
+[2025-06-17 14:21:28] Loaded agent: Travel Planner  [6]
+[2025-06-17 14:21:28] Loaded agent: Philosopher  [7]
+[2025-06-17 14:21:31] start_session: initializing
+[2025-06-17 14:21:31] start_chat_session chatc: agent_id = 1
+[2025-06-17 14:21:31] start_chat_session: command constructed
+[2025-06-17 14:21:31] StartChat,1
+[2025-06-17 14:21:31] call_helper: starting
+[2025-06-17 14:21:31] call_helper: wrote message
+[2025-06-17 14:21:31] call_helper: removed old response
+[2025-06-17 14:21:31] call_helper: invoking helper
+[2025-06-17 14:21:31] helper.exe message.txt response.txt
+[2025-06-17 14:21:32] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:32] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:21:32] start_chat_session: response line count = 2
+[2025-06-17 14:21:32] start_chat_session: session_id = a5669faa
+[2025-06-17 14:21:32] start_chat_session: returning SUCCESS
+[2025-06-17 14:21:32] start_session: completed successfully
+[2025-06-17 14:21:34] chatlog_add: START
+[2025-06-17 14:21:34] chatlog_add: line 0: YOU: cat
+[2025-06-17 14:21:34] chatlog_add: DONE
+[2025-06-17 14:21:35] call_helper: starting
+[2025-06-17 14:21:35] call_helper: wrote message
+[2025-06-17 14:21:35] call_helper: removed old response
+[2025-06-17 14:21:35] call_helper: invoking helper
+[2025-06-17 14:21:35] helper.exe message.txt response.txt
+[2025-06-17 14:21:36] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:36] chatlog_add: START
+[2025-06-17 14:21:36] chatlog_add: line 1: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:21:36] chatlog_add: DONE
+[2025-06-17 14:21:39] chatlog_add: START
+[2025-06-17 14:21:39] chatlog_add: line 2: YOU: test
+[2025-06-17 14:21:39] chatlog_add: DONE
+[2025-06-17 14:21:40] call_helper: starting
+[2025-06-17 14:21:40] call_helper: wrote message
+[2025-06-17 14:21:40] call_helper: removed old response
+[2025-06-17 14:21:40] call_helper: invoking helper
+[2025-06-17 14:21:40] helper.exe message.txt response.txt
+[2025-06-17 14:21:41] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:41] chatlog_add: START
+[2025-06-17 14:21:41] chatlog_add: line 3: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:21:41] chatlog_add: DONE
+[2025-06-17 14:21:46] call_helper: starting
+[2025-06-17 14:21:46] call_helper: wrote message
+[2025-06-17 14:21:46] call_helper: removed old response
+[2025-06-17 14:21:46] call_helper: invoking helper
+[2025-06-17 14:21:46] helper.exe message.txt response.txt
+[2025-06-17 14:21:47] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:47] chatlog_add: START
+[2025-06-17 14:21:47] chatlog_add: line 4: Research Assistant :
+[2025-06-17 14:21:47] chatlog_add: DONE
+[2025-06-17 14:21:47] chatlog_add: START
+[2025-06-17 14:21:47] chatlog_add: line 5: Session a5669faa ended
+[2025-06-17 14:21:47] chatlog_add: DONE
+[2025-06-17 14:21:47] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 14:21:48] Main menu: Set current_agent_name = The System 
+[2025-06-17 14:21:48] Main: About to call handle_chat_INTERNAL_DEBUG
+[2025-06-17 14:21:48] start_session: initializing
+[2025-06-17 14:21:48] start_chat_session chatc: agent_id = 0
+[2025-06-17 14:21:48] start_chat_session: command constructed
+[2025-06-17 14:21:48] StartChat,0
+[2025-06-17 14:21:48] call_helper: starting
+[2025-06-17 14:21:48] call_helper: wrote message
+[2025-06-17 14:21:48] call_helper: removed old response
+[2025-06-17 14:21:48] call_helper: invoking helper
+[2025-06-17 14:21:48] helper.exe message.txt response.txt
+[2025-06-17 14:21:49] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:49] start_chat_session: call_helper returned SUCCESS
+[2025-06-17 14:21:49] start_chat_session: response line count = 2
+[2025-06-17 14:21:49] start_chat_session: session_id = 4537665e
+[2025-06-17 14:21:49] start_chat_session: returning SUCCESS
+[2025-06-17 14:21:49] start_session: completed successfully
+[2025-06-17 14:21:50] chatlog_add: START
+[2025-06-17 14:21:50] chatlog_add: line 0: YOU: test
+[2025-06-17 14:21:50] chatlog_add: DONE
+[2025-06-17 14:21:50] call_helper: starting
+[2025-06-17 14:21:50] call_helper: wrote message
+[2025-06-17 14:21:50] call_helper: removed old response
+[2025-06-17 14:21:50] call_helper: invoking helper
+[2025-06-17 14:21:50] helper.exe message.txt response.txt
+[2025-06-17 14:21:51] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:21:51] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:52] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:53] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:54] spinner_tick updated line.
+[2025-06-17 14:21:55] spinner_clear executed.
+[2025-06-17 14:21:55] chatlog_add: START
+[2025-06-17 14:21:55] chatlog_add: line 1: The System :
+[2025-06-17 14:21:55] chatlog_add: DONE
+[2025-06-17 14:21:55] chatlog_add: START
+[2025-06-17 14:21:55] chatlog_add: line 2: How can I assist you today?
+[2025-06-17 14:21:55] chatlog_add: DONE
+[2025-06-17 14:22:43] chatlog_add: START
+[2025-06-17 14:22:43] chatlog_add: line 3: YOU: a cat
+[2025-06-17 14:22:43] chatlog_add: DONE
+[2025-06-17 14:22:43] call_helper: starting
+[2025-06-17 14:22:43] call_helper: wrote message
+[2025-06-17 14:22:43] call_helper: removed old response
+[2025-06-17 14:22:43] call_helper: invoking helper
+[2025-06-17 14:22:43] helper.exe message.txt response.txt
+[2025-06-17 14:22:44] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:22:44] chatlog_add: START
+[2025-06-17 14:22:44] chatlog_add: line 4: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:22:44] chatlog_add: DONE
+[2025-06-17 14:22:48] chatlog_add: START
+[2025-06-17 14:22:48] chatlog_add: line 5: YOU: a cat
+[2025-06-17 14:22:48] chatlog_add: DONE
+[2025-06-17 14:22:48] call_helper: starting
+[2025-06-17 14:22:48] call_helper: wrote message
+[2025-06-17 14:22:48] call_helper: removed old response
+[2025-06-17 14:22:48] call_helper: invoking helper
+[2025-06-17 14:22:48] helper.exe message.txt response.txt
+[2025-06-17 14:22:49] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:22:49] chatlog_add: START
+[2025-06-17 14:22:49] chatlog_add: line 6: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:22:49] chatlog_add: DONE
+[2025-06-17 14:28:47] chatlog_add: START
+[2025-06-17 14:28:47] chatlog_add: line 7: YOU: test
+[2025-06-17 14:28:47] chatlog_add: DONE
+[2025-06-17 14:28:47] call_helper: starting
+[2025-06-17 14:28:47] call_helper: wrote message
+[2025-06-17 14:28:47] call_helper: removed old response
+[2025-06-17 14:28:47] call_helper: invoking helper
+[2025-06-17 14:28:47] helper.exe message.txt response.txt
+[2025-06-17 14:28:48] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:28:48] spinner_tick updated line.
+[2025-06-17 14:28:48] spinner_tick updated line.
+[2025-06-17 14:28:48] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:49] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:50] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_tick updated line.
+[2025-06-17 14:28:51] spinner_clear executed.
+[2025-06-17 14:28:51] chatlog_add: START
+[2025-06-17 14:28:51] chatlog_add: line 8: The System :
+[2025-06-17 14:28:51] chatlog_add: DONE
+[2025-06-17 14:28:51] chatlog_add: START
+[2025-06-17 14:28:51] chatlog_add: line 9: If you're testing the system, everything seems to be working fine! Let me
+[2025-06-17 14:28:51] chatlog_add: line 10: know if there's anything specific you'd like to know or discuss.
+[2025-06-17 14:28:51] chatlog_add: DONE
+[2025-06-17 14:28:54] chatlog_add: START
+[2025-06-17 14:28:54] chatlog_add: line 11: YOU: a cat
+[2025-06-17 14:28:54] chatlog_add: DONE
+[2025-06-17 14:28:54] call_helper: starting
+[2025-06-17 14:28:54] call_helper: wrote message
+[2025-06-17 14:28:54] call_helper: removed old response
+[2025-06-17 14:28:54] call_helper: invoking helper
+[2025-06-17 14:28:54] helper.exe message.txt response.txt
+[2025-06-17 14:28:56] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:28:56] chatlog_add: START
+[2025-06-17 14:28:56] chatlog_add: line 12: SYSTEM: No response (empty or invalid).
+[2025-06-17 14:28:56] chatlog_add: DONE
+[2025-06-17 14:29:37] chatlog_add: START
+[2025-06-17 14:29:37] chatlog_add: line 13: YOU: test
+[2025-06-17 14:29:37] chatlog_add: DONE
+[2025-06-17 14:29:37] call_helper: starting
+[2025-06-17 14:29:37] call_helper: wrote message
+[2025-06-17 14:29:37] call_helper: removed old response
+[2025-06-17 14:29:37] call_helper: invoking helper
+[2025-06-17 14:29:37] helper.exe message.txt response.txt
+[2025-06-17 14:29:38] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:29:38] spinner_tick updated line.
+[2025-06-17 14:29:38] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:39] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:40] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_tick updated line.
+[2025-06-17 14:29:41] spinner_clear executed.
+[2025-06-17 14:29:41] chatlog_add: START
+[2025-06-17 14:29:41] chatlog_add: line 14: The System :
+[2025-06-17 14:29:41] chatlog_add: DONE
+[2025-06-17 14:29:41] chatlog_add: START
+[2025-06-17 14:29:41] chatlog_add: line 15: Everything seems to be working! If you have any questions or need assistance
+[2025-06-17 14:29:41] chatlog_add: line 16: with something specific, feel free to ask.
+[2025-06-17 14:29:41] chatlog_add: DONE
+[2025-06-17 14:31:52] chatlog_add: START
+[2025-06-17 14:31:52] chatlog_add: line 17: YOU: a cat
+[2025-06-17 14:31:52] chatlog_add: DONE
+[2025-06-17 14:31:52] call_helper: starting
+[2025-06-17 14:31:52] call_helper: wrote message
+[2025-06-17 14:31:52] call_helper: removed old response
+[2025-06-17 14:31:52] call_helper: invoking helper
+[2025-06-17 14:31:52] helper.exe message.txt response.txt
+[2025-06-17 14:31:56] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:56] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:57] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:58] spinner_tick updated line.
+[2025-06-17 14:31:59] spinner_tick updated line.
+[2025-06-17 14:31:59] spinner_tick updated line.
+[2025-06-17 14:31:59] spinner_tick updated line.
+[2025-06-17 14:31:59] spinner_clear executed.
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 18: The System :
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 19: Cats are fascinating creatures! Here are a few more details:
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 20: - **Anatomy**: Cats have excellent night vision and a strong sense of smell.
+[2025-06-17 14:31:59] chatlog_add: line 21: Their retractable claws help them in climbing and hunting.
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 22: - **Lifespan**: Domestic cats generally live for about 12 to 15 years, though
+[2025-06-17 14:31:59] chatlog_add: line 23: some can live into their 20s with proper care.
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 24: - **Diet**: Cats are obligate carnivores, meaning their diet should primarily
+[2025-06-17 14:31:59] chatlog_add: line 25: consist of meat. They require specific nutrients like taurine, found mainly
+[2025-06-17 14:31:59] chatlog_add: line 26: in animal products.
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 27: - **Social Structure**: While often seen as solitary, many cats form strong
+[2025-06-17 14:31:59] chatlog_add: line 28: bonds with their human families and may enjoy the company of other pets.
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 29: - **Health**: Regular vet visits are important to monitor for common health
+[2025-06-17 14:31:59] chatlog_add: line 30: issues such as dental disease, obesity, and kidney problems.
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:31:59] chatlog_add: START
+[2025-06-17 14:31:59] chatlog_add: line 31: If there's something more specific you'd like to know, feel free to ask!
+[2025-06-17 14:31:59] chatlog_add: DONE
+[2025-06-17 14:32:02] chatlog_add: START
+[2025-06-17 14:32:02] chatlog_add: line 32: YOU: test
+[2025-06-17 14:32:02] chatlog_add: DONE
+[2025-06-17 14:32:02] call_helper: starting
+[2025-06-17 14:32:02] call_helper: wrote message
+[2025-06-17 14:32:02] call_helper: removed old response
+[2025-06-17 14:32:02] call_helper: invoking helper
+[2025-06-17 14:32:02] helper.exe message.txt response.txt
+[2025-06-17 14:32:03] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:32:03] spinner_tick updated line.
+[2025-06-17 14:32:03] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:04] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:05] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_tick updated line.
+[2025-06-17 14:32:06] spinner_clear executed.
+[2025-06-17 14:32:06] chatlog_add: START
+[2025-06-17 14:32:06] chatlog_add: line 33: The System :
+[2025-06-17 14:32:06] chatlog_add: DONE
+[2025-06-17 14:32:06] chatlog_add: START
+[2025-06-17 14:32:06] chatlog_add: line 34: Everything is functioning well! If you have any questions or need
+[2025-06-17 14:32:06] chatlog_add: line 35: information, I'm here to help.
+[2025-06-17 14:32:06] chatlog_add: DONE
+[2025-06-17 14:32:09] call_helper: starting
+[2025-06-17 14:32:09] call_helper: wrote message
+[2025-06-17 14:32:09] call_helper: removed old response
+[2025-06-17 14:32:09] call_helper: invoking helper
+[2025-06-17 14:32:09] helper.exe message.txt response.txt
+[2025-06-17 14:32:10] call_helper: SUCCESS response.txt should now exist
+[2025-06-17 14:32:10] chatlog_add: START
+[2025-06-17 14:32:10] chatlog_add: line 36: The System :
+[2025-06-17 14:32:10] chatlog_add: DONE
+[2025-06-17 14:32:10] chatlog_add: START
+[2025-06-17 14:32:10] chatlog_add: line 37: Session 4537665e ended
+[2025-06-17 14:32:10] chatlog_add: DONE
+[2025-06-17 14:32:10] handle_chat_INTERNAL_DEBUG: completed successfully
+[2025-06-17 14:32:10] Main: Returned from handle_chat_INTERNAL_DEBUG

@@ -19,115 +19,64 @@ void check_connection(void) {
 }
 
 int check_connection_status(void) {
-    char lines[1][80];
+    char lines[1][RESPONSE_LINE_MAX];
     int count;
 
-    log_message("ccs in");
+    log_message("check_connection_status: starting");
 
-    if (write_message_file("TestConnection") != SUCCESS) return FAILURE;
-    log_message("ccs after write");
-
-    if (call_helper() != SUCCESS) return FAILURE;
-    log_message("ccs after call helper");
-
-    if (wait_for_response_file(5000) != SUCCESS) return FAILURE;
-    log_message("ccs after wait for response");
+    if (call_helper("TestConnection") != SUCCESS) {
+        log_message("check_connection_status: call_helper failed");
+        return FAILURE;
+    }
 
     count = read_response_file(lines, 1, 1);
     if (count >= 1 && strcmp(lines[0], "Online") == 0) {
         return SUCCESS;
     }
 
+    log_message("check_connection_status: unexpected or missing response");
     return FAILURE;
 }
 
-int send_message_to_helper(const char* command_line) {
-    if (write_message_file(command_line) != SUCCESS) return FAILURE;
-    if (call_helper() != SUCCESS) return FAILURE;
-    return SUCCESS;
-}
 
-int write_message_file(const char* message) {
-    FILE* f = fopen(MSG_FILE, "w");
-    if (!f) return FAILURE;
+int call_helper(const char* message) {
+    FILE* f;
+    char cmd[100];
+    int result;
+
+    log_message("call_helper: starting");
+
+    /* Write message to file */
+    f = fopen(MSG_FILE, "w");
+    if (!f) {
+        log_message("call_helper: failed to open msg.txt for writing.");
+        return FAILURE;
+    }
     fprintf(f, "%s\n", message);
     fclose(f);
-    return SUCCESS;
-}
 
-int call_helper(void) {
-    char cmd[100];
-    log_message("In call helper");
-
+    log_message("call_helper: wrote message");
+    
+		/* Remove old response */
     remove(RESP_FILE);
-    log_message("Removed response.txt");
+    log_message("call_helper: removed old response");
 
+    /* Build and run command */
     sprintf(cmd, "%s %s %s", HELPER_APP, MSG_FILE, RESP_FILE);
-    log_message("helper app called");
-		log_message(cmd);
+    log_message("call_helper: invoking helper");
+    log_message(cmd);
 
-    if (system(cmd) == 0) {
-    		log_message("helper app SUCCESS");
+		/* THIS IS WHERE WE CALL HELPER */
+    result = system(cmd);
+    
+    if (result == 0) {
+        log_message("call_helper: SUCCESS response.txt should now exist");
         return SUCCESS;
     } else {
-    		    		log_message("helper app FAILURE");
+        log_message("call_helper: FAILURE");
         return FAILURE;
     }
 }
-
-
-int wait_for_response_file(int timeout_ms) {
-    int pos = 0, dir = 1, steps = 0;
-    int max_steps = timeout_ms / 100;
-    FILE* f;
-    long size;
-
-    ui_hide_cursor();
-    log_message("wait_for_response_file");
-
-    while (steps < max_steps) {
-        log_message("spinner_tick() called.");
-        spinner_tick(pos, dir);
-
-        f = fopen(RESP_FILE, "r");
-        if (f) {
-            log_message("Opened RESP_FILE");
-
-            fseek(f, 0, SEEK_END);
-            size = ftell(f);
-            fclose(f);
-
-            if (size > 0) {
-                log_message("RESP_FILE has content");
-                spinner_clear();
-                log_message("spinner cleared called.");
-                ui_show_cursor();
-                log_message("Returning SUCCESS from wait_for_response_file");
-                return SUCCESS;
-            } else {
-                log_message("RESP_FILE is empty");
-            }
-        }
-
-        delay(100);
-        pos += dir;
-        if (pos == 19 || pos == 0) dir = -dir;
-        steps++;
-    }
-
-    spinner_clear();
-    log_message("spinner cleared called.");
-    ui_show_cursor();
-
-    if (file_exists(RESP_FILE) == SUCCESS) {
-        log_message("Final file_exists check: SUCCESS");
-        return SUCCESS;
-    } else {
-        log_message("Final file_exists check: FAILURE");
-        return FAILURE;
-    }
-}
-
 
 
 int file_exists(const char* filename) {
@@ -161,20 +110,72 @@ int file_exists(const char* filename) {
     return FAILURE;
 }
 
+int start_chat_session(int agent_id) {
+    char cmd[40];
+    char logbuf[120];
+    int count;
 
-int read_response_file(char lines[][80], int max_lines, int skip_first_line) {
-    FILE* f = fopen(RESP_FILE, "r");
-    int count = 0;
-    int len;
+    /* Dynamically allocate to avoid BSS overflow */
+    char (*response)[RESPONSE_LINE_MAX];
+    response = malloc(MAX_RESPONSE_LINES * RESPONSE_LINE_MAX);
+    if (!response) {
+        show_error("Memory allocation failed.");
+        return FAILURE;
+    }
+    memset(response, 0, MAX_RESPONSE_LINES * RESPONSE_LINE_MAX);
 
-		if (!f) return FAILURE;
+    sprintf(logbuf, "start_chat_session chatc: agent_id = %d", agent_id);
+    log_message(logbuf);
 
-    if (skip_first_line) {
-        char temp[80];
-        fgets(temp, sizeof(temp), f);
+    sprintf(cmd, "StartChat,%d", agent_id);
+    log_message("start_chat_session: command constructed");
+    log_message(cmd);
+
+    if (call_helper(cmd) != SUCCESS) {
+        log_message("start_chat_session: call_helper FAILED");
+        free(response);
+        return FAILURE;
     }
 
-    while (fgets(lines[count], 80, f) && count < max_lines) {
+    log_message("start_chat_session: call_helper returned SUCCESS");
+
+    count = read_response_file(response, MAX_RESPONSE_LINES, 0);
+    sprintf(logbuf, "start_chat_session: response line count = %d", count);
+    log_message(logbuf);
+
+    if (count >= 1) {
+        strncpy(session_id, response[0], sizeof(session_id) - 1);
+        session_id[sizeof(session_id) - 1] = '\0';
+        sprintf(logbuf, "start_chat_session: session_id = %s", session_id);
+        log_message(logbuf);
+        log_message("start_chat_session: returning SUCCESS");
+        free(response);
+        return SUCCESS;
+    }
+
+    log_message("start_chat_session: No session ID received.");
+    free(response);
+    return FAILURE;
+}
+
+
+
+int read_response_file(char lines[][RESPONSE_LINE_MAX], int max_lines, int skip_first_line) {
+    FILE* f;
+    int count;
+    int len;
+
+    char buf[RESPONSE_LINE_MAX];
+
+    count = 0;
+    f = fopen(RESP_FILE, "r");
+    if (!f) return FAILURE;
+
+    if (skip_first_line) {
+        fgets(buf, sizeof(buf), f);  /* discard first line */
+    }
+
+    while (count < max_lines && fgets(lines[count], RESPONSE_LINE_MAX, f)) {
         len = strlen(lines[count]);
         while (len > 0 && (lines[count][len - 1] == '\n' || lines[count][len - 1] == '\r')) {
             lines[count][--len] = '\0';
@@ -183,6 +184,5 @@ int read_response_file(char lines[][80], int max_lines, int skip_first_line) {
     }
 
     fclose(f);
-    remove(RESP_FILE);
     return count;
 }

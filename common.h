@@ -4,6 +4,8 @@
 #define SUCCESS 0
 #define FAILURE -1
 
+#define MAX_RESPONSE_LINES 20
+
 void log_message(const char* message);
 
 #endif

@@ -7,5 +7,6 @@ void handle_chat_with_agent(void);
 void handle_settings(void);
 void handle_exit(void);
 void test_spinner(void);
+void test_spinner_file(void);
 
 #endif

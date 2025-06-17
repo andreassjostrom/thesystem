@@ -4,7 +4,9 @@
 #define MAX_AGENTS 20
 #define MAX_AGENT_NAME 40
 #define MAX_AGENT_DESC 80
-#define MAX_AGENT_LINE 80
+#define MAX_AGENT_LINE 140  /* Increased for safety */
+
+#define SYSTEM_AGENT_ID 0
 
 typedef struct {
     int id;

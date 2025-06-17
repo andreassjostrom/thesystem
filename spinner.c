@@ -2,6 +2,7 @@
 #include <dos.h>
 #include <stdio.h>
 #include "spinner.h"
+#include "common.h"
 
 #define SPINNER_WIDTH 20
 #define SPINNER_ROW 23
@@ -19,9 +20,26 @@ void spinner_tick(int pos, int dir) {
 
     gotoxy(SPINNER_COL, SPINNER_ROW);
     cprintf("%s", line);
+
+    log_message("spinner_tick updated line.");
+}
+
+void spinner_wait(int milliseconds) {
+    int pos = 0, dir = 1;
+    int steps = milliseconds / 100;
+
+    while (steps-- > 0) {
+        spinner_tick(pos, dir);
+        delay(100);
+        pos += dir;
+        if (pos == SPINNER_WIDTH - 1 || pos == 0) dir = -dir;
+    }
+
+    spinner_clear();
 }
 
 void spinner_clear(void) {
     gotoxy(SPINNER_COL, SPINNER_ROW);
     cprintf("%-20s", " ");
+    log_message("spinner_clear executed.");
 }
