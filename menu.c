@@ -42,10 +42,10 @@ void draw_menu() {
     gotoxy(20, 6); cprintf("1. Chat with The System");
     gotoxy(20, 7); cprintf("2. Chat with an AI Agent");
     gotoxy(20, 8); cprintf("3. Settings");
-    gotoxy(20, 9); cprintf("8. Test code");
-    gotoxy(20, 11); cprintf("9. Exit");
-    gotoxy(20, 11); cprintf("Selection number: ");
-    gotoxy(39, 11);
+    /* gotoxy(20, 9); cprintf("8. Test code");  */
+    gotoxy(20, 14); cprintf("9. Exit");
+    gotoxy(20, 20); cprintf("Selection number: ");
+    gotoxy(39, 20);
 }
 
 void handle_settings() {
@@ -57,9 +57,6 @@ void handle_settings() {
 
 void handle_exit() {
     clrscr();
-    gotoxy(20, 10);
-    cprintf("Exiting THE SYSTEM...");
-    getch();
 }
 
 void test_spinner(void) {

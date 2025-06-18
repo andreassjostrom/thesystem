@@ -9,12 +9,17 @@
 #include "connect.h"
 #include "state.h"
 #include "common.h"
+#include "splash.h"
+
 
 int main() {
     char input[4];
     char logbuf[120];
 
     log_message("********** Start app **********");
+    
+    /* Show splash screen sequence */
+		show_splash_sequence();
 
     /* Check if there is a connection */
     check_connection();
@@ -27,7 +32,7 @@ int main() {
         draw_menu();
 
         /* Prompt for input */
-        if (!get_user_input(input, 3, 39, 11, 1)) {
+        if (!get_user_input(input, 3, 39, 20, 1)) {
             continue;  /* ESC pressed skip and redraw */
         }
 
