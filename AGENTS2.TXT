@@ -1,9 +1,0 @@
-00000000
-ID: 0 | Name: The System | Desc: An all-knowing assistant that responds to any input.
-ID: 1 | Name: Research Assistant | Desc: Explores academic and technical topics, summarizes findings.
-ID: 2 | Name: Code Debugger | Desc: Analyzes code, identifies bugs, and explains fixes.
-ID: 3 | Name: Creative Writer | Desc: Writes stories, scripts, and creative pieces in various styles.
-ID: 4 | Name: Legal Advisor | Desc: Explains legal terms and offers general guidance on legal matters.
-ID: 5 | Name: Executive Coach | Desc: Provides leadership advice, communication tips, and career coaching.
-ID: 6 | Name: Travel Planner | Desc: Plans trips and suggests destinations, activities, and itineraries.
-ID: 7 | Name: Philosopher | Desc: Engages in deep thinking, ethics, and meaning-of-life questions.

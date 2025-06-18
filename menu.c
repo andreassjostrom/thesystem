@@ -11,6 +11,7 @@
 #include "state.h"
 #include "common.h"
 #include "spinner.h"
+#include "splash.h"
 
 extern int agent_count;
 extern int is_online;
@@ -48,10 +49,37 @@ void draw_menu() {
     gotoxy(39, 20);
 }
 
+
+void render_main_menu(void) {
+    if (render_template_file("menu.txt") != SUCCESS) {
+        clrscr();
+        gotoxy(30, 10);
+        cprintf("Main menu not found.");
+        getch();
+        return;
+    }
+
+    gotoxy(24, 16);  /* Position for input after menu draws */
+}
+
 void handle_settings() {
     clrscr();
     gotoxy(20, 10);
     cprintf("Opening settings menu...");
+    getch();
+}
+
+void handle_about() {
+    clrscr();
+    gotoxy(20, 10);
+    cprintf("Opening about...");
+    getch();
+}
+
+void handle_dedication() {
+    clrscr();
+    gotoxy(20, 10);
+    cprintf("Opening dedication...");
     getch();
 }
 

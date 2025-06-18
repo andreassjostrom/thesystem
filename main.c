@@ -29,10 +29,10 @@ int main() {
 
     while (1) {
         while (kbhit()) getch();  /* Clear leftover keystrokes */
-        draw_menu();
+				render_main_menu();
 
         /* Prompt for input */
-        if (!get_user_input(input, 3, 39, 20, 1)) {
+        if (!get_user_input(input, 3, 24, 16, 1)) {
             continue;  /* ESC pressed skip and redraw */
         }
 
@@ -71,6 +71,14 @@ int main() {
             case '3':
                 handle_settings();
                 break;
+
+            case '4':
+                handle_settings();
+                break;
+                
+            case '5':
+                handle_settings();
+                break;                
 
             case '8':
                 test_spinner_file();
