@@ -78,11 +78,9 @@ int call_helper(const char* message) {
     }
 }
 
-
 int file_exists(const char* filename) {
     char logbuf[100];
     FILE* f;
-    long size;
 
     sprintf(logbuf, "Checking file_exists: %s", filename);
     log_message(logbuf);
@@ -90,20 +88,12 @@ int file_exists(const char* filename) {
     f = fopen(filename, "r");
     if (f) {
         log_message("File pointer is not NULL");
-
-        fseek(f, 0, SEEK_END);
-        size = ftell(f);
         fclose(f);
 
-        sprintf(logbuf, "Opened '%s', size = %ld", filename, size);
+        sprintf(logbuf, "Opened '%s' successfully", filename);
         log_message(logbuf);
 
-        if (size > 0) {
-            return SUCCESS;
-        } else {
-            log_message("File size is 0  treating as FAILURE");
-            return FAILURE;
-        }
+        return SUCCESS;
     }
 
     log_message("File pointer is NULL  fopen failed");

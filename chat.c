@@ -42,6 +42,9 @@ int start_session(int agent_id) {
         return FAILURE;
     }
 
+    /* Show splash screen now that session_id is valid */
+    show_agent_splash_screen(agent_id);
+
     chatlog_clear();
     chatui_refresh_view(current_agent_name, "");
 
@@ -137,7 +140,7 @@ int run_chat_loop(void) {
 
             response_count = read_response_file(response, MAX_RESPONSE_LINES, 1);
             if (response_count > 0) {
-                if (spinner_enabled) spinner_wait(3000);
+                if (spinner_enabled) spinner_wait(2500);
                 for (j = 0; j < response_count; j++) {
                     if (j == 0) {
                         sprintf(formatted, "%s:", current_agent_name);

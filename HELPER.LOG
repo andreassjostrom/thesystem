@@ -1,491 +1,915 @@
-[2025-06-17 18:45:08] STEP: Log file exceeded 100kB. Truncated!
-[2025-06-17 18:45:08] STEP: Started helper app
-[2025-06-17 18:45:08] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:45:08] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:45:08] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:45:08] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:45:08] STEP: Create TCP socket
-[2025-06-17 18:45:09] STEP: Resolving server address and port...
-[2025-06-17 18:45:09] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:45:09] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:45:09] STEP: Connection established!
-[2025-06-17 18:45:09] STEP: Sent 16 bytes to server
-[2025-06-17 18:45:09] STEP: Response received
-[2025-06-17 18:45:09] STEP: Writing 15 bytes to response.txt
-[2025-06-17 18:45:09] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:28:47] STEP: Log file exceeded 100kB. Truncated!
+[2025-06-20 02:28:47] STEP: Started helper app
+[2025-06-20 02:28:47] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:28:47] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:28:47] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:28:47] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:28:47] STEP: Create TCP socket
+[2025-06-20 02:28:47] STEP: Resolving server address and port...
+[2025-06-20 02:28:47] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:28:47] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:28:47] STEP: Connection established!
+[2025-06-20 02:28:47] STEP: Sent 50 bytes to server
+[2025-06-20 02:28:49] STEP: Response received
+[2025-06-20 02:28:49] STEP: Writing 237 bytes to response.txt
+[2025-06-20 02:28:49] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:46:58] STEP: Started helper app
-[2025-06-17 18:46:58] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:46:58] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:46:58] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:46:58] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:46:58] STEP: Create TCP socket
-[2025-06-17 18:46:58] STEP: Resolving server address and port...
-[2025-06-17 18:46:58] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:46:58] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:46:58] STEP: Connection established!
-[2025-06-17 18:46:58] STEP: Sent 16 bytes to server
-[2025-06-17 18:46:59] STEP: Response received
-[2025-06-17 18:46:59] STEP: Writing 15 bytes to response.txt
-[2025-06-17 18:46:59] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:29:04] STEP: Started helper app
+[2025-06-20 02:29:04] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:29:04] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:29:04] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:29:04] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:29:04] STEP: Create TCP socket
+[2025-06-20 02:29:05] STEP: Resolving server address and port...
+[2025-06-20 02:29:05] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:29:05] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:29:05] STEP: Connection established!
+[2025-06-20 02:29:05] STEP: Sent 59 bytes to server
+[2025-06-20 02:29:10] STEP: Response received
+[2025-06-20 02:29:10] STEP: Writing 734 bytes to response.txt
+[2025-06-20 02:29:10] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:49:57] STEP: Started helper app
-[2025-06-17 18:49:57] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:49:57] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:49:57] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:49:57] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:49:57] STEP: Create TCP socket
-[2025-06-17 18:49:57] STEP: Resolving server address and port...
-[2025-06-17 18:49:57] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:49:57] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:49:57] STEP: Connection established!
-[2025-06-17 18:49:57] STEP: Sent 16 bytes to server
-[2025-06-17 18:49:58] STEP: Response received
-[2025-06-17 18:49:58] STEP: Writing 15 bytes to response.txt
-[2025-06-17 18:49:58] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:29:24] STEP: Started helper app
+[2025-06-20 02:29:24] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:29:24] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:29:24] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:29:24] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:29:24] STEP: Create TCP socket
+[2025-06-20 02:29:25] STEP: Resolving server address and port...
+[2025-06-20 02:29:25] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:29:25] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:29:25] STEP: Connection established!
+[2025-06-20 02:29:25] STEP: Sent 37 bytes to server
+[2025-06-20 02:29:28] STEP: Response received
+[2025-06-20 02:29:28] STEP: Writing 374 bytes to response.txt
+[2025-06-20 02:29:28] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:52:51] STEP: Started helper app
-[2025-06-17 18:52:51] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:52:51] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:52:51] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:52:51] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:52:51] STEP: Create TCP socket
-[2025-06-17 18:52:51] STEP: Resolving server address and port...
-[2025-06-17 18:52:51] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:52:51] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:52:51] STEP: Connection established!
-[2025-06-17 18:52:51] STEP: Sent 16 bytes to server
-[2025-06-17 18:52:52] STEP: Response received
-[2025-06-17 18:52:52] STEP: Writing 15 bytes to response.txt
-[2025-06-17 18:52:52] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:29:48] STEP: Started helper app
+[2025-06-20 02:29:48] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:29:48] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:29:48] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:29:48] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:29:48] STEP: Create TCP socket
+[2025-06-20 02:29:48] STEP: Resolving server address and port...
+[2025-06-20 02:29:48] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:29:48] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:29:48] STEP: Connection established!
+[2025-06-20 02:29:48] STEP: Sent 45 bytes to server
+[2025-06-20 02:29:52] STEP: Response received
+[2025-06-20 02:29:52] STEP: Writing 392 bytes to response.txt
+[2025-06-20 02:29:52] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:53:59] STEP: Started helper app
-[2025-06-17 18:53:59] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:53:59] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:53:59] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:53:59] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:53:59] STEP: Create TCP socket
-[2025-06-17 18:54:00] STEP: Resolving server address and port...
-[2025-06-17 18:54:00] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:54:00] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:54:00] STEP: Connection established!
-[2025-06-17 18:54:00] STEP: Sent 13 bytes to server
-[2025-06-17 18:54:00] STEP: Response received
-[2025-06-17 18:54:00] STEP: Writing 37 bytes to response.txt
-[2025-06-17 18:54:00] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:30:19] STEP: Started helper app
+[2025-06-20 02:30:19] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:30:19] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:30:19] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:30:19] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:30:19] STEP: Create TCP socket
+[2025-06-20 02:30:19] STEP: Resolving server address and port...
+[2025-06-20 02:30:19] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:30:19] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:30:29] STEP: Timed out waiting for response!
+[2025-06-20 02:30:29] STEP: Attempt TCP connection (2) with 9999ms timeout
+[2025-06-20 02:30:30] STEP: Connection established!
+[2025-06-20 02:30:30] STEP: Sent 83 bytes to server
+[2025-06-20 02:30:34] STEP: Response received
+[2025-06-20 02:30:34] STEP: Writing 321 bytes to response.txt
+[2025-06-20 02:30:34] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:54:02] STEP: Started helper app
-[2025-06-17 18:54:02] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:54:02] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:54:02] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:54:02] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:54:02] STEP: Create TCP socket
-[2025-06-17 18:54:02] STEP: Resolving server address and port...
-[2025-06-17 18:54:02] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:54:02] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:54:02] STEP: Connection established!
-[2025-06-17 18:54:02] STEP: Sent 20 bytes to server
-[2025-06-17 18:54:03] STEP: Response received
-[2025-06-17 18:54:03] STEP: Writing 36 bytes to response.txt
-[2025-06-17 18:54:03] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:30:46] STEP: Started helper app
+[2025-06-20 02:30:46] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:30:46] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:30:46] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:30:46] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:30:46] STEP: Create TCP socket
+[2025-06-20 02:30:46] STEP: Resolving server address and port...
+[2025-06-20 02:30:46] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:30:46] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:30:46] STEP: Connection established!
+[2025-06-20 02:30:46] STEP: Sent 18 bytes to server
+[2025-06-20 02:30:47] STEP: Response received
+[2025-06-20 02:30:47] STEP: Writing 31 bytes to response.txt
+[2025-06-20 02:30:47] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 18:54:08] STEP: Started helper app
-[2025-06-17 18:54:08] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 18:54:08] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 18:54:08] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 18:54:08] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 18:54:08] STEP: Create TCP socket
-[2025-06-17 18:54:08] STEP: Resolving server address and port...
-[2025-06-17 18:54:08] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 18:54:08] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 18:54:08] STEP: Connection established!
-[2025-06-17 18:54:08] STEP: Sent 18 bytes to server
-[2025-06-17 18:54:09] STEP: Response received
-[2025-06-17 18:54:09] STEP: Writing 31 bytes to response.txt
-[2025-06-17 18:54:09] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:43:43] STEP: Started helper app
+[2025-06-20 02:43:43] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:43:43] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:43:43] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:43:43] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:43:43] STEP: Create TCP socket
+[2025-06-20 02:43:43] STEP: Resolving server address and port...
+[2025-06-20 02:43:43] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:43:43] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:43:44] STEP: Connection established!
+[2025-06-20 02:43:44] STEP: Sent 16 bytes to server
+[2025-06-20 02:43:44] STEP: Response received
+[2025-06-20 02:43:44] STEP: Writing 15 bytes to response.txt
+[2025-06-20 02:43:44] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:06:54] STEP: Started helper app
-[2025-06-17 19:06:54] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:06:54] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:06:54] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:06:54] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:06:54] STEP: Create TCP socket
-[2025-06-17 19:06:54] STEP: Resolving server address and port...
-[2025-06-17 19:06:54] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:06:54] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:06:54] STEP: Connection established!
-[2025-06-17 19:06:54] STEP: Sent 16 bytes to server
-[2025-06-17 19:06:55] STEP: Response received
-[2025-06-17 19:06:55] STEP: Writing 15 bytes to response.txt
-[2025-06-17 19:06:55] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:44:22] STEP: Started helper app
+[2025-06-20 02:44:22] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:44:22] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:44:22] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:44:22] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:44:22] STEP: Create TCP socket
+[2025-06-20 02:44:22] STEP: Resolving server address and port...
+[2025-06-20 02:44:22] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:44:22] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:44:23] STEP: Connection established!
+[2025-06-20 02:44:23] STEP: Sent 13 bytes to server
+[2025-06-20 02:44:23] STEP: Response received
+[2025-06-20 02:44:23] STEP: Writing 37 bytes to response.txt
+[2025-06-20 02:44:23] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:14:17] STEP: Started helper app
-[2025-06-17 19:14:17] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:14:17] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:14:17] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:14:17] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:14:17] STEP: Create TCP socket
-[2025-06-17 19:14:17] STEP: Resolving server address and port...
-[2025-06-17 19:14:17] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:14:17] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:14:17] STEP: Connection established!
-[2025-06-17 19:14:17] STEP: Sent 16 bytes to server
-[2025-06-17 19:14:18] STEP: Response received
-[2025-06-17 19:14:18] STEP: Writing 15 bytes to response.txt
-[2025-06-17 19:14:18] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:44:27] STEP: Started helper app
+[2025-06-20 02:44:27] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:44:27] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:44:27] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:44:27] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:44:27] STEP: Create TCP socket
+[2025-06-20 02:44:27] STEP: Resolving server address and port...
+[2025-06-20 02:44:27] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:44:27] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:44:28] STEP: Connection established!
+[2025-06-20 02:44:28] STEP: Sent 23 bytes to server
+[2025-06-20 02:44:29] STEP: Response received
+[2025-06-20 02:44:29] STEP: Writing 134 bytes to response.txt
+[2025-06-20 02:44:29] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:14:34] STEP: Started helper app
-[2025-06-17 19:14:34] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:14:34] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:14:34] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:14:34] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:14:34] STEP: Create TCP socket
-[2025-06-17 19:14:34] STEP: Resolving server address and port...
-[2025-06-17 19:14:34] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:14:34] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:14:34] STEP: Connection established!
-[2025-06-17 19:14:34] STEP: Sent 13 bytes to server
-[2025-06-17 19:14:34] STEP: Response received
-[2025-06-17 19:14:34] STEP: Writing 37 bytes to response.txt
-[2025-06-17 19:14:34] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:46:49] STEP: Started helper app
+[2025-06-20 02:46:49] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:46:49] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:46:49] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:46:49] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:46:49] STEP: Create TCP socket
+[2025-06-20 02:46:49] STEP: Resolving server address and port...
+[2025-06-20 02:46:49] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:46:49] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:46:49] STEP: Connection established!
+[2025-06-20 02:46:49] STEP: Sent 18 bytes to server
+[2025-06-20 02:46:50] STEP: Response received
+[2025-06-20 02:46:50] STEP: Writing 31 bytes to response.txt
+[2025-06-20 02:46:50] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:14:41] STEP: Started helper app
-[2025-06-17 19:14:41] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:14:41] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:14:41] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:14:41] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:14:41] STEP: Create TCP socket
-[2025-06-17 19:14:41] STEP: Resolving server address and port...
-[2025-06-17 19:14:41] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:14:41] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:14:41] STEP: Connection established!
-[2025-06-17 19:14:41] STEP: Sent 50 bytes to server
-[2025-06-17 19:14:51] STEP: Timed out waiting for response!
-[2025-06-17 19:14:51] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 02:49:13] STEP: Started helper app
+[2025-06-20 02:49:13] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:49:13] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:49:13] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:49:13] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:49:13] STEP: Create TCP socket
+[2025-06-20 02:49:13] STEP: Resolving server address and port...
+[2025-06-20 02:49:13] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:49:13] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:49:13] STEP: Connection established!
+[2025-06-20 02:49:13] STEP: Sent 16 bytes to server
+[2025-06-20 02:49:14] STEP: Response received
+[2025-06-20 02:49:14] STEP: Writing 15 bytes to response.txt
+[2025-06-20 02:49:14] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:15:40] STEP: Started helper app
-[2025-06-17 19:15:40] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:15:40] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:15:40] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:15:40] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:15:40] STEP: Create TCP socket
-[2025-06-17 19:15:40] STEP: Resolving server address and port...
-[2025-06-17 19:15:40] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:15:40] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:15:40] STEP: Connection established!
-[2025-06-17 19:15:40] STEP: Sent 66 bytes to server
-[2025-06-17 19:15:46] STEP: Response received
-[2025-06-17 19:15:46] STEP: Writing 1440 bytes to response.txt
-[2025-06-17 19:15:46] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:49:21] STEP: Started helper app
+[2025-06-20 02:49:21] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:49:21] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:49:21] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:49:21] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:49:21] STEP: Create TCP socket
+[2025-06-20 02:49:21] STEP: Resolving server address and port...
+[2025-06-20 02:49:21] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:49:21] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:49:22] STEP: Connection established!
+[2025-06-20 02:49:22] STEP: Sent 13 bytes to server
+[2025-06-20 02:49:22] STEP: Response received
+[2025-06-20 02:49:22] STEP: Writing 37 bytes to response.txt
+[2025-06-20 02:49:22] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:01] STEP: Started helper app
-[2025-06-17 19:16:01] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:01] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:01] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:01] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:01] STEP: Create TCP socket
-[2025-06-17 19:16:01] STEP: Resolving server address and port...
-[2025-06-17 19:16:01] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:01] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:01] STEP: Connection established!
-[2025-06-17 19:16:01] STEP: Sent 18 bytes to server
-[2025-06-17 19:16:02] STEP: Response received
-[2025-06-17 19:16:02] STEP: Writing 31 bytes to response.txt
-[2025-06-17 19:16:02] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:49:25] STEP: Started helper app
+[2025-06-20 02:49:25] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:49:25] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:49:25] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:49:25] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:49:25] STEP: Create TCP socket
+[2025-06-20 02:49:25] STEP: Resolving server address and port...
+[2025-06-20 02:49:25] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:49:25] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:49:25] STEP: Connection established!
+[2025-06-20 02:49:25] STEP: Sent 23 bytes to server
+[2025-06-20 02:49:27] STEP: Response received
+[2025-06-20 02:49:27] STEP: Writing 184 bytes to response.txt
+[2025-06-20 02:49:27] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:05] STEP: Started helper app
-[2025-06-17 19:16:05] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:05] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:05] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:05] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:05] STEP: Create TCP socket
-[2025-06-17 19:16:06] STEP: Resolving server address and port...
-[2025-06-17 19:16:06] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:06] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:06] STEP: Connection established!
-[2025-06-17 19:16:06] STEP: Sent 13 bytes to server
-[2025-06-17 19:16:06] STEP: Response received
-[2025-06-17 19:16:06] STEP: Writing 37 bytes to response.txt
-[2025-06-17 19:16:06] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:49:56] STEP: Started helper app
+[2025-06-20 02:49:56] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:49:56] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:49:56] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:49:56] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:49:56] STEP: Create TCP socket
+[2025-06-20 02:49:56] STEP: Resolving server address and port...
+[2025-06-20 02:49:56] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:49:56] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:49:56] STEP: Connection established!
+[2025-06-20 02:49:56] STEP: Sent 18 bytes to server
+[2025-06-20 02:49:57] STEP: Response received
+[2025-06-20 02:49:57] STEP: Writing 31 bytes to response.txt
+[2025-06-20 02:49:57] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:12] STEP: Started helper app
-[2025-06-17 19:16:12] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:12] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:12] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:12] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:12] STEP: Create TCP socket
-[2025-06-17 19:16:12] STEP: Resolving server address and port...
-[2025-06-17 19:16:12] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:12] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:12] STEP: Connection established!
-[2025-06-17 19:16:12] STEP: Sent 23 bytes to server
-[2025-06-17 19:16:20] STEP: Response received
-[2025-06-17 19:16:20] STEP: Writing 1440 bytes to response.txt
-[2025-06-17 19:16:20] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:52:26] STEP: Started helper app
+[2025-06-20 02:52:26] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:52:27] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:52:27] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:52:27] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:52:27] STEP: Create TCP socket
+[2025-06-20 02:52:27] STEP: Resolving server address and port...
+[2025-06-20 02:52:27] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:52:27] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:52:27] STEP: Connection established!
+[2025-06-20 02:52:27] STEP: Sent 16 bytes to server
+[2025-06-20 02:52:28] STEP: Response received
+[2025-06-20 02:52:28] STEP: Writing 15 bytes to response.txt
+[2025-06-20 02:52:28] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:35] STEP: Started helper app
-[2025-06-17 19:16:35] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:35] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:35] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:35] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:35] STEP: Create TCP socket
-[2025-06-17 19:16:35] STEP: Resolving server address and port...
-[2025-06-17 19:16:35] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:35] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:35] STEP: Connection established!
-[2025-06-17 19:16:35] STEP: Sent 33 bytes to server
-[2025-06-17 19:16:46] STEP: Timed out waiting for response!
-[2025-06-17 19:16:46] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 02:52:31] STEP: Started helper app
+[2025-06-20 02:52:31] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:52:31] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:52:31] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:52:31] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:52:31] STEP: Create TCP socket
+[2025-06-20 02:52:31] STEP: Resolving server address and port...
+[2025-06-20 02:52:31] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:52:31] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:52:31] STEP: Connection established!
+[2025-06-20 02:52:31] STEP: Sent 13 bytes to server
+[2025-06-20 02:52:32] STEP: Response received
+[2025-06-20 02:52:32] STEP: Writing 37 bytes to response.txt
+[2025-06-20 02:52:32] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:50] STEP: Started helper app
-[2025-06-17 19:16:50] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:50] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:50] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:50] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:50] STEP: Create TCP socket
-[2025-06-17 19:16:50] STEP: Resolving server address and port...
-[2025-06-17 19:16:50] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:50] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:50] STEP: Connection established!
-[2025-06-17 19:16:50] STEP: Sent 21 bytes to server
-[2025-06-17 19:16:51] STEP: Response received
-[2025-06-17 19:16:51] STEP: Writing 129 bytes to response.txt
-[2025-06-17 19:16:51] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:52:35] STEP: Started helper app
+[2025-06-20 02:52:35] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:52:35] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:52:35] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:52:35] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:52:35] STEP: Create TCP socket
+[2025-06-20 02:52:35] STEP: Resolving server address and port...
+[2025-06-20 02:52:35] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:52:35] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:52:36] STEP: Connection established!
+[2025-06-20 02:52:36] STEP: Sent 20 bytes to server
+[2025-06-20 02:52:37] STEP: Response received
+[2025-06-20 02:52:37] STEP: Writing 100 bytes to response.txt
+[2025-06-20 02:52:37] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:16:59] STEP: Started helper app
-[2025-06-17 19:16:59] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:16:59] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:16:59] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:16:59] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:16:59] STEP: Create TCP socket
-[2025-06-17 19:16:59] STEP: Resolving server address and port...
-[2025-06-17 19:16:59] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:16:59] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:16:59] STEP: Connection established!
-[2025-06-17 19:16:59] STEP: Sent 34 bytes to server
-[2025-06-17 19:17:07] STEP: Response received
-[2025-06-17 19:17:07] STEP: Writing 1404 bytes to response.txt
-[2025-06-17 19:17:07] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:52:44] STEP: Started helper app
+[2025-06-20 02:52:44] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:52:44] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:52:44] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:52:44] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:52:44] STEP: Create TCP socket
+[2025-06-20 02:52:44] STEP: Resolving server address and port...
+[2025-06-20 02:52:44] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:52:44] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:52:44] STEP: Connection established!
+[2025-06-20 02:52:44] STEP: Sent 23 bytes to server
+[2025-06-20 02:52:46] STEP: Response received
+[2025-06-20 02:52:46] STEP: Writing 94 bytes to response.txt
+[2025-06-20 02:52:46] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:17:25] STEP: Started helper app
-[2025-06-17 19:17:25] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:17:25] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:17:25] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:17:25] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:17:25] STEP: Create TCP socket
-[2025-06-17 19:17:26] STEP: Resolving server address and port...
-[2025-06-17 19:17:26] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:17:26] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:17:26] STEP: Connection established!
-[2025-06-17 19:17:26] STEP: Sent 49 bytes to server
-[2025-06-17 19:17:34] STEP: Response received
-[2025-06-17 19:17:34] STEP: Writing 1219 bytes to response.txt
-[2025-06-17 19:17:34] STEP: Exiting with code 0 (Success!)
+[2025-06-20 02:53:00] STEP: Started helper app
+[2025-06-20 02:53:00] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 02:53:00] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 02:53:00] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 02:53:00] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 02:53:00] STEP: Create TCP socket
+[2025-06-20 02:53:00] STEP: Resolving server address and port...
+[2025-06-20 02:53:00] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 02:53:00] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 02:53:00] STEP: Connection established!
+[2025-06-20 02:53:00] STEP: Sent 18 bytes to server
+[2025-06-20 02:53:01] STEP: Response received
+[2025-06-20 02:53:01] STEP: Writing 31 bytes to response.txt
+[2025-06-20 02:53:01] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:17:48] STEP: Started helper app
-[2025-06-17 19:17:48] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:17:48] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:17:48] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:17:48] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:17:48] STEP: Create TCP socket
-[2025-06-17 19:17:49] STEP: Resolving server address and port...
-[2025-06-17 19:17:49] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:17:49] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:17:49] STEP: Connection established!
-[2025-06-17 19:17:49] STEP: Sent 26 bytes to server
-[2025-06-17 19:17:54] STEP: Response received
-[2025-06-17 19:17:54] STEP: Writing 769 bytes to response.txt
-[2025-06-17 19:17:54] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:05:17] STEP: Started helper app
+[2025-06-20 03:05:17] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:05:17] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:05:17] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:05:17] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:05:17] STEP: Create TCP socket
+[2025-06-20 03:05:17] STEP: Resolving server address and port...
+[2025-06-20 03:05:17] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:05:17] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:05:17] STEP: Connection established!
+[2025-06-20 03:05:17] STEP: Sent 16 bytes to server
+[2025-06-20 03:05:18] STEP: Response received
+[2025-06-20 03:05:18] STEP: Writing 15 bytes to response.txt
+[2025-06-20 03:05:18] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:18:06] STEP: Started helper app
-[2025-06-17 19:18:06] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:18:06] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:18:06] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:18:06] STEP: RESPONSE_TIMEOUT requested  9000, resolved to 9000
-[2025-06-17 19:18:06] STEP: Create TCP socket
-[2025-06-17 19:18:07] STEP: Resolving server address and port...
-[2025-06-17 19:18:07] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:18:07] STEP: Attempt TCP connection (1) with 9000ms timeout
-[2025-06-17 19:18:07] STEP: Connection established!
-[2025-06-17 19:18:07] STEP: Sent 60 bytes to server
-[2025-06-17 19:18:17] STEP: Timed out waiting for response!
-[2025-06-17 19:18:17] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 03:05:55] STEP: Started helper app
+[2025-06-20 03:05:55] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:05:55] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:05:55] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:05:55] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:05:55] STEP: Create TCP socket
+[2025-06-20 03:05:55] STEP: Resolving server address and port...
+[2025-06-20 03:05:55] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:05:55] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:05:55] STEP: Connection established!
+[2025-06-20 03:05:55] STEP: Sent 13 bytes to server
+[2025-06-20 03:05:56] STEP: Response received
+[2025-06-20 03:05:56] STEP: Writing 37 bytes to response.txt
+[2025-06-20 03:05:56] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:19:06] STEP: Started helper app
-[2025-06-17 19:19:06] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:19:06] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:19:06] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:19:06] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:19:06] STEP: Create TCP socket
-[2025-06-17 19:19:06] STEP: Resolving server address and port...
-[2025-06-17 19:19:06] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:19:06] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:19:07] STEP: Connection established!
-[2025-06-17 19:19:07] STEP: Sent 53 bytes to server
-[2025-06-17 19:19:18] STEP: Timed out waiting for response!
-[2025-06-17 19:19:18] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 03:06:25] STEP: Started helper app
+[2025-06-20 03:06:25] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:06:25] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:06:25] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:06:25] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:06:25] STEP: Create TCP socket
+[2025-06-20 03:06:25] STEP: Resolving server address and port...
+[2025-06-20 03:06:25] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:06:25] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:06:25] STEP: Connection established!
+[2025-06-20 03:06:25] STEP: Sent 20 bytes to server
+[2025-06-20 03:06:26] STEP: Response received
+[2025-06-20 03:06:26] STEP: Writing 99 bytes to response.txt
+[2025-06-20 03:06:26] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:21:18] STEP: Started helper app
-[2025-06-17 19:21:18] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:21:18] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:21:18] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:21:18] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:21:18] STEP: Create TCP socket
-[2025-06-17 19:21:19] STEP: Resolving server address and port...
-[2025-06-17 19:21:19] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:21:19] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:21:19] STEP: Connection established!
-[2025-06-17 19:21:19] STEP: Sent 32 bytes to server
-[2025-06-17 19:21:30] STEP: Response received
-[2025-06-17 19:21:30] STEP: Writing 1348 bytes to response.txt
-[2025-06-17 19:21:30] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:07:44] STEP: Started helper app
+[2025-06-20 03:07:44] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:07:44] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:07:44] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:07:44] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:07:44] STEP: Create TCP socket
+[2025-06-20 03:07:45] STEP: Resolving server address and port...
+[2025-06-20 03:07:45] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:07:45] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:07:45] STEP: Connection established!
+[2025-06-20 03:07:45] STEP: Sent 18 bytes to server
+[2025-06-20 03:07:45] STEP: Response received
+[2025-06-20 03:07:45] STEP: Writing 31 bytes to response.txt
+[2025-06-20 03:07:45] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:21:55] STEP: Started helper app
-[2025-06-17 19:21:55] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:21:55] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:21:55] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:21:55] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:21:55] STEP: Create TCP socket
-[2025-06-17 19:21:56] STEP: Resolving server address and port...
-[2025-06-17 19:21:56] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:21:56] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:21:56] STEP: Connection established!
-[2025-06-17 19:21:56] STEP: Sent 23 bytes to server
-[2025-06-17 19:22:07] STEP: Timed out waiting for response!
-[2025-06-17 19:22:07] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 03:10:22] STEP: Started helper app
+[2025-06-20 03:10:22] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:10:22] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:10:22] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:10:22] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:10:22] STEP: Create TCP socket
+[2025-06-20 03:10:23] STEP: Resolving server address and port...
+[2025-06-20 03:10:23] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:10:23] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:10:23] STEP: Connection established!
+[2025-06-20 03:10:23] STEP: Sent 16 bytes to server
+[2025-06-20 03:10:24] STEP: Response received
+[2025-06-20 03:10:24] STEP: Writing 15 bytes to response.txt
+[2025-06-20 03:10:24] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:22:09] STEP: Started helper app
-[2025-06-17 19:22:09] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:22:09] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:22:09] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:22:09] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:22:09] STEP: Create TCP socket
-[2025-06-17 19:22:09] STEP: Resolving server address and port...
-[2025-06-17 19:22:09] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:22:09] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:22:09] STEP: Connection established!
-[2025-06-17 19:22:09] STEP: Sent 19 bytes to server
-[2025-06-17 19:22:20] STEP: Timed out waiting for response!
-[2025-06-17 19:22:20] STEP: Exiting with code 9 (ERROR: Could not receive from socket!)
+[2025-06-20 03:10:25] STEP: Started helper app
+[2025-06-20 03:10:25] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:10:25] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:10:25] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:10:25] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:10:25] STEP: Create TCP socket
+[2025-06-20 03:10:25] STEP: Resolving server address and port...
+[2025-06-20 03:10:25] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:10:25] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:10:25] STEP: Connection established!
+[2025-06-20 03:10:25] STEP: Sent 13 bytes to server
+[2025-06-20 03:10:26] STEP: Response received
+[2025-06-20 03:10:26] STEP: Writing 37 bytes to response.txt
+[2025-06-20 03:10:26] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:22:22] STEP: Started helper app
-[2025-06-17 19:22:22] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:22:22] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:22:22] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:22:22] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:22:22] STEP: Create TCP socket
-[2025-06-17 19:22:22] STEP: Resolving server address and port...
-[2025-06-17 19:22:22] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:22:22] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:22:22] STEP: Connection established!
-[2025-06-17 19:22:22] STEP: Sent 18 bytes to server
-[2025-06-17 19:22:26] STEP: Response received
-[2025-06-17 19:22:26] STEP: Writing 31 bytes to response.txt
-[2025-06-17 19:22:26] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:10:30] STEP: Started helper app
+[2025-06-20 03:10:30] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:10:30] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:10:30] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:10:30] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:10:30] STEP: Create TCP socket
+[2025-06-20 03:10:30] STEP: Resolving server address and port...
+[2025-06-20 03:10:30] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:10:30] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:10:31] STEP: Connection established!
+[2025-06-20 03:10:31] STEP: Sent 20 bytes to server
+[2025-06-20 03:10:32] STEP: Response received
+[2025-06-20 03:10:32] STEP: Writing 43 bytes to response.txt
+[2025-06-20 03:10:32] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:32:23] STEP: Started helper app
-[2025-06-17 19:32:23] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:32:23] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:32:23] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:32:23] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:32:23] STEP: Create TCP socket
-[2025-06-17 19:32:24] STEP: Resolving server address and port...
-[2025-06-17 19:32:24] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:32:24] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:32:24] STEP: Connection established!
-[2025-06-17 19:32:24] STEP: Sent 16 bytes to server
-[2025-06-17 19:32:28] STEP: Response received
-[2025-06-17 19:32:28] STEP: Writing 15 bytes to response.txt
-[2025-06-17 19:32:28] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:10:34] STEP: Started helper app
+[2025-06-20 03:10:34] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:10:34] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:10:34] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:10:34] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:10:34] STEP: Create TCP socket
+[2025-06-20 03:10:34] STEP: Resolving server address and port...
+[2025-06-20 03:10:34] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:10:34] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:10:34] STEP: Connection established!
+[2025-06-20 03:10:34] STEP: Sent 18 bytes to server
+[2025-06-20 03:10:35] STEP: Response received
+[2025-06-20 03:10:35] STEP: Writing 31 bytes to response.txt
+[2025-06-20 03:10:35] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:32:32] STEP: Started helper app
-[2025-06-17 19:32:32] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:32:32] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:32:32] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:32:32] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:32:32] STEP: Create TCP socket
-[2025-06-17 19:32:32] STEP: Resolving server address and port...
-[2025-06-17 19:32:32] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:32:32] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:32:32] STEP: Connection established!
-[2025-06-17 19:32:32] STEP: Sent 13 bytes to server
-[2025-06-17 19:32:32] STEP: Response received
-[2025-06-17 19:32:32] STEP: Writing 37 bytes to response.txt
-[2025-06-17 19:32:32] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:14:54] STEP: Started helper app
+[2025-06-20 03:14:54] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:14:54] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:14:54] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:14:54] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:14:54] STEP: Create TCP socket
+[2025-06-20 03:14:54] STEP: Resolving server address and port...
+[2025-06-20 03:14:54] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:14:54] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:14:54] STEP: Connection established!
+[2025-06-20 03:14:54] STEP: Sent 16 bytes to server
+[2025-06-20 03:14:56] STEP: Response received
+[2025-06-20 03:14:56] STEP: Writing 15 bytes to response.txt
+[2025-06-20 03:14:56] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:32:44] STEP: Started helper app
-[2025-06-17 19:32:44] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:32:44] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:32:44] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:32:44] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:32:44] STEP: Create TCP socket
-[2025-06-17 19:32:45] STEP: Resolving server address and port...
-[2025-06-17 19:32:45] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:32:45] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:32:45] STEP: Connection established!
-[2025-06-17 19:32:45] STEP: Sent 41 bytes to server
-[2025-06-17 19:32:46] STEP: Response received
-[2025-06-17 19:32:46] STEP: Writing 184 bytes to response.txt
-[2025-06-17 19:32:46] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:14:57] STEP: Started helper app
+[2025-06-20 03:14:57] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:14:57] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:14:57] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:14:57] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:14:57] STEP: Create TCP socket
+[2025-06-20 03:14:57] STEP: Resolving server address and port...
+[2025-06-20 03:14:57] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:14:57] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:14:58] STEP: Connection established!
+[2025-06-20 03:14:58] STEP: Sent 13 bytes to server
+[2025-06-20 03:14:58] STEP: Response received
+[2025-06-20 03:14:58] STEP: Writing 37 bytes to response.txt
+[2025-06-20 03:14:58] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:32:59] STEP: Started helper app
-[2025-06-17 19:32:59] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:32:59] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:32:59] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:32:59] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:32:59] STEP: Create TCP socket
-[2025-06-17 19:32:59] STEP: Resolving server address and port...
-[2025-06-17 19:32:59] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:32:59] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:32:59] STEP: Connection established!
-[2025-06-17 19:32:59] STEP: Sent 41 bytes to server
-[2025-06-17 19:33:01] STEP: Response received
-[2025-06-17 19:33:01] STEP: Writing 169 bytes to response.txt
-[2025-06-17 19:33:01] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:15:02] STEP: Started helper app
+[2025-06-20 03:15:02] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:15:02] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:15:02] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:15:02] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:15:02] STEP: Create TCP socket
+[2025-06-20 03:15:03] STEP: Resolving server address and port...
+[2025-06-20 03:15:03] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:15:03] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:15:03] STEP: Connection established!
+[2025-06-20 03:15:03] STEP: Sent 20 bytes to server
+[2025-06-20 03:15:04] STEP: Response received
+[2025-06-20 03:15:04] STEP: Writing 91 bytes to response.txt
+[2025-06-20 03:15:04] STEP: Exiting with code 0 (Success!)
 -------------
 
-[2025-06-17 19:33:08] STEP: Started helper app
-[2025-06-17 19:33:08] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
-[2025-06-17 19:33:08] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
-[2025-06-17 19:33:08] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
-[2025-06-17 19:33:08] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
-[2025-06-17 19:33:08] STEP: Create TCP socket
-[2025-06-17 19:33:09] STEP: Resolving server address and port...
-[2025-06-17 19:33:09] STEP: Server resolved, connecting to 147.182.245.228:5000
-[2025-06-17 19:33:09] STEP: Attempt TCP connection (1) with 9999ms timeout
-[2025-06-17 19:33:09] STEP: Connection established!
-[2025-06-17 19:33:09] STEP: Sent 18 bytes to server
-[2025-06-17 19:33:09] STEP: Response received
-[2025-06-17 19:33:09] STEP: Writing 31 bytes to response.txt
-[2025-06-17 19:33:09] STEP: Exiting with code 0 (Success!)
+[2025-06-20 03:15:06] STEP: Started helper app
+[2025-06-20 03:15:06] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:15:06] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:15:06] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:15:06] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:15:06] STEP: Create TCP socket
+[2025-06-20 03:15:06] STEP: Resolving server address and port...
+[2025-06-20 03:15:06] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:15:06] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:15:06] STEP: Connection established!
+[2025-06-20 03:15:06] STEP: Sent 18 bytes to server
+[2025-06-20 03:15:07] STEP: Response received
+[2025-06-20 03:15:07] STEP: Writing 31 bytes to response.txt
+[2025-06-20 03:15:07] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 03:18:45] STEP: Started helper app
+[2025-06-20 03:18:45] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 03:18:45] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 03:18:45] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 03:18:45] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 03:18:45] STEP: Create TCP socket
+[2025-06-20 03:18:45] STEP: Resolving server address and port...
+[2025-06-20 03:18:45] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 03:18:45] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 03:18:45] STEP: Connection established!
+[2025-06-20 03:18:45] STEP: Sent 16 bytes to server
+[2025-06-20 03:18:46] STEP: Response received
+[2025-06-20 03:18:46] STEP: Writing 15 bytes to response.txt
+[2025-06-20 03:18:46] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 04:14:53] STEP: Started helper app
+[2025-06-20 04:14:53] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 04:14:53] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 04:14:53] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 04:14:53] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 04:14:53] STEP: Create TCP socket
+[2025-06-20 04:14:54] STEP: Resolving server address and port...
+[2025-06-20 04:14:54] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 04:14:54] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 04:14:54] STEP: Connection established!
+[2025-06-20 04:14:54] STEP: Sent 13 bytes to server
+[2025-06-20 04:14:54] STEP: Response received
+[2025-06-20 04:14:54] STEP: Writing 37 bytes to response.txt
+[2025-06-20 04:14:54] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 04:14:56] STEP: Started helper app
+[2025-06-20 04:14:56] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 04:14:56] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 04:14:56] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 04:14:56] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 04:14:56] STEP: Create TCP socket
+[2025-06-20 04:14:56] STEP: Resolving server address and port...
+[2025-06-20 04:14:56] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 04:14:56] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 04:14:56] STEP: Connection established!
+[2025-06-20 04:14:56] STEP: Sent 20 bytes to server
+[2025-06-20 04:14:58] STEP: Response received
+[2025-06-20 04:14:58] STEP: Writing 155 bytes to response.txt
+[2025-06-20 04:14:58] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 04:15:02] STEP: Started helper app
+[2025-06-20 04:15:02] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 04:15:02] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 04:15:02] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 04:15:02] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 04:15:02] STEP: Create TCP socket
+[2025-06-20 04:15:02] STEP: Resolving server address and port...
+[2025-06-20 04:15:02] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 04:15:02] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 04:15:02] STEP: Connection established!
+[2025-06-20 04:15:02] STEP: Sent 18 bytes to server
+[2025-06-20 04:15:02] STEP: Response received
+[2025-06-20 04:15:02] STEP: Writing 31 bytes to response.txt
+[2025-06-20 04:15:02] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:28:01] STEP: Started helper app
+[2025-06-20 06:28:01] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:28:01] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:28:01] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:28:01] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:28:01] STEP: Create TCP socket
+[2025-06-20 06:28:01] STEP: Resolving server address and port...
+[2025-06-20 06:28:01] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:28:01] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:28:01] STEP: Connection established!
+[2025-06-20 06:28:01] STEP: Sent 16 bytes to server
+[2025-06-20 06:28:02] STEP: Response received
+[2025-06-20 06:28:02] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:28:02] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:33:14] STEP: Started helper app
+[2025-06-20 06:33:14] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:33:14] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:33:14] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:33:14] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:33:14] STEP: Create TCP socket
+[2025-06-20 06:33:15] STEP: Resolving server address and port...
+[2025-06-20 06:33:15] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:33:15] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:33:15] STEP: Connection established!
+[2025-06-20 06:33:15] STEP: Sent 16 bytes to server
+[2025-06-20 06:33:16] STEP: Response received
+[2025-06-20 06:33:16] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:33:16] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:38:41] STEP: Started helper app
+[2025-06-20 06:38:41] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:38:41] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:38:41] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:38:41] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:38:41] STEP: Create TCP socket
+[2025-06-20 06:38:42] STEP: Resolving server address and port...
+[2025-06-20 06:38:42] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:38:42] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:38:42] STEP: Connection established!
+[2025-06-20 06:38:42] STEP: Sent 16 bytes to server
+[2025-06-20 06:38:43] STEP: Response received
+[2025-06-20 06:38:43] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:38:43] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:44:54] STEP: Started helper app
+[2025-06-20 06:44:54] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:44:54] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:44:54] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:44:54] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:44:54] STEP: Create TCP socket
+[2025-06-20 06:44:54] STEP: Resolving server address and port...
+[2025-06-20 06:44:54] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:44:54] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:44:54] STEP: Connection established!
+[2025-06-20 06:44:54] STEP: Sent 16 bytes to server
+[2025-06-20 06:44:55] STEP: Response received
+[2025-06-20 06:44:55] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:44:55] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:45:49] STEP: Started helper app
+[2025-06-20 06:45:49] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:45:49] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:45:49] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:45:49] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:45:49] STEP: Create TCP socket
+[2025-06-20 06:45:50] STEP: Resolving server address and port...
+[2025-06-20 06:45:50] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:45:50] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:45:50] STEP: Connection established!
+[2025-06-20 06:45:50] STEP: Sent 13 bytes to server
+[2025-06-20 06:45:50] STEP: Response received
+[2025-06-20 06:45:50] STEP: Writing 37 bytes to response.txt
+[2025-06-20 06:45:50] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:04] STEP: Started helper app
+[2025-06-20 06:46:04] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:04] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:04] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:04] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:04] STEP: Create TCP socket
+[2025-06-20 06:46:05] STEP: Resolving server address and port...
+[2025-06-20 06:46:05] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:05] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:05] STEP: Connection established!
+[2025-06-20 06:46:05] STEP: Sent 56 bytes to server
+[2025-06-20 06:46:07] STEP: Response received
+[2025-06-20 06:46:07] STEP: Writing 343 bytes to response.txt
+[2025-06-20 06:46:07] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:22] STEP: Started helper app
+[2025-06-20 06:46:22] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:22] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:22] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:22] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:22] STEP: Create TCP socket
+[2025-06-20 06:46:22] STEP: Resolving server address and port...
+[2025-06-20 06:46:22] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:22] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:22] STEP: Connection established!
+[2025-06-20 06:46:22] STEP: Sent 18 bytes to server
+[2025-06-20 06:46:23] STEP: Response received
+[2025-06-20 06:46:23] STEP: Writing 31 bytes to response.txt
+[2025-06-20 06:46:23] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:36] STEP: Started helper app
+[2025-06-20 06:46:36] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:36] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:36] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:36] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:36] STEP: Create TCP socket
+[2025-06-20 06:46:36] STEP: Resolving server address and port...
+[2025-06-20 06:46:36] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:36] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:36] STEP: Connection established!
+[2025-06-20 06:46:36] STEP: Sent 13 bytes to server
+[2025-06-20 06:46:37] STEP: Response received
+[2025-06-20 06:46:37] STEP: Writing 37 bytes to response.txt
+[2025-06-20 06:46:37] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:41] STEP: Started helper app
+[2025-06-20 06:46:41] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:41] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:41] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:41] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:41] STEP: Create TCP socket
+[2025-06-20 06:46:41] STEP: Resolving server address and port...
+[2025-06-20 06:46:41] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:41] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:41] STEP: Connection established!
+[2025-06-20 06:46:41] STEP: Sent 23 bytes to server
+[2025-06-20 06:46:42] STEP: Response received
+[2025-06-20 06:46:42] STEP: Writing 129 bytes to response.txt
+[2025-06-20 06:46:42] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:46] STEP: Started helper app
+[2025-06-20 06:46:46] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:46] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:46] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:46] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:46] STEP: Create TCP socket
+[2025-06-20 06:46:46] STEP: Resolving server address and port...
+[2025-06-20 06:46:46] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:46] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:46] STEP: Connection established!
+[2025-06-20 06:46:46] STEP: Sent 20 bytes to server
+[2025-06-20 06:46:48] STEP: Response received
+[2025-06-20 06:46:48] STEP: Writing 174 bytes to response.txt
+[2025-06-20 06:46:48] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:46:55] STEP: Started helper app
+[2025-06-20 06:46:55] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:46:55] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:46:55] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:46:55] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:46:55] STEP: Create TCP socket
+[2025-06-20 06:46:56] STEP: Resolving server address and port...
+[2025-06-20 06:46:56] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:46:56] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:46:56] STEP: Connection established!
+[2025-06-20 06:46:56] STEP: Sent 17 bytes to server
+[2025-06-20 06:46:57] STEP: Response received
+[2025-06-20 06:46:57] STEP: Writing 164 bytes to response.txt
+[2025-06-20 06:46:57] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:47:03] STEP: Started helper app
+[2025-06-20 06:47:03] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:47:03] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:47:03] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:47:03] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:47:03] STEP: Create TCP socket
+[2025-06-20 06:47:03] STEP: Resolving server address and port...
+[2025-06-20 06:47:03] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:47:03] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:47:04] STEP: Connection established!
+[2025-06-20 06:47:04] STEP: Sent 19 bytes to server
+[2025-06-20 06:47:05] STEP: Response received
+[2025-06-20 06:47:05] STEP: Writing 184 bytes to response.txt
+[2025-06-20 06:47:05] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:47:18] STEP: Started helper app
+[2025-06-20 06:47:18] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:47:18] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:47:18] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:47:18] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:47:18] STEP: Create TCP socket
+[2025-06-20 06:47:18] STEP: Resolving server address and port...
+[2025-06-20 06:47:18] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:47:18] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:47:18] STEP: Connection established!
+[2025-06-20 06:47:18] STEP: Sent 18 bytes to server
+[2025-06-20 06:47:18] STEP: Response received
+[2025-06-20 06:47:18] STEP: Writing 31 bytes to response.txt
+[2025-06-20 06:47:18] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:48:29] STEP: Started helper app
+[2025-06-20 06:48:29] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:48:29] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:48:29] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:48:29] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:48:29] STEP: Create TCP socket
+[2025-06-20 06:48:29] STEP: Resolving server address and port...
+[2025-06-20 06:48:29] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:48:29] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:48:29] STEP: Connection established!
+[2025-06-20 06:48:29] STEP: Sent 13 bytes to server
+[2025-06-20 06:48:30] STEP: Response received
+[2025-06-20 06:48:30] STEP: Writing 37 bytes to response.txt
+[2025-06-20 06:48:30] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:48:33] STEP: Started helper app
+[2025-06-20 06:48:33] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:48:33] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:48:33] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:48:33] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:48:33] STEP: Create TCP socket
+[2025-06-20 06:48:33] STEP: Resolving server address and port...
+[2025-06-20 06:48:33] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:48:33] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:48:33] STEP: Connection established!
+[2025-06-20 06:48:33] STEP: Sent 23 bytes to server
+[2025-06-20 06:48:34] STEP: Response received
+[2025-06-20 06:48:34] STEP: Writing 307 bytes to response.txt
+[2025-06-20 06:48:34] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:48:45] STEP: Started helper app
+[2025-06-20 06:48:45] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:48:45] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:48:45] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:48:45] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:48:45] STEP: Create TCP socket
+[2025-06-20 06:48:46] STEP: Resolving server address and port...
+[2025-06-20 06:48:46] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:48:46] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:48:46] STEP: Connection established!
+[2025-06-20 06:48:46] STEP: Sent 17 bytes to server
+[2025-06-20 06:48:47] STEP: Response received
+[2025-06-20 06:48:47] STEP: Writing 305 bytes to response.txt
+[2025-06-20 06:48:47] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:49:18] STEP: Started helper app
+[2025-06-20 06:49:18] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:49:18] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:49:18] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:49:18] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:49:18] STEP: Create TCP socket
+[2025-06-20 06:49:18] STEP: Resolving server address and port...
+[2025-06-20 06:49:18] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:49:18] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:49:18] STEP: Connection established!
+[2025-06-20 06:49:18] STEP: Sent 18 bytes to server
+[2025-06-20 06:49:19] STEP: Response received
+[2025-06-20 06:49:19] STEP: Writing 31 bytes to response.txt
+[2025-06-20 06:49:19] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:49:27] STEP: Started helper app
+[2025-06-20 06:49:27] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:49:28] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:49:28] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:49:28] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:49:28] STEP: Create TCP socket
+[2025-06-20 06:49:28] STEP: Resolving server address and port...
+[2025-06-20 06:49:28] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:49:28] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:49:28] STEP: Connection established!
+[2025-06-20 06:49:28] STEP: Sent 16 bytes to server
+[2025-06-20 06:49:29] STEP: Response received
+[2025-06-20 06:49:29] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:49:29] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 06:49:34] STEP: Started helper app
+[2025-06-20 06:49:34] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 06:49:34] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 06:49:34] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 06:49:34] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 06:49:34] STEP: Create TCP socket
+[2025-06-20 06:49:34] STEP: Resolving server address and port...
+[2025-06-20 06:49:34] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 06:49:34] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 06:49:34] STEP: Connection established!
+[2025-06-20 06:49:34] STEP: Sent 16 bytes to server
+[2025-06-20 06:49:35] STEP: Response received
+[2025-06-20 06:49:35] STEP: Writing 15 bytes to response.txt
+[2025-06-20 06:49:35] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 07:11:22] STEP: Started helper app
+[2025-06-20 07:11:22] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 07:11:22] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 07:11:22] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 07:11:22] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 07:11:22] STEP: Create TCP socket
+[2025-06-20 07:11:22] STEP: Resolving server address and port...
+[2025-06-20 07:11:22] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 07:11:22] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 07:11:22] STEP: Connection established!
+[2025-06-20 07:11:22] STEP: Sent 16 bytes to server
+[2025-06-20 07:11:23] STEP: Response received
+[2025-06-20 07:11:23] STEP: Writing 15 bytes to response.txt
+[2025-06-20 07:11:23] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 07:18:26] STEP: Started helper app
+[2025-06-20 07:18:26] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 07:18:26] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 07:18:26] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 07:18:26] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 07:18:26] STEP: Create TCP socket
+[2025-06-20 07:18:26] STEP: Resolving server address and port...
+[2025-06-20 07:18:26] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 07:18:26] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 07:18:26] STEP: Connection established!
+[2025-06-20 07:18:26] STEP: Sent 16 bytes to server
+[2025-06-20 07:18:27] STEP: Response received
+[2025-06-20 07:18:27] STEP: Writing 15 bytes to response.txt
+[2025-06-20 07:18:27] STEP: Exiting with code 0 (Success!)
+-------------
+
+[2025-06-20 07:21:34] STEP: Started helper app
+[2025-06-20 07:21:34] STEP: SEND_BUFFER_SIZE requested  1024, resolved to 1024
+[2025-06-20 07:21:34] STEP: RECEIVE_BUFFER_SIZE requested  2048, resolved to 2048
+[2025-06-20 07:21:34] STEP: CONNECTION_ATTEMPT requested  4, resolved to 4
+[2025-06-20 07:21:34] STEP: RESPONSE_TIMEOUT requested  9999, resolved to 9999
+[2025-06-20 07:21:34] STEP: Create TCP socket
+[2025-06-20 07:21:34] STEP: Resolving server address and port...
+[2025-06-20 07:21:34] STEP: Server resolved, connecting to 147.182.245.228:5000
+[2025-06-20 07:21:34] STEP: Attempt TCP connection (1) with 9999ms timeout
+[2025-06-20 07:21:34] STEP: Connection established!
+[2025-06-20 07:21:34] STEP: Sent 16 bytes to server
+[2025-06-20 07:21:35] STEP: Response received
+[2025-06-20 07:21:35] STEP: Writing 15 bytes to response.txt
+[2025-06-20 07:21:35] STEP: Exiting with code 0 (Success!)
 -------------
 

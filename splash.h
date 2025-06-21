@@ -7,7 +7,9 @@
 #define SPLASH_FILE_EXT ".txt"
 #define SPLASH_DELAY_MS 1500
 
-int show_splash_sequence(void);                        /* Cycles splash1.txt, splash2.txt, etc. */
-int render_template_file(const char* filename);        /* Generic 80x24 screen renderer */
+int show_splash_sequence(void);                  /* Cycles splash1.txt, splash2.txt, etc. */
+int render_template_file(const char* filename);  /* Generic 80x24 screen renderer */
+int show_agent_splash_screen(int agent_id);      /* Shows agent<ID>.txt if available */
+int show_credits_sequence(void);
 
 #endif

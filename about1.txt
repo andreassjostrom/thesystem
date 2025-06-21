@@ -1,0 +1,22 @@
+ ษอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+ บ                              About "THE SYSTEM"                           บ
+ บ                                                                           บ
+ บ THE SYSTEM is a retro-styled AI chat program built for the original       บ 
+ บ IBM PC (Model 5150), running MS-DOS 3.31 on an Intel 8088 processor       บ 
+ บ at 4.77 MHz. It communicates with modern AI models including watsonx,     บ
+ บ OpenAI, Mistral, and LLaMA via a server and a lightweight TCP bridge,     บ
+ บ using an Intel 8/16 LAN Adapter.                                          บ
+ บ                                                                           บ
+ บ * Written in Turbo C 2.01 and Open Watcom 1.9                             บ
+ บ * Networking powered by mTCP, by Michael Brutman                          บ
+ บ     - http://www.brutman.com/mTCP/mTCP.html                               บ
+ บ * Supports chat and communication with AI Agents on CrewAI, LlamaIndex,   บ
+ บ   and more.                                                               บ
+ บ * DOS app uses plain ASCII and 80x25 layout with block art flair          บ
+ บ                                                                           บ
+ บ  LICENSE                                                                  บ
+ บ  THE SYSTEM (C) Andreas Sjostrom is free software under the GNU GPL v3.   บ
+ บ  See LICENSE.TXT for full license terms.                                  บ
+ บ  Source code: https://the-system.ai                                       บ
+ บ  mTCP (C) Michael B. Brutman GPLv3 licensed                               บ
+ ศอออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ

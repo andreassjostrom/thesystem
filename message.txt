@@ -1,1 +1,1 @@
-EndChat,88629f05
+TestConnection

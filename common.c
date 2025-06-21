@@ -24,3 +24,31 @@ void log_message(const char* message) {
 		fflush(f); 
     fclose(f);
 }
+
+int launch_external_program(const char* exe_name) {
+    int result;
+
+    ui_hide_cursor();
+    clrscr();
+    gotoxy(20, 12);
+    cprintf("Launching %s...", exe_name);
+    delay_ms(500);
+
+    result = system(exe_name);
+
+    clrscr();
+    while (kbhit()) getch();
+
+    if (result == -1) {
+        gotoxy(20, 13);
+        cprintf("Failed to launch: %s", exe_name);
+        delay_ms(1500);
+        draw_menu();
+        ui_show_cursor();
+        return FAILURE;
+    }
+
+    draw_menu();
+    ui_show_cursor();
+    return SUCCESS;
+}

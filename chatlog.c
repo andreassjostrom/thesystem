@@ -45,7 +45,7 @@ void chatlog_scroll_reset_to_bottom(void) {
     }
 }
 
-int chatlog_get_visible_lines(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
+int chatlog_get_visible_lines_old(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
     int count = 0;
     int i;
     for (i = scroll_index; i < chatlog_count && count < max_lines; i++, count++) {
@@ -54,6 +54,34 @@ int chatlog_get_visible_lines(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
     }
     return count;
 }
+
+
+int chatlog_get_visible_lines(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
+    int count = 0;
+    int i, max;
+    char logbuf[80];
+
+    /* Determine how many lines to return */
+    max = scroll_index + max_lines;
+    if (max > chatlog_count) {
+        max = chatlog_count;
+    }
+
+    for (i = scroll_index; i < max; i++, count++) {
+        strncpy(lines[count], chatlog[i], CHATLOG_LINE_BYTES - 1);
+        lines[count][CHATLOG_LINE_BYTES - 1] = '\0';
+    }
+
+    /* Log how many lines are being returned and from where */
+    sprintf(logbuf, "chatlog_get_visible_lines: scroll=%d count=%d", scroll_index, count);
+    log_message(logbuf);
+
+    return count;
+}
+
+
+
+
 
 int wrap_text_into_lines(const char* input, char lines[][CHATLOG_LINE_BYTES], int max_lines, int max_width) {
     int count = 0;

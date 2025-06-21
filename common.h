@@ -7,5 +7,6 @@
 #define MAX_RESPONSE_LINES 20
 
 void log_message(const char* message);
+int launch_external_program(const char* exe_name);
 
 #endif

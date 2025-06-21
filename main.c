@@ -18,6 +18,9 @@ int main() {
 
     log_message("********** Start app **********");
     
+    /* Hide cursor. */
+    ui_hide_cursor();   
+    
     /* Show splash screen sequence */
 		show_splash_sequence();
 
@@ -27,12 +30,15 @@ int main() {
     /* Load agents either from local file or server */
     load_agents();
 
+    /* Show cursor. */
+    ui_show_cursor();
+
     while (1) {
         while (kbhit()) getch();  /* Clear leftover keystrokes */
 				render_main_menu();
 
         /* Prompt for input */
-        if (!get_user_input(input, 3, 24, 16, 1)) {
+        if (!get_user_input(input, 3, 27, 17, 1)) {
             continue;  /* ESC pressed skip and redraw */
         }
 
@@ -72,13 +78,18 @@ int main() {
                 handle_settings();
                 break;
 
-            case '4':
-                handle_settings();
-                break;
-                
-            case '5':
-                handle_settings();
-                break;                
+               
+					case '4':
+					    if (handle_about() != SUCCESS) {
+					        log_message("main: handle_about() failed");
+					    }
+					    break;   
+					    
+						case '5':
+						    if (handle_credits() != SUCCESS) {
+						        log_message("main: handle_credits() failed");
+						    }
+						    break;        
 
             case '8':
                 test_spinner_file();
@@ -89,7 +100,7 @@ int main() {
                 return SUCCESS;
 
             default:
-                gotoxy(20, 13);
+                gotoxy(27, 17);
                 cprintf("Invalid selection. Press any key...");
                 getch();
                 break;

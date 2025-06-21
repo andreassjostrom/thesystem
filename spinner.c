@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "spinner.h"
 #include "common.h"
+#include "ui.h"
 
 #define SPINNER_WIDTH 20
 #define SPINNER_ROW 23
@@ -28,12 +29,14 @@ void spinner_wait(int milliseconds) {
     int pos = 0, dir = 1;
     int steps = milliseconds / 100;
 
+		ui_hide_cursor();
     while (steps-- > 0) {
         spinner_tick(pos, dir);
-        delay(100);
+        delay(50);
         pos += dir;
         if (pos == SPINNER_WIDTH - 1 || pos == 0) dir = -dir;
     }
+		ui_show_cursor();
 
     spinner_clear();
 }

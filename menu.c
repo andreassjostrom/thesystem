@@ -40,8 +40,8 @@ void draw_menu() {
 
     gotoxy(30, 2); cprintf("THE SYSTEM");
     gotoxy(26, 4); cprintf("Main Menu");
-    gotoxy(20, 6); cprintf("1. Chat with The System");
-    gotoxy(20, 7); cprintf("2. Chat with an AI Agent");
+    gotoxy(20, 6); cprintf("1. The System - The All-Knowing");
+    gotoxy(20, 7); cprintf("2. Totally 1980s AI Chat");
     gotoxy(20, 8); cprintf("3. Settings");
     /* gotoxy(20, 9); cprintf("8. Test code");  */
     gotoxy(20, 14); cprintf("9. Exit");
@@ -65,23 +65,60 @@ void render_main_menu(void) {
 void handle_settings() {
     clrscr();
     gotoxy(20, 10);
-    cprintf("Opening settings menu...");
-    getch();
+    cprintf("Opening settings...");
+
+    getch();  /* Pause briefly before returning to menu */
 }
 
-void handle_about() {
-    clrscr();
-    gotoxy(20, 10);
-    cprintf("Opening about...");
-    getch();
+
+int handle_credits() {
+    log_message("handle_credits: called");
+    if (show_credits_sequence() != SUCCESS) {
+        log_message("handle_credits: show_credits_sequence() failed");
+        return FAILURE;
+    }
+    return SUCCESS;
 }
 
-void handle_dedication() {
-    clrscr();
-    gotoxy(20, 10);
-    cprintf("Opening dedication...");
-    getch();
+
+int handle_about() {
+    int i = 1;
+    char filename[20];
+    char logbuf[100];
+    int key;
+
+    log_message("handle_about: start");
+    ui_hide_cursor();
+
+    while (1) {
+        sprintf(filename, "about%d.txt", i);
+        sprintf(logbuf, "handle_about: checking %s", filename);
+        log_message(logbuf);
+
+        if (render_template_file(filename) != SUCCESS) {
+            log_message("handle_about: no more about screens");
+            break;
+        }
+
+        gotoxy(26, 25);  /* Bottom center */
+        textcolor(LIGHTGREEN);
+        textbackground(BLACK);
+        cprintf("[Press any key to continue...]");
+
+        key = getch();
+        if (key == 27) {  /* ESC to exit early */
+            log_message("handle_about: ESC pressed, exiting early");
+            break;
+        }
+
+        i++;
+    }
+
+    ui_show_cursor();
+    log_message("handle_about: end");
+    return SUCCESS;
 }
+
 
 void handle_exit() {
     clrscr();
@@ -148,7 +185,7 @@ refresh_menu:
     if (redraw) {
         clrscr();
         gotoxy(2, 2);
-        cprintf("Select an AI Agent to chat with:");
+        cprintf("Select an AI bot or agent:");
 
         y = 4;
         for (i = 1; i < agent_count; i++) {
@@ -160,10 +197,10 @@ refresh_menu:
     }
 
     gotoxy(2, y);
-    cprintf("Enter ID: ");
-    gotoxy(13, y);
+    cprintf("Selection number:");
+    gotoxy(32, y);
 
-    if (!get_user_input(input, sizeof(input), 13, y, 1)) {
+    if (!get_user_input(input, sizeof(input), 26, y, 1)) {
         return;
     }
 
