@@ -1,1 +1,1 @@
-ListAgents
+TestConnection
