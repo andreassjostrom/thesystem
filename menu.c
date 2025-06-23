@@ -51,7 +51,7 @@ void draw_menu() {
 
 
 void render_main_menu(void) {
-    if (render_template_file("menu.txt") != SUCCESS) {
+    if (render_template_file(MENU_FILE) != SUCCESS) {
         clrscr();
         gotoxy(30, 10);
         cprintf("Main menu not found.");
@@ -91,7 +91,7 @@ int handle_about() {
     ui_hide_cursor();
 
     while (1) {
-        sprintf(filename, "about%d.txt", i);
+        sprintf(filename, "%sabout%d.txt", DATA_FOLDER, i);
         sprintf(logbuf, "handle_about: checking %s", filename);
         log_message(logbuf);
 
@@ -200,7 +200,7 @@ refresh_menu:
     cprintf("Selection number:");
     gotoxy(32, y);
 
-    if (!get_user_input(input, sizeof(input), 26, y, 1)) {
+    if (!get_user_input(input, sizeof(input), 19, y, 1)) {
         return;
     }
 

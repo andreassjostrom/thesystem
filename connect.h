@@ -6,7 +6,6 @@
 #define MSG_FILE "message.txt"
 #define RESP_FILE "response.txt"
 #define HELPER_APP "helper.exe"
-#define AGENTS_FILE "agents.txt"
 
 #define RESPONSE_LINE_MAX 512  /* Reduced from 2048 to stay within DOS limits */
 

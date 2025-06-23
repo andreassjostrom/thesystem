@@ -1174,3 +1174,594 @@
 [2025-06-20 07:21:35] Loaded agent: Intel Insider  [5]
 [2025-06-20 07:21:35] Loaded agent: Microsoft Insider  [6]
 [2025-06-20 07:21:35] Loaded agent: Capgemini Insider  [7]
+[2025-06-20 07:26:03] ********** Start app **********
+[2025-06-20 07:26:03] show_splash_sequence: starting
+[2025-06-20 07:26:03] show_splash_sequence: checking splash1.txt
+[2025-06-20 07:26:05] show_splash_sequence: checking splash2.txt
+[2025-06-20 07:26:05] render_template_file: failed to open splash2.txt
+[2025-06-20 07:26:05] show_splash_sequence: ended
+[2025-06-20 07:26:05] check_connection_status: starting
+[2025-06-20 07:26:05] call_helper: starting
+[2025-06-20 07:26:05] call_helper: wrote message
+[2025-06-20 07:26:05] call_helper: removed old response
+[2025-06-20 07:26:05] call_helper: invoking helper
+[2025-06-20 07:26:05] helper.exe message.txt response.txt
+[2025-06-20 07:26:06] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 07:26:06] Connection status: ONLINE
+[2025-06-20 07:26:06] Checking file_exists: agents.txt
+[2025-06-20 07:26:06] File pointer is not NULL
+[2025-06-20 07:26:06] Opened 'agents.txt' successfully
+[2025-06-20 07:26:06] Loaded agent: The System  [0]
+[2025-06-20 07:26:06] Loaded agent: Retro Quizmaster  [1]
+[2025-06-20 07:26:06] Loaded agent: ASCII Artist  [2]
+[2025-06-20 07:26:06] Loaded agent: Adventure Host  [3]
+[2025-06-20 07:26:06] Loaded agent: IBM Insider  [4]
+[2025-06-20 07:26:06] Loaded agent: Intel Insider  [5]
+[2025-06-20 07:26:06] Loaded agent: Microsoft Insider  [6]
+[2025-06-20 07:26:06] Loaded agent: Capgemini Insider  [7]
+[2025-06-20 08:09:31] ********** Start app **********
+[2025-06-20 08:09:31] show_splash_sequence: starting
+[2025-06-20 08:09:31] show_splash_sequence: checking splash1.txt
+[2025-06-20 08:09:32] show_splash_sequence: checking splash2.txt
+[2025-06-20 08:09:32] render_template_file: failed to open splash2.txt
+[2025-06-20 08:09:32] show_splash_sequence: ended
+[2025-06-20 08:09:32] check_connection_status: starting
+[2025-06-20 08:09:32] call_helper: starting
+[2025-06-20 08:09:32] call_helper: wrote message
+[2025-06-20 08:09:32] call_helper: removed old response
+[2025-06-20 08:09:32] call_helper: invoking helper
+[2025-06-20 08:09:32] helper.exe message.txt response.txt
+[2025-06-20 08:09:34] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 08:09:34] Connection status: ONLINE
+[2025-06-20 08:09:34] Checking file_exists: agents.txt
+[2025-06-20 08:09:34] File pointer is not NULL
+[2025-06-20 08:09:34] Opened 'agents.txt' successfully
+[2025-06-20 08:09:34] Loaded agent: The System  [0]
+[2025-06-20 08:09:34] Loaded agent: Retro Quizmaster  [1]
+[2025-06-20 08:09:34] Loaded agent: ASCII Artist  [2]
+[2025-06-20 08:09:34] Loaded agent: Adventure Host  [3]
+[2025-06-20 08:09:34] Loaded agent: IBM Insider  [4]
+[2025-06-20 08:09:34] Loaded agent: Intel Insider  [5]
+[2025-06-20 08:09:34] Loaded agent: Microsoft Insider  [6]
+[2025-06-20 08:09:34] Loaded agent: Capgemini Insider  [7]
+[2025-06-20 08:09:39] Main menu: Set current_agent_name = The System 
+[2025-06-20 08:09:39] Main: About to call handle_chat
+[2025-06-20 08:09:39] start_session: initializing
+[2025-06-20 08:09:39] start_chat_session chatc: agent_id = 0
+[2025-06-20 08:09:39] start_chat_session: command constructed
+[2025-06-20 08:09:39] StartChat,0
+[2025-06-20 08:09:39] call_helper: starting
+[2025-06-20 08:09:39] call_helper: wrote message
+[2025-06-20 08:09:39] call_helper: removed old response
+[2025-06-20 08:09:39] call_helper: invoking helper
+[2025-06-20 08:09:39] helper.exe message.txt response.txt
+[2025-06-20 08:09:40] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 08:09:40] start_chat_session: call_helper returned SUCCESS
+[2025-06-20 08:09:40] start_chat_session: response line count = 2
+[2025-06-20 08:09:40] start_chat_session: session_id = 5ff6b775
+[2025-06-20 08:09:40] start_chat_session: returning SUCCESS
+[2025-06-20 08:09:40] show_agent_splash_screen: checking agent0.txt
+[2025-06-20 08:09:40] Checking file_exists: agent0.txt
+[2025-06-20 08:09:40] File pointer is not NULL
+[2025-06-20 08:09:40] Opened 'agent0.txt' successfully
+[2025-06-20 08:09:40] show_agent_splash_screen: splash rendered successfully
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:40] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_tick updated line.
+[2025-06-20 08:09:41] spinner_clear executed.
+[2025-06-20 08:09:41] chatlog_get_visible_lines: scroll=0 count=0
+[2025-06-20 08:09:42] start_session: completed successfully
+[2025-06-20 08:09:50] chatlog_add: START
+[2025-06-20 08:09:50] chatlog_add: line 0: YOU: tell me about ibm
+[2025-06-20 08:09:50] chatlog_add: DONE
+[2025-06-20 08:09:50] chatlog_get_visible_lines: scroll=0 count=1
+[2025-06-20 08:09:50] call_helper: starting
+[2025-06-20 08:09:50] call_helper: wrote message
+[2025-06-20 08:09:50] call_helper: removed old response
+[2025-06-20 08:09:50] call_helper: invoking helper
+[2025-06-20 08:09:50] helper.exe message.txt response.txt
+[2025-06-20 08:09:53] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:53] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_tick updated line.
+[2025-06-20 08:09:54] spinner_clear executed.
+[2025-06-20 08:09:54] chatlog_add: START
+[2025-06-20 08:09:54] chatlog_add: line 1: The System :
+[2025-06-20 08:09:54] chatlog_add: DONE
+[2025-06-20 08:09:54] chatlog_add: START
+[2025-06-20 08:09:54] chatlog_add: line 2: IBM, or International Business Machines, was founded in 1911. Initially
+[2025-06-20 08:09:54] chatlog_add: line 3: focused on punch card machinery, it evolved into a leading computer
+[2025-06-20 08:09:54] chatlog_add: line 4: technology company. In the 1960s, IBM's mainframes dominated. The IBM PC,
+[2025-06-20 08:09:54] chatlog_add: line 5: released in 1981, set standards for personal computing. Known for innovation,
+[2025-06-20 08:09:54] chatlog_add: line 6: IBM has contributed to chip design, AI, and quantum computing.
+[2025-06-20 08:09:54] chatlog_add: DONE
+[2025-06-20 08:09:54] chatlog_get_visible_lines: scroll=0 count=7
+[2025-06-20 08:10:06] chatlog_add: START
+[2025-06-20 08:10:06] chatlog_add: line 7: YOU: testing
+[2025-06-20 08:10:06] chatlog_add: DONE
+[2025-06-20 08:10:06] chatlog_get_visible_lines: scroll=0 count=8
+[2025-06-20 08:10:06] call_helper: starting
+[2025-06-20 08:10:06] call_helper: wrote message
+[2025-06-20 08:10:06] call_helper: removed old response
+[2025-06-20 08:10:06] call_helper: invoking helper
+[2025-06-20 08:10:06] helper.exe message.txt response.txt
+[2025-06-20 08:10:09] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:09] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_tick updated line.
+[2025-06-20 08:10:10] spinner_clear executed.
+[2025-06-20 08:10:10] chatlog_add: START
+[2025-06-20 08:10:10] chatlog_add: line 8: The System :
+[2025-06-20 08:10:10] chatlog_add: DONE
+[2025-06-20 08:10:10] chatlog_add: START
+[2025-06-20 08:10:10] chatlog_add: line 9: It looks like you're testing the system. If you need any help or have
+[2025-06-20 08:10:10] chatlog_add: line 10: questions, feel free to ask!
+[2025-06-20 08:10:10] chatlog_add: DONE
+[2025-06-20 08:10:10] chatlog_get_visible_lines: scroll=0 count=11
+[2025-06-20 08:10:15] call_helper: starting
+[2025-06-20 08:10:15] call_helper: wrote message
+[2025-06-20 08:10:15] call_helper: removed old response
+[2025-06-20 08:10:15] call_helper: invoking helper
+[2025-06-20 08:10:15] helper.exe message.txt response.txt
+[2025-06-20 08:10:16] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 08:10:16] chatlog_add: START
+[2025-06-20 08:10:16] chatlog_add: line 11: The System :
+[2025-06-20 08:10:16] chatlog_add: DONE
+[2025-06-20 08:10:16] chatlog_add: START
+[2025-06-20 08:10:16] chatlog_add: line 12: Session 5ff6b775 ended
+[2025-06-20 08:10:16] chatlog_add: DONE
+[2025-06-20 08:10:16] handle_chat: completed successfully
+[2025-06-20 08:10:16] Main: Returned from handle_chat
+[2025-06-20 08:11:00] handle_credits: called
+[2025-06-20 08:11:00] show_credits_sequence: starting
+[2025-06-20 08:11:00] show_credits_sequence: checking credits1.txt
+[2025-06-20 08:11:06] show_credits_sequence: checking credits2.txt
+[2025-06-20 08:11:07] show_credits_sequence: checking credits3.txt
+[2025-06-20 08:11:11] show_credits_sequence: checking credits4.txt
+[2025-06-20 08:11:11] show_credits_sequence: checking credits5.txt
+[2025-06-20 08:11:13] show_credits_sequence: checking credits6.txt
+[2025-06-20 08:11:13] show_credits_sequence: checking credits7.txt
+[2025-06-20 08:11:13] render_template_file: failed to open credits7.txt
+[2025-06-20 08:11:13] show_credits_sequence: ended
+[2025-06-20 15:30:16] ********** Start app **********
+[2025-06-20 15:30:16] show_splash_sequence: starting
+[2025-06-20 15:30:16] show_splash_sequence: checking splash1.txt
+[2025-06-20 15:30:17] show_splash_sequence: checking splash2.txt
+[2025-06-20 15:30:17] render_template_file: failed to open splash2.txt
+[2025-06-20 15:30:17] show_splash_sequence: ended
+[2025-06-20 15:30:17] check_connection_status: starting
+[2025-06-20 15:30:17] call_helper: starting
+[2025-06-20 15:30:17] call_helper: wrote message
+[2025-06-20 15:30:17] call_helper: removed old response
+[2025-06-20 15:30:17] call_helper: invoking helper
+[2025-06-20 15:30:17] helper.exe message.txt response.txt
+[2025-06-20 15:30:17] call_helper: SUCCESS response.txt should now exist
+[2025-06-20 15:30:17] check_connection_status: unexpected or missing response
+[2025-06-20 15:30:17] Connection status: OFFLINE
+[2025-06-20 15:30:17] Checking file_exists: agents.txt
+[2025-06-20 15:30:17] File pointer is not NULL
+[2025-06-20 15:30:17] Opened 'agents.txt' successfully
+[2025-06-20 15:30:17] Loaded agent: The System  [0]
+[2025-06-20 15:30:17] Loaded agent: Retro Quizmaster  [1]
+[2025-06-20 15:30:17] Loaded agent: ASCII Artist  [2]
+[2025-06-20 15:30:17] Loaded agent: Adventure Host  [3]
+[2025-06-20 15:30:17] Loaded agent: IBM Insider  [4]
+[2025-06-20 15:30:17] Loaded agent: Intel Insider  [5]
+[2025-06-20 15:30:17] Loaded agent: Microsoft Insider  [6]
+[2025-06-20 15:30:17] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 09:43:33] ********** Start app **********
+[2025-06-23 09:43:33] show_splash_sequence: starting
+[2025-06-23 09:43:33] show_splash_sequence: checking splash1.txt
+[2025-06-23 09:43:35] show_splash_sequence: checking splash2.txt
+[2025-06-23 09:43:35] render_template_file: failed to open splash2.txt
+[2025-06-23 09:43:35] show_splash_sequence: ended
+[2025-06-23 09:43:35] check_connection_status: starting
+[2025-06-23 09:43:35] call_helper: starting
+[2025-06-23 09:43:35] call_helper: wrote message
+[2025-06-23 09:43:35] call_helper: removed old response
+[2025-06-23 09:43:35] call_helper: invoking helper
+[2025-06-23 09:43:35] helper.exe message.txt response.txt
+[2025-06-23 09:43:36] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 09:43:36] Connection status: ONLINE
+[2025-06-23 09:43:36] Checking file_exists: agents.txt
+[2025-06-23 09:43:36] File pointer is not NULL
+[2025-06-23 09:43:36] Opened 'agents.txt' successfully
+[2025-06-23 09:43:36] Loaded agent: The System  [0]
+[2025-06-23 09:43:36] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 09:43:36] Loaded agent: ASCII Artist  [2]
+[2025-06-23 09:43:36] Loaded agent: Adventure Host  [3]
+[2025-06-23 09:43:36] Loaded agent: IBM Insider  [4]
+[2025-06-23 09:43:36] Loaded agent: Intel Insider  [5]
+[2025-06-23 09:43:36] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 09:43:36] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 10:52:50] ********** Start app **********
+[2025-06-23 10:52:50] show_splash_sequence: starting
+[2025-06-23 10:52:50] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 10:52:52] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 10:52:52] render_template_file: failed to open data/splash2.txt
+[2025-06-23 10:52:52] show_splash_sequence: ended
+[2025-06-23 10:52:52] check_connection_status: starting
+[2025-06-23 10:52:52] call_helper: starting
+[2025-06-23 10:52:52] call_helper: wrote message
+[2025-06-23 10:52:52] call_helper: removed old response
+[2025-06-23 10:52:52] call_helper: invoking helper
+[2025-06-23 10:52:52] helper.exe message.txt response.txt
+[2025-06-23 10:52:53] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:52:53] Connection status: ONLINE
+[2025-06-23 10:52:53] Checking file_exists: agents.txt
+[2025-06-23 10:52:53] File pointer is not NULL
+[2025-06-23 10:52:53] Opened 'agents.txt' successfully
+[2025-06-23 10:52:53] Loaded agent: The System  [0]
+[2025-06-23 10:52:53] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 10:52:53] Loaded agent: ASCII Artist  [2]
+[2025-06-23 10:52:53] Loaded agent: Adventure Host  [3]
+[2025-06-23 10:52:53] Loaded agent: IBM Insider  [4]
+[2025-06-23 10:52:53] Loaded agent: Intel Insider  [5]
+[2025-06-23 10:52:53] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 10:52:53] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 10:52:58] handle_about: start
+[2025-06-23 10:52:58] handle_about: checking data/about1.txt
+[2025-06-23 10:52:59] handle_about: ESC pressed, exiting early
+[2025-06-23 10:52:59] handle_about: end
+[2025-06-23 10:53:06] handle_about: start
+[2025-06-23 10:53:06] handle_about: checking data/about1.txt
+[2025-06-23 10:53:08] handle_about: ESC pressed, exiting early
+[2025-06-23 10:53:08] handle_about: end
+[2025-06-23 10:53:19] handle_about: start
+[2025-06-23 10:53:19] handle_about: checking data/about1.txt
+[2025-06-23 10:53:20] handle_about: checking data/about2.txt
+[2025-06-23 10:53:21] handle_about: ESC pressed, exiting early
+[2025-06-23 10:53:21] handle_about: end
+[2025-06-23 10:53:37] Main menu: Set current_agent_name = The System 
+[2025-06-23 10:53:37] Main: About to call handle_chat
+[2025-06-23 10:53:37] start_session: initializing
+[2025-06-23 10:53:38] start_chat_session chatc: agent_id = 0
+[2025-06-23 10:53:38] start_chat_session: command constructed
+[2025-06-23 10:53:38] StartChat,0
+[2025-06-23 10:53:38] call_helper: starting
+[2025-06-23 10:53:38] call_helper: wrote message
+[2025-06-23 10:53:38] call_helper: removed old response
+[2025-06-23 10:53:38] call_helper: invoking helper
+[2025-06-23 10:53:38] helper.exe message.txt response.txt
+[2025-06-23 10:53:38] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:53:38] start_chat_session: call_helper returned SUCCESS
+[2025-06-23 10:53:38] start_chat_session: response line count = 2
+[2025-06-23 10:53:38] start_chat_session: session_id = db9bde4f
+[2025-06-23 10:53:38] start_chat_session: returning SUCCESS
+[2025-06-23 10:53:38] show_agent_splash_screen: checking data/agent0.txt
+[2025-06-23 10:53:38] Checking file_exists: data/agent0.txt
+[2025-06-23 10:53:38] File pointer is not NULL
+[2025-06-23 10:53:38] Opened 'data/agent0.txt' successfully
+[2025-06-23 10:53:38] show_agent_splash_screen: splash rendered successfully
+[2025-06-23 10:53:38] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:39] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_tick updated line.
+[2025-06-23 10:53:40] spinner_clear executed.
+[2025-06-23 10:53:40] chatlog_get_visible_lines: scroll=0 count=0
+[2025-06-23 10:53:40] start_session: completed successfully
+[2025-06-23 10:53:54] call_helper: starting
+[2025-06-23 10:53:54] call_helper: wrote message
+[2025-06-23 10:53:54] call_helper: removed old response
+[2025-06-23 10:53:54] call_helper: invoking helper
+[2025-06-23 10:53:54] helper.exe message.txt response.txt
+[2025-06-23 10:53:54] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:53:54] chatlog_add: START
+[2025-06-23 10:53:54] chatlog_add: line 0: The System :
+[2025-06-23 10:53:54] chatlog_add: DONE
+[2025-06-23 10:53:54] chatlog_add: START
+[2025-06-23 10:53:54] chatlog_add: line 1: Session db9bde4f ended
+[2025-06-23 10:53:54] chatlog_add: DONE
+[2025-06-23 10:53:54] handle_chat: completed successfully
+[2025-06-23 10:53:54] Main: Returned from handle_chat
+[2025-06-23 10:53:59] start_session: initializing
+[2025-06-23 10:53:59] start_chat_session chatc: agent_id = 7
+[2025-06-23 10:53:59] start_chat_session: command constructed
+[2025-06-23 10:53:59] StartChat,7
+[2025-06-23 10:53:59] call_helper: starting
+[2025-06-23 10:53:59] call_helper: wrote message
+[2025-06-23 10:53:59] call_helper: removed old response
+[2025-06-23 10:53:59] call_helper: invoking helper
+[2025-06-23 10:53:59] helper.exe message.txt response.txt
+[2025-06-23 10:54:00] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:54:00] start_chat_session: call_helper returned SUCCESS
+[2025-06-23 10:54:00] start_chat_session: response line count = 2
+[2025-06-23 10:54:00] start_chat_session: session_id = 29ad7969
+[2025-06-23 10:54:00] start_chat_session: returning SUCCESS
+[2025-06-23 10:54:00] show_agent_splash_screen: checking data/agent7.txt
+[2025-06-23 10:54:00] Checking file_exists: data/agent7.txt
+[2025-06-23 10:54:00] File pointer is not NULL
+[2025-06-23 10:54:00] Opened 'data/agent7.txt' successfully
+[2025-06-23 10:54:00] show_agent_splash_screen: splash rendered successfully
+[2025-06-23 10:54:00] spinner_tick updated line.
+[2025-06-23 10:54:00] spinner_tick updated line.
+[2025-06-23 10:54:00] spinner_tick updated line.
+[2025-06-23 10:54:00] spinner_tick updated line.
+[2025-06-23 10:54:00] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:01] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_tick updated line.
+[2025-06-23 10:54:02] spinner_clear executed.
+[2025-06-23 10:54:02] chatlog_get_visible_lines: scroll=0 count=0
+[2025-06-23 10:54:02] start_session: completed successfully
+[2025-06-23 10:54:23] call_helper: starting
+[2025-06-23 10:54:23] call_helper: wrote message
+[2025-06-23 10:54:23] call_helper: removed old response
+[2025-06-23 10:54:23] call_helper: invoking helper
+[2025-06-23 10:54:23] helper.exe message.txt response.txt
+[2025-06-23 10:54:23] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:54:23] chatlog_add: START
+[2025-06-23 10:54:23] chatlog_add: line 0: Capgemini Insider :
+[2025-06-23 10:54:23] chatlog_add: DONE
+[2025-06-23 10:54:23] chatlog_add: START
+[2025-06-23 10:54:23] chatlog_add: line 1: Session 29ad7969 ended
+[2025-06-23 10:54:23] chatlog_add: DONE
+[2025-06-23 10:54:23] handle_chat: completed successfully
+[2025-06-23 10:54:28] ********** Start app **********
+[2025-06-23 10:54:28] show_splash_sequence: starting
+[2025-06-23 10:54:28] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 10:54:30] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 10:54:30] render_template_file: failed to open data/splash2.txt
+[2025-06-23 10:54:30] show_splash_sequence: ended
+[2025-06-23 10:54:30] check_connection_status: starting
+[2025-06-23 10:54:30] call_helper: starting
+[2025-06-23 10:54:30] call_helper: wrote message
+[2025-06-23 10:54:30] call_helper: removed old response
+[2025-06-23 10:54:30] call_helper: invoking helper
+[2025-06-23 10:54:30] helper.exe message.txt response.txt
+[2025-06-23 10:54:32] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:54:32] Connection status: ONLINE
+[2025-06-23 10:54:32] Checking file_exists: agents.txt
+[2025-06-23 10:54:32] File pointer is not NULL
+[2025-06-23 10:54:32] Opened 'agents.txt' successfully
+[2025-06-23 10:54:32] Loaded agent: The System  [0]
+[2025-06-23 10:54:32] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 10:54:32] Loaded agent: ASCII Artist  [2]
+[2025-06-23 10:54:32] Loaded agent: Adventure Host  [3]
+[2025-06-23 10:54:32] Loaded agent: IBM Insider  [4]
+[2025-06-23 10:54:32] Loaded agent: Intel Insider  [5]
+[2025-06-23 10:54:32] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 10:54:32] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 10:55:07] ********** Start app **********
+[2025-06-23 10:55:07] show_splash_sequence: starting
+[2025-06-23 10:55:07] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 10:55:08] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 10:55:08] render_template_file: failed to open data/splash2.txt
+[2025-06-23 10:55:08] show_splash_sequence: ended
+[2025-06-23 10:55:08] check_connection_status: starting
+[2025-06-23 10:55:08] call_helper: starting
+[2025-06-23 10:55:08] call_helper: wrote message
+[2025-06-23 10:55:08] call_helper: removed old response
+[2025-06-23 10:55:08] call_helper: invoking helper
+[2025-06-23 10:55:08] helper.exe message.txt response.txt
+[2025-06-23 10:55:11] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:55:11] Connection status: ONLINE
+[2025-06-23 10:55:11] Checking file_exists: agents.txt
+[2025-06-23 10:55:11] File pointer is NULL  fopen failed
+[2025-06-23 10:55:11] call_helper: starting
+[2025-06-23 10:55:11] call_helper: wrote message
+[2025-06-23 10:55:11] call_helper: removed old response
+[2025-06-23 10:55:11] call_helper: invoking helper
+[2025-06-23 10:55:11] helper.exe message.txt response.txt
+[2025-06-23 10:55:12] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:55:12] Saved agents file
+[2025-06-23 10:55:12] Loaded agent: The System  [0]
+[2025-06-23 10:55:12] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 10:55:12] Loaded agent: ASCII Artist  [2]
+[2025-06-23 10:55:12] Loaded agent: Adventure Host  [3]
+[2025-06-23 10:55:12] Loaded agent: IBM Insider  [4]
+[2025-06-23 10:55:12] Loaded agent: Intel Insider  [5]
+[2025-06-23 10:55:12] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 10:55:12] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 10:55:54] ********** Start app **********
+[2025-06-23 10:55:54] show_splash_sequence: starting
+[2025-06-23 10:55:54] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 10:55:55] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 10:55:55] render_template_file: failed to open data/splash2.txt
+[2025-06-23 10:55:55] show_splash_sequence: ended
+[2025-06-23 10:55:55] check_connection_status: starting
+[2025-06-23 10:55:55] call_helper: starting
+[2025-06-23 10:55:55] call_helper: wrote message
+[2025-06-23 10:55:55] call_helper: removed old response
+[2025-06-23 10:55:55] call_helper: invoking helper
+[2025-06-23 10:55:55] helper.exe message.txt response.txt
+[2025-06-23 10:55:57] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:55:57] Connection status: ONLINE
+[2025-06-23 10:55:57] Checking file_exists: agents.txt
+[2025-06-23 10:55:57] File pointer is NULL  fopen failed
+[2025-06-23 10:55:57] call_helper: starting
+[2025-06-23 10:55:57] call_helper: wrote message
+[2025-06-23 10:55:57] call_helper: removed old response
+[2025-06-23 10:55:57] call_helper: invoking helper
+[2025-06-23 10:55:57] helper.exe message.txt response.txt
+[2025-06-23 10:55:58] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 10:55:58] Saved agents file
+[2025-06-23 10:55:58] Loaded agent: The System  [0]
+[2025-06-23 10:55:58] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 10:55:58] Loaded agent: ASCII Artist  [2]
+[2025-06-23 10:55:58] Loaded agent: Adventure Host  [3]
+[2025-06-23 10:55:58] Loaded agent: IBM Insider  [4]
+[2025-06-23 10:55:58] Loaded agent: Intel Insider  [5]
+[2025-06-23 10:55:58] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 10:55:58] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 11:06:54] ********** Start app **********
+[2025-06-23 11:06:54] show_splash_sequence: starting
+[2025-06-23 11:06:54] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 11:06:56] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 11:06:56] render_template_file: failed to open data/splash2.txt
+[2025-06-23 11:06:56] show_splash_sequence: ended
+[2025-06-23 11:06:56] check_connection_status: starting
+[2025-06-23 11:06:56] call_helper: starting
+[2025-06-23 11:06:56] call_helper: wrote message
+[2025-06-23 11:06:56] call_helper: removed old response
+[2025-06-23 11:06:56] call_helper: invoking helper
+[2025-06-23 11:06:56] helper.exe message.txt response.txt
+[2025-06-23 11:06:58] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 11:06:58] Connection status: ONLINE
+[2025-06-23 11:06:58] Checking file_exists: agents.txt
+[2025-06-23 11:06:58] File pointer is NULL  fopen failed
+[2025-06-23 11:06:58] call_helper: starting
+[2025-06-23 11:06:58] call_helper: wrote message
+[2025-06-23 11:06:58] call_helper: removed old response
+[2025-06-23 11:06:58] call_helper: invoking helper
+[2025-06-23 11:06:58] helper.exe message.txt response.txt
+[2025-06-23 11:06:59] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 11:06:59] Saved agents file
+[2025-06-23 11:06:59] Loaded agent: The System  [0]
+[2025-06-23 11:06:59] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 11:06:59] Loaded agent: ASCII Artist  [2]
+[2025-06-23 11:06:59] Loaded agent: Adventure Host  [3]
+[2025-06-23 11:06:59] Loaded agent: IBM Insider  [4]
+[2025-06-23 11:06:59] Loaded agent: Intel Insider  [5]
+[2025-06-23 11:06:59] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 11:06:59] Loaded agent: Capgemini Insider  [7]
+[2025-06-23 11:12:51] ********** Start app **********
+[2025-06-23 11:12:51] show_splash_sequence: starting
+[2025-06-23 11:12:51] show_splash_sequence: checking data/splash1.txt
+[2025-06-23 11:12:53] show_splash_sequence: checking data/splash2.txt
+[2025-06-23 11:12:53] render_template_file: failed to open data/splash2.txt
+[2025-06-23 11:12:53] show_splash_sequence: ended
+[2025-06-23 11:12:53] check_connection_status: starting
+[2025-06-23 11:12:53] call_helper: starting
+[2025-06-23 11:12:53] call_helper: wrote message
+[2025-06-23 11:12:53] call_helper: removed old response
+[2025-06-23 11:12:53] call_helper: invoking helper
+[2025-06-23 11:12:53] helper.exe message.txt response.txt
+[2025-06-23 11:12:54] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 11:12:54] Connection status: ONLINE
+[2025-06-23 11:12:54] Checking file_exists: data/agents.txt
+[2025-06-23 11:12:54] File pointer is NULL  fopen failed
+[2025-06-23 11:12:54] call_helper: starting
+[2025-06-23 11:12:54] call_helper: wrote message
+[2025-06-23 11:12:54] call_helper: removed old response
+[2025-06-23 11:12:54] call_helper: invoking helper
+[2025-06-23 11:12:54] helper.exe message.txt response.txt
+[2025-06-23 11:12:55] call_helper: SUCCESS response.txt should now exist
+[2025-06-23 11:12:55] Saved agents file
+[2025-06-23 11:12:55] Loaded agent: The System  [0]
+[2025-06-23 11:12:55] Loaded agent: Retro Quizmaster  [1]
+[2025-06-23 11:12:55] Loaded agent: ASCII Artist  [2]
+[2025-06-23 11:12:55] Loaded agent: Adventure Host  [3]
+[2025-06-23 11:12:55] Loaded agent: IBM Insider  [4]
+[2025-06-23 11:12:55] Loaded agent: Intel Insider  [5]
+[2025-06-23 11:12:55] Loaded agent: Microsoft Insider  [6]
+[2025-06-23 11:12:55] Loaded agent: Capgemini Insider  [7]

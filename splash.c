@@ -50,7 +50,7 @@ int show_splash_sequence(void) {
     log_message("show_splash_sequence: starting");
 
     while (1) {
-        sprintf(filename, "splash%d.txt", index);
+    	  sprintf(filename, "%ssplash%d.txt", DATA_FOLDER, index);
         sprintf(logbuf, "show_splash_sequence: checking %s", filename);
         log_message(logbuf);
 
@@ -68,7 +68,7 @@ int show_splash_sequence(void) {
 int show_agent_splash_screen(int agent_id) {
     char filename[40], logbuf[80];
 
-    sprintf(filename, "agent%d.txt", agent_id);
+    sprintf(filename, "%sagent%d.txt", DATA_FOLDER, agent_id);
     sprintf(logbuf, "show_agent_splash_screen: checking %s", filename);
     log_message(logbuf);
 
@@ -100,7 +100,7 @@ int show_credits_sequence(void) {
     log_message("show_credits_sequence: starting");
 
     while (1) {
-        sprintf(filename, "credits%d.txt", index);
+    	  sprintf(filename, "%scredits%d.txt", DATA_FOLDER, index);
         sprintf(logbuf, "show_credits_sequence: checking %s", filename);
         log_message(logbuf);
 
