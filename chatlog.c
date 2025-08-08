@@ -45,15 +45,6 @@ void chatlog_scroll_reset_to_bottom(void) {
     }
 }
 
-int chatlog_get_visible_lines_old(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
-    int count = 0;
-    int i;
-    for (i = scroll_index; i < chatlog_count && count < max_lines; i++, count++) {
-        strncpy(lines[count], chatlog[i], CHATLOG_LINE_BYTES - 1);
-        lines[count][CHATLOG_LINE_BYTES - 1] = '\0';
-    }
-    return count;
-}
 
 
 int chatlog_get_visible_lines(char lines[][CHATLOG_LINE_BYTES], int max_lines) {
