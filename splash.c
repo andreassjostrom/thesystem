@@ -65,6 +65,68 @@ int show_splash_sequence(void) {
     return SUCCESS;
 }
 
+int show_agent_splash_screen_old(int agent_id) {
+    char filename[40], logbuf[80];
+
+    sprintf(filename, "%sagent%d.txt", DATA_FOLDER, agent_id);
+    sprintf(logbuf, "show_agent_splash_screen: checking %s", filename);
+    log_message(logbuf);
+
+    if (file_exists(filename) != SUCCESS) {
+        log_message("show_agent_splash_screen: file does not exist");
+        return FAILURE;
+    }
+
+    ui_hide_cursor();
+
+    if (render_template_file(filename) == SUCCESS) {
+        log_message("show_agent_splash_screen: splash rendered successfully");
+        if (spinner_enabled) spinner_wait(3000);
+        ui_reset_fullscreen(); /* <-- make sure we leave a clean screen */
+        ui_show_cursor();
+        return SUCCESS;
+    }
+
+    log_message("show_agent_splash_screen: render failed");
+    ui_show_cursor();
+    return FAILURE;
+}
+
+
+
+
+int show_agent_splash_screen_preclaude(int agent_id) {
+    char filename[40], logbuf[80];
+
+    sprintf(filename, "%sagent%d.txt", DATA_FOLDER, agent_id);
+    sprintf(logbuf, "show_agent_splash_screen: checking %s", filename);
+    log_message(logbuf);
+
+    if (file_exists(filename) != SUCCESS) {
+        log_message("show_agent_splash_screen: file does not exist");
+        return FAILURE;
+    }
+
+    ui_hide_cursor();
+
+    if (render_template_file(filename) == SUCCESS) {
+        log_message("show_agent_splash_screen: splash rendered successfully");
+        if (spinner_enabled) spinner_wait(3000);
+
+        /* Clear splash from screen before entering chat */
+        ui_clear_screen_fast();
+        window(1, 1, SCREEN_COLS, SCREEN_ROWS);
+
+        ui_show_cursor();
+        return SUCCESS;
+    }
+
+    log_message("show_agent_splash_screen: render failed");
+    ui_show_cursor();
+    return FAILURE;
+}
+
+
 int show_agent_splash_screen(int agent_id) {
     char filename[40], logbuf[80];
 
@@ -82,6 +144,10 @@ int show_agent_splash_screen(int agent_id) {
     if (render_template_file(filename) == SUCCESS) {
         log_message("show_agent_splash_screen: splash rendered successfully");
         if (spinner_enabled) spinner_wait(3000);
+
+        /* Clear splash using standard Turbo C method */
+        clrscr();
+        
         ui_show_cursor();
         return SUCCESS;
     }
@@ -90,6 +156,7 @@ int show_agent_splash_screen(int agent_id) {
     ui_show_cursor();
     return FAILURE;
 }
+
 
 int show_credits_sequence(void) {
     char filename[20], logbuf[64];

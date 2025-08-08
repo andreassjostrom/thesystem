@@ -4,6 +4,9 @@
 /* Connection status */
 int is_online = 0;
 
+ /* Logging in app */
+int is_logging_enabled = 0; 
+
 /* Current session identifier */
 char session_id[SESSION_ID_LENGTH] = "";
 
@@ -11,4 +14,4 @@ char session_id[SESSION_ID_LENGTH] = "";
 char current_agent_name[MAX_AGENT_NAME];
 
 /* Start with spinner on */
-int spinner_enabled = 1;
+int spinner_enabled = 0;

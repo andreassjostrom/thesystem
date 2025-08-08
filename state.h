@@ -7,6 +7,7 @@
 
 
 extern int is_online;
+extern int is_logging_enabled;
 extern char session_id[SESSION_ID_LENGTH];
 extern char current_agent_name[MAX_AGENT_NAME];
 

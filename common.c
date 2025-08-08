@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <dos.h>
 #include "common.h"
+#include "state.h"
 
 #define LOGFILE "log.txt"
 
@@ -10,18 +11,20 @@ void log_message(const char* message) {
     struct time t;
     struct date d;
 
-    f = fopen(LOGFILE, "a");
-    if (!f) return;
+    if (!is_logging_enabled) return;
 
     gettime(&t);
     getdate(&d);
+
+    f = fopen("log.txt", "a");
+    if (!f) return;
 
     fprintf(f, "[%04d-%02d-%02d %02d:%02d:%02d] %s\n",
             d.da_year, d.da_mon, d.da_day,
             t.ti_hour, t.ti_min, t.ti_sec,
             message);
 
-		fflush(f); 
+    fflush(f);
     fclose(f);
 }
 
