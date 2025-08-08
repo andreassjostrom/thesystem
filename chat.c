@@ -46,11 +46,13 @@ int start_session(int agent_id) {
     show_agent_splash_screen(agent_id);
 
     chatlog_clear();
-    chatui_refresh_view(current_agent_name, "");
+		chatui_force_redraw();
+		chatui_refresh_view(current_agent_name, "");
 
     log_message("start_session: completed successfully");
     return SUCCESS;
 }
+
 
 int run_chat_loop(void) {
     char input[CHATLOG_MAX_INPUT_LENGTH + 1];
@@ -69,6 +71,10 @@ int run_chat_loop(void) {
     }
     memset(response, 0, MAX_RESPONSE_LINES * RESPONSE_LINE_MAX);
 
+    /* Clear logs and draw the initial empty chat window once before starting input */
+    chatlog_clear();
+    chatui_refresh_view(current_agent_name, "");
+
     while (in_chat) {
         memset(input, 0, sizeof(input));
         i = 0;
@@ -76,33 +82,32 @@ int run_chat_loop(void) {
         while (1) {
             ch = getch();
 
-            /* Handle extended keys */
+            /* Handle extended keys (arrows, page up/down) */
             if (ch == 0 || ch == 224) {
                 ch2 = getch();
-
                 switch (ch2) {
                     case 72:  /* Up arrow */
                         chatlog_scroll(-1);
-                        chatui_refresh_view(current_agent_name, "");
+                        chatui_refresh_view(current_agent_name, input);
                         continue;
                     case 80:  /* Down arrow */
                         chatlog_scroll(1);
-                        chatui_refresh_view(current_agent_name, "");
+                        chatui_refresh_view(current_agent_name, input);
                         continue;
                     case 73:  /* Page Up */
                         chatlog_scroll(-20);
-                        chatui_refresh_view(current_agent_name, "");
+                        chatui_refresh_view(current_agent_name, input);
                         continue;
                     case 81:  /* Page Down */
                         chatlog_scroll(20);
-                        chatui_refresh_view(current_agent_name, "");
+                        chatui_refresh_view(current_agent_name, input);
                         continue;
                     default:
                         continue;
                 }
             }
 
-            if (ch == 13) break;  /* Enter */
+            if (ch == 13) break;  /* ENTER */
             if (ch == 27) {       /* ESC = End chat */
                 sprintf(command, "EndChat,%s", session_id);
                 if (call_helper(command) != SUCCESS) {
@@ -122,14 +127,21 @@ int run_chat_loop(void) {
                 break;
             }
 
-            if (ch == 8 && i > 0) i--;  /* Backspace */
-            else if (i < CHATLOG_MAX_INPUT_LENGTH - 1 && ch >= 32 && ch <= 126)
+            /* Backspace handling */
+            if (ch == 8 && i > 0) {
+                i--;
+            }
+            /* Accept printable characters */
+            else if (i < CHATLOG_MAX_INPUT_LENGTH - 1 && ch >= 32 && ch <= 126) {
                 input[i++] = ch;
+            }
 
             input[i] = '\0';
-            chatui_draw_input_prompt(input);
+
+            chatui_update_input_line_fast(input); /* ultra-fast, only changed chars */
         }
 
+        /* If user typed something before hitting ENTER */
         if (i > 0) {
             sprintf(formatted, "YOU: %s", input);
             chatlog_add(formatted);
@@ -155,6 +167,7 @@ int run_chat_loop(void) {
             chatui_refresh_view(current_agent_name, "");
         }
 
+        /* Stop if log is full */
         if (chatlog_blocked()) {
             show_error("Chat log full. Restart required.");
             free(response);
@@ -165,3 +178,4 @@ int run_chat_loop(void) {
     free(response);
     return SUCCESS;
 }
+
