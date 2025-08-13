@@ -26,8 +26,8 @@ void ui_hide_cursor(void) {
 void ui_show_cursor(void) {
     union REGS regs;
     regs.h.ah = 0x01;
-    regs.h.ch = 0x0D;  /* Start line - near bottom */
-    regs.h.cl = 0x0F;  /* End line - bottom */
+    regs.h.ch = 0x0B;  /* Start line 11 */
+    regs.h.cl = 0x0C;  /* End line 12 */
     int86(0x10, &regs, &regs);
 }
 

@@ -121,7 +121,6 @@ int run_chat_loop(void) {
                         sprintf(formatted, "%s:", current_agent_name);
                         chatlog_add(formatted);
                     }
-                    chatlog_add(response[j]);
                 }
                 in_chat = 0;
                 break;
@@ -138,7 +137,7 @@ int run_chat_loop(void) {
 
             input[i] = '\0';
 
-            chatui_update_input_line_fast(input); /* ultra-fast, only changed chars */
+            chatui_update_input_line(input); /* ultra-fast, only changed chars */
         }
 
         /* If user typed something before hitting ENTER */
