@@ -1,6 +1,7 @@
 import socket
 import os
 from openai import OpenAI
+from openai import RateLimitError
 import uuid
 import json
 from dotenv import load_dotenv
@@ -117,8 +118,17 @@ def handle_command(command_str):
             response = client.chat.completions.create(**create_kwargs)
             reply = response.choices[0].message.content.strip()
             reply = sanitize_for_dos(reply)
+        except RateLimitError as e:
+            print(f"Chat rate limited (session {session_id}): {e}")
+            # Remove the user message we appended since it never got a reply
+            session["messages"].pop()
+            reply = "The System is thinking hard and needs a moment. Please try again shortly."
+            return session_id, reply
         except Exception as e:
-            return session_id, f"OpenAI Error: {str(e)}"
+            print(f"Chat error (session {session_id}): {e}")
+            reply = "SYSTEM ERROR: Unable to process your request right now. Please try again shortly."
+            session["messages"].pop()  # remove the user message so it's not stuck in a broken session
+            return session_id, reply
         session["messages"].append({"role": "assistant", "content": reply})
         return session_id, reply
     elif command == "EndChat":
