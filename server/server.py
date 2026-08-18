@@ -38,12 +38,27 @@ def get_agent_details(agent_id):
 
 # === Output Sanitization ===
 def sanitize_for_dos(text, max_len=1200):
+    # Normalize Unicode smart quotes/dashes to plain ASCII
+    replacements = {
+        '\u2018': "'", '\u2019': "'",   # single curly quotes
+        '\u201c': '"', '\u201d': '"',   # double curly quotes
+        '\u2013': '-', '\u2014': '-',   # en dash, em dash
+        '\u2026': '...',                # ellipsis
+    }
+    for uni_char, ascii_char in replacements.items():
+        text = text.replace(uni_char, ascii_char)
     # Strip markdown bold/italic markers
     text = re.sub(r'\*+', '', text)
     # Strip markdown links, keep just the link text
     text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # Strip markdown horizontal rule dividers (---, ***, ___ on their own line)
+    text = re.sub(r'^\s*[-*_]{3,}\s*$', '', text, flags=re.MULTILINE)
+    # Collapse resulting blank lines from removed dividers
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    # Drop any remaining non-ASCII characters
+    text = text.encode('ascii', errors='ignore').decode('ascii')
     # Truncate to a safe length for the DOS client
-    return text[:max_len]
+    return text.strip()[:max_len]
 # === Command Handling ===
 def handle_command(command_str):
     parts = [part.strip() for part in command_str.split(",")]
