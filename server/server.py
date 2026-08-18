@@ -58,6 +58,9 @@ def sanitize_for_dos(text, max_len=1200):
     text = re.sub(r'\n{3,}', '\n\n', text)
     # Drop any remaining non-ASCII characters
     text = text.encode('ascii', errors='ignore').decode('ascii')
+    # Drop control characters (tabs, ESC, etc) that would scramble the DOS
+    # text window -- keep only printable ASCII and newline
+    text = ''.join(c for c in text if c == '\n' or 32 <= ord(c) <= 126)
     # Truncate to a safe length for the DOS client
     return text.strip()[:max_len]
 # === Command Handling ===
