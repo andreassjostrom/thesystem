@@ -10,3 +10,9 @@ server/.env
 *.log
 __pycache__/
 *.pyc
+.DS_Store
+message.txt
+response.txt
+RESPONSE.TXT
+MESSAGE.TXT
+HELPER.LOG
