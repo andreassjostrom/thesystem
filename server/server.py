@@ -1,5 +1,6 @@
 import socket
 import os
+import unicodedata
 from openai import OpenAI
 from openai import RateLimitError
 import uuid
@@ -57,7 +58,7 @@ def sanitize_for_dos(text, max_len=1200):
     # Collapse resulting blank lines from removed dividers
     text = re.sub(r'\n{3,}', '\n\n', text)
     # Drop any remaining non-ASCII characters
-    text = text.encode('ascii', errors='ignore').decode('ascii')
+    text = unicodedata.normalize('NFKD', text).encode('ascii', errors='ignore').decode('ascii')
     # Drop control characters (tabs, ESC, etc) that would scramble the DOS
     # text window -- keep only printable ASCII and newline
     text = ''.join(c for c in text if c == '\n' or 32 <= ord(c) <= 126)
