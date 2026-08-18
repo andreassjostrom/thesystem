@@ -6,3 +6,7 @@
 *.map
 *.tmp
 *.pui
+server/.env
+*.log
+__pycache__/
+*.pyc
