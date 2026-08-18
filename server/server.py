@@ -5,6 +5,7 @@ import uuid
 import json
 from dotenv import load_dotenv
 import time
+import re
 # === Init ===
 load_dotenv()
 # Initialize OpenAI client
@@ -30,9 +31,19 @@ def get_agent_details(agent_id):
             return {
                 "name": agent["name"],
                 "description": agent["description"],
-                "base_prompt": agent["base_prompt"]
+                "base_prompt": agent["base_prompt"],
+                "model": agent.get("model", "gpt-5.5")
             }
     return None
+
+# === Output Sanitization ===
+def sanitize_for_dos(text, max_len=1200):
+    # Strip markdown bold/italic markers
+    text = re.sub(r'\*+', '', text)
+    # Strip markdown links, keep just the link text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # Truncate to a safe length for the DOS client
+    return text[:max_len]
 # === Command Handling ===
 def handle_command(command_str):
     parts = [part.strip() for part in command_str.split(",")]
@@ -65,7 +76,10 @@ def handle_command(command_str):
         if not agent:
             return "00000000", f"Error: Agent with ID '{agent_id}' not found"
         session_id = str(uuid.uuid4())[:8]
-        sessions[session_id] = [{"role": "system", "content": agent["base_prompt"]}]
+        sessions[session_id] = {
+            "model": agent["model"],
+            "messages": [{"role": "system", "content": agent["base_prompt"]}]
+        }
         return session_id, f"Session started with Agent {agent_id}"
     elif command == "Chat":
         if len(parts) < 3:
@@ -75,17 +89,22 @@ def handle_command(command_str):
         if session_id not in sessions:
             return session_id, "Error: Session ID not found"
         
-        sessions[session_id].append({"role": "user", "content": message})
+        session = sessions[session_id]
+        session["messages"].append({"role": "user", "content": message})
         try:
-            response = client.chat.completions.create(
-                model="gpt-5.5",
-                messages=sessions[session_id],
-                max_completion_tokens=MAX_TOKENS_LIMIT
-            )
+            create_kwargs = {
+                "model": session["model"],
+                "messages": session["messages"],
+                "max_completion_tokens": MAX_TOKENS_LIMIT
+            }
+            if session["model"] == "gpt-5-search-api":
+                create_kwargs["web_search_options"] = {}
+            response = client.chat.completions.create(**create_kwargs)
             reply = response.choices[0].message.content.strip()
+            reply = sanitize_for_dos(reply)
         except Exception as e:
             return session_id, f"OpenAI Error: {str(e)}"
-        sessions[session_id].append({"role": "assistant", "content": reply})
+        session["messages"].append({"role": "assistant", "content": reply})
         return session_id, reply
     elif command == "EndChat":
         if len(parts) != 2:
